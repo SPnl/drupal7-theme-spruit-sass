@@ -1,0 +1,57 @@
+/* social share */
+.primary-content .content .social-share ul {
+  padding: 0;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.social-share ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 190px;
+  right: 0;
+  z-index: 9000;
+}
+.social-share li {
+  padding: 0;
+  margin: 0;
+}
+.social-share li a {
+  font-family: "SPruit-icons";
+  font-size: 1.5rem;
+  line-height: 42px;
+  text-align: center;
+  display: block;
+  background-color: #fff;
+  color: #8c8c8c;
+  float: right;
+  width: 42px;
+  height: 42px;
+  text-decoration: none;
+}
+.social-share li a:hover {
+  color: $color1;
+  border-bottom: none;
+}
+.social-share li span {
+  font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+  text-align: center;
+  background: #EC1B23;
+  line-height: 42px;
+  color: white;
+  z-index: -500;
+  position: fixed;
+  right: -160px;
+  margin-left:0;
+  width: 160px;
+  font-size: 1rem;
+  transition: margin 0.4s ease;
+}
+.social-share li a:hover span {
+  margin-right: 202px;
+  transition: margin 0.4s ease;
+}
+/* alleen voor mobiel laten zien */
+.no-touch .social-share .whatsapp {
+  display: none;
+}

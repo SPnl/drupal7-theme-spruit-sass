@@ -1,0 +1,186 @@
+/* Different common section layouts */
+
+/* Overview = Horziontally sorted articles 
+   Stream = Vertically stacked articles 
+   Collection = Verically + Horzontally (grid) sorted articles */
+
+.page .overview,
+.page .collection {
+  background: #f1f1f1;
+  overflow: hidden;
+  padding: 1em 0;
+  text-align: center;
+  max-width: 100% !important;
+}
+
+.page .overview article,
+.page .collection article {
+  max-width: 960px;
+  margin: 0 auto 1em auto;
+  background: #fff;
+  width: 280px;
+  height: 438px;
+  display: inline-block;
+  overflow: hidden;
+  margin-left: .41em;
+  text-align: left;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.page .collection .picture-wrapper,
+.page .overview .picture-wrapper,
+.page .stream .picture-wrapper {
+  width: 280px;
+  height: 280px;
+  background: #e1e1e1;
+  overflow: hidden;      
+}
+
+.page .collection .picture-wrapper img, 
+.page .overview .picture-wrapper img,
+.page .stream .picture-wrapper img {
+  display: inline-block;
+  max-width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform-style: preserve-3d; /* Chrome, Safari, Opera */
+  transform-style: preserve-3d;
+}
+
+/* Zoom in effect, on hover */
+.page .collection article:hover .picture-wrapper img,
+.page .overview article:hover .picture-wrapper img,
+.page .stream article:hover .picture-wrapper img {
+  transform: scale(1.14);
+}
+
+.page .overview article .type {
+  padding: 0; 
+  margin: 0;
+  margin-top: -1.7em;
+  position: absolute; 
+}
+.page .overview article .type a {
+  padding: .4em 1em;
+  display: inline-block;
+  background: #fff;
+  font-size: .8em;
+}
+
+.page .overview article .title {
+  padding: 0 1em;
+}
+
+.page .overview article a:hover {
+  border: none;
+}
+
+.page .secondary-actions {
+  background: #f60000;
+  overflow: hidden;
+}
+
+.primary-content .site-slogan {
+  text-align: center;
+}
+.primary-content h2.site-slogan {
+  color: #f60000;
+  font-size: 2.8em;
+  margin: .4em auto 0 auto;
+  padding: .14em 0 .4em 0;
+}
+
+/* Stream: top-down list of articles */ 
+
+.page .stream {
+  background: #f1f1f1;
+  overflow: hidden;
+  padding: .4em 1.4em;
+  max-width: 100% important!;
+}
+.page .stream article {
+  background: #fff;
+  margin: 1.4em auto;
+  max-width: 1180px;
+  height: 280px;
+  overflow: hidden;
+}
+.page .stream article {
+  background: #fff;
+  margin: 1em auto;
+  max-width: 1180px;
+  height: 280px;
+  overflow: hidden;
+}
+.page .stream article .picture-wrapper {
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+  float: left;
+  background: #ddd;
+  margin-right: 1.4em;
+}
+
+/* Stream exposed form (filter) */
+
+.page .stream .view-filters {
+  background: none;
+  margin: 0;
+  max-width: 100%;
+  padding: .4em 0 0 0;
+}
+.page .stream .view-filters form {
+  padding: 0;
+  max-width: 1180px;
+}
+.page .stream .view-filters label {
+  display: none; 
+  font-family: 
+}
+.page .stream .view-filters .form-item {
+  display: block;
+  float: left;
+  background: #ddd;
+  margin-right: .72em;
+  padding: 0;
+  color: #888;
+}
+.page .stream .view-filters .form-item label {
+  display: block;
+  float: left;
+  padding: .82em 1.4em;
+  font-family: HelveticaNeueLTStd-BdCn, 'Sans serif';
+  font-weight: normal;
+  cursor: pointer;
+}
+.page .stream .view-filters .form-item label:hover {
+  background: #000;
+  color: #fff;
+}
+.page .stream .view-filters .form-radio {
+  display: none;
+}
+.page .stream .view-filters .throbber {
+  display: none;
+}
+.page .stream .view-filters .form-radio + label:before {
+  content: "v";
+  display:inline-block;
+  padding: 0 .4em 0 0;
+  vertical-align:middle;
+  margin-top: -4px;
+  cursor: pointer;
+  font-family: SPruit-icons;
+}
+.page .stream .view-filters .form-radio:checked + label {
+  background: #fff;
+  color: #f60000;
+}
+.page .stream .view-filters .form-radio:checked + label:before {
+  content: "v";
+}
+.page .views-exposed-form .views-exposed-widget {
+  padding: 0;
+}
+

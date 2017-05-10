@@ -1,0 +1,66 @@
+/* Social media and sharing option icons */
+.social {
+  list-style: none;
+  overflow: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.social * {
+  /* Default (natural) border-box sizing, could be moved up the stack */
+  box-sizing: border-box; 
+}
+.social li {
+  font-family: SPruit-Icons;
+  display: block;
+  width: 32px;
+  height: 40px;
+  float: left;
+  margin: 2px;
+}
+.social li a {
+  display: block;
+  border: 1px solid #f60000;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.social li a:before {
+  font-size: 1.2em
+}
+.social li a:hover {
+  border: 1px solid #f60000;
+  color: #fff;
+  background: #f60000;
+}
+.social li .text {
+  display: none;
+}
+
+/* Icon variations */
+.social li.facebook a:before {
+  content: 'f';
+}
+.social li.email a:before {
+  content: 'm';
+}
+.social li.twitter a:before {
+  content: 't';
+}
+.social li.phone {
+   width: auto;
+}
+.social li.phone: {
+  width: auto;
+}
+.social li.phone a .text{
+  font-family: HelveticaNeueLTStd-BdCn, 'Sans serif';
+  display: inline-block;
+  padding-right: .6em;
+  padding-top: .114em;
+}
+.social li.phone a:before {
+  content: "0";
+  padding: .4em .72em;
+  font-size: .87em;
+  vertical-align: -2px;
+}

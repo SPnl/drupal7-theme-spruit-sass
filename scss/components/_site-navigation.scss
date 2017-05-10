@@ -1,0 +1,106 @@
+/* SITE NAVIGATION */
+
+.site-navigation {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0;
+}
+.site-navigation .title {
+  display: none;
+}
+.site-navigation ul {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+.site-navigation ul li {
+  text-transform: uppercase;
+  font-family: HelveticaInseratLTPro, 'Sans serif';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+}
+.site-navigation ul li a,
+.site-navigation ul li a:link,
+.site-navigation ul li a:visited {
+  color: #f60000;
+  padding: 15px;
+  background: transparent;
+  font-size: 1.4142em;
+  text-decoration: none;
+}
+.site-navigation ul li a:hover {
+  background: #fff;
+  color: #000;
+}
+
+.site-navigation li.active-trail a {
+  color: #aaa;
+  background: #fff;
+}
+.site-navigation .menu-toggle {
+  display: none; //disable hamburger menu
+}
+
+/* HAMBURGER MENU */
+@media only screen and (max-width: 480px){
+    .site-navigation .menu {
+        display: none;
+        top: 70px;
+        left: 0;
+        background: #fff;
+        z-index: 1;
+        width: 100%;
+        position: absolute;
+        padding: 0;
+        border-top: 1px solid $color1;
+    }
+    .site-navigation .menu li {
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+    }
+    .site-navigation .menu li a {
+        font-size: 1.14em;
+        border-bottom: 1px solid $color1;
+        display: block;
+        font-weight: normal;
+    }
+    .site-navigation .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 24px;
+        right: 15px;
+        z-index: 2;
+        pointer: cursor;
+    }
+    .site-navigation .menu-toggle button {
+        display: block;
+        background: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+        outline: none; //remove chrome-safari default focus
+    }
+    .site-navigation .menu-toggle button .text {
+        display: none;
+    }
+    .site-navigation .menu-toggle button:after {
+        font-family: 'SPruit-icons';
+        content: '\e900';
+        display: block;
+        float: right;
+        border: 1px solid $color1;
+        background: #fff;
+        color: $color1;
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+        line-height: .94;
+        height: 32px;
+        width: 37px;
+    }
+}

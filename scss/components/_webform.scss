@@ -1,0 +1,134 @@
+/* WEBFORM */
+
+legend {
+    font-size: 1.5rem;
+    font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+}
+.form-wrapper {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (min-width:500px){
+    .form-wrapper {
+        padding:30px;
+    }
+    legend {
+        margin-left: -15px;
+    }
+}
+.form-actions {
+    max-width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+}
+
+.form-item {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.form-select {
+    padding: 0.8rem;
+    font-family: $font-strong;
+    font-size: 0.9em;
+    border: none;
+    background: #f1f1f1;
+}
+.form-item label {
+    margin: 16px 0 0 0;
+    font-weight: normal;
+    font-family: $font-middle;
+    font-size: 1.125rem;
+}
+.form-item .description {
+    font-size: 0.85em;
+    color: #d1d1d1;
+    padding-top: 5px;
+}
+
+.form-item .form-text,
+.form-item .form-textarea {
+    max-width:100%;
+    width: 100%;
+    padding: .72em;
+    background: #eee;
+    color: #333;
+    border: none;
+    font-family: $font-strong;
+}
+
+.form-type-checkbox input[type="checkbox"] {
+    display: none;
+}
+.form-type-checkbox input[type="checkbox"] + label:before {
+    display: inline-block;
+    font-family: 'SPruit-icons';
+    content: 'v';
+    color: #fff;
+    background: #fff;
+    padding: .30em .32em;
+    margin-right: .72em;
+    border: 2px solid #333;
+    border-radius: .14em;
+    font-size: .92em;
+}
+.form-type-checkbox input:checked + label:before {
+    content: 'v';
+    color: #f00;
+    background: #fff;
+    border-color: #f00;
+}
+.form-type-checkbox input:checked + label {
+    color: $color1;
+}
+.no-touch .form-type-checkbox:hover input + label:before {
+    color: #aaa;
+}
+.form-item .form-select:focus,
+.form-item .form-textarea:focus,
+.form-item .form-text:focus, {
+    outline:none; //disable browser default focus
+    box-shadow:0 0 5px 0 #888;
+}
+input.webform-previous,
+input.button-primary {
+    font-family: $font-primary;
+    font-weight: normal;
+    font-size: 1em;
+    text-transform: uppercase;
+    background: $color1;
+    padding: 1rem 3rem;
+    color: #fff;
+    border: 1px solid $color1;
+    transition: all 0.2s ease;
+    outline:none; //disable browser default focus
+    cursor: pointer;
+}
+input.webform-previous {
+    background: #fff;
+    color: $color1;
+}
+input.webform-previous:hover,
+input.button-primary:hover {
+    background:#000;
+    color:#fff;
+    border-color:#000;
+}
+    
+@media only screen and (max-width:500px){
+    .form-submit {
+      width:100%;
+      margin-bottom:6px;
+    }
+}
+
+/* WEBFORM INLINE-ERROR */
+div.error {
+    background-repeat: no-repeat;
+    padding-left: 27px;
+    line-height: 27px;
+    background-position-x: 2px;
+    background-position-y: 2px;
+    display: block;
+}

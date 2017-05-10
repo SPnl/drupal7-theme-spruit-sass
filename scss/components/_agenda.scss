@@ -1,0 +1,28 @@
+/* AGENDA */
+
+.view-agenda {
+    background:#f1f1f1;
+}
+.view-agenda .views-row {
+    background:#fff;
+    margin:0 auto;
+    max-width:1200px;
+    height:310px;
+    border-top:15px solid #f1f1f1;
+    border-bottom:15px solid #f1f1f1;
+}
+.view-agenda img {
+    float:left;
+    margin-right:15px;
+}
+.view-agenda a {
+    text-decoration:none;
+    color:#333;
+}
+.view-agenda p {
+    margin:0;
+}
+.view-agenda .meta-plaats {
+    padding-top:15px;
+    font-family: $font-body;
+}

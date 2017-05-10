@@ -1,0 +1,77 @@
+.site-header {
+  overflow: hidden;
+  display: table;
+  width: 100%;
+
+  /* Faux top-border */
+  background: #fff; /* Old browsers */
+  background: -moz-linear-gradient(top, #f60000 5px, #ffffff 5px); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5px,#f60000), color-stop(5px,#ffffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f60000 5px,#ffffff 5px); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f60000 5px,#ffffff 5px); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #f60000 5px,#ffffff 5px); /* IE10+ */
+  background: linear-gradient(to bottom, #f60000 5px,#ffffff 5px); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f60000', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.site-header .site-branding {
+  display: table-cell;
+  vertical-align: bottom;
+  padding: .72em;
+  width: 120px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.site-branding .site-logo {
+  height: 52px;
+  display: inline-block;
+}
+
+.site-header .site-logo img {
+  height: 100%;
+  width: auto;
+}
+
+.site-header .site-name {
+  margin: 0;
+  padding: 0;
+  font-size: 1.4142em;
+}
+
+.site-header .site-name a {
+  text-decoration: none;
+  color: #222;
+}
+
+
+/* Search toggle */
+
+.site-header .search-toggle {
+  display: table-cell;
+  width: 120px;
+  vertical-align: middle;
+  text-align:center;
+  border-top: 4px solid #f60000;
+}
+.site-header .search-toggle a {
+  color: #f60000;
+  text-decoration: none;
+  font-size: 2.4em;
+}
+.site-search-on .site-header .search-toggle a {
+  color: #eee;
+} 
+.site-header .search-toggle a:hover {
+  color: #000;
+}
+.site-header .search-toggle a:before {
+  font-family: "SPruit-icons";
+  content: "S";
+}
+.site-header .search-toggle a .text {
+  display: none;
+}
+.page-search .site-header .search-toggle a {
+  color: #eee;
+}

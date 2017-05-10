@@ -1,0 +1,37 @@
+.book-navigation {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.book-navigation .page-links {
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+    width: 100%;
+    padding: .4em;
+}
+
+.book-navigation .page-links a {
+  display: inline-block;
+  width: 44%;
+  padding: 1%;
+  margin: 0;
+  color: #f60000;
+  padding: .4em;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: .9em;
+}
+
+.book-navigation .page-links a:hover {
+  background: #f60000;
+  color: #fff;
+}
+
+.book-navigation .page-links .page-up {
+  width: 5%;
+  text-align: center;
+}
+.book-navigation .page-links .page-next {
+  float: right;
+  text-align: right;
+}

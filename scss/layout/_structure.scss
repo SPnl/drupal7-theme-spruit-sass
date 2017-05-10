@@ -1,0 +1,43 @@
+/* STRUCTURE */
+/* MEDIA */
+/*
+@media screen and (max-width: 576px){
+    .primary-content header .title,
+    h2.pane-title {
+        margin: 0 0 0 15px;
+    }
+}
+*/
+@media screen and (min-width: 576px){
+    .primary-content header .title,
+    h2.pane-title {
+        width: 510px;
+        max-width: 100%;
+        margin: 0 auto 1.2rem auto;
+    }
+}
+@media screen and (min-width: 768px){
+    .primary-content header .title,
+    h2.pane-title {
+        width: 690px;
+        max-width: 100%;
+        margin: 0 auto 1.2rem auto;
+    }
+}
+@media screen and (min-width: 992px){
+    .primary-content header .title,
+    h2.pane-title {
+        width: 930px;
+        max-width: 100%;
+        margin: 0 auto 1.2rem auto;
+    }
+}
+@media screen and (min-width: 1200px){
+    .primary-content header .title,
+    h2.pane-title {
+        width: 1110px;
+        max-width: 100%;
+        margin: 0 auto 1.2rem auto;
+    }
+}
+

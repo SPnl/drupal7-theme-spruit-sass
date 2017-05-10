@@ -1,0 +1,31 @@
+/* Person 'cards' related to content */
+
+aside.person {
+  background: #f1f1f1;
+  width: 440px;
+  box-sizing: border-box;
+  margin: 1.14em 0 1.14em 0;
+  overflow: hidden;
+  display: inline-block;
+}
+
+aside.person .picture-wrapper {
+  float: left;
+  width: 124px;
+  height: 124px;
+  background: #ddd;
+  margin-right: 1.4em;
+}
+
+aside.person .title {
+  font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+  text-transform: none;
+  margin: 1.4em 0 0 0;
+  font-size: 1.14em;
+}
+
+aside.person .title a:hover {
+  color: #f60000;
+  border: none;
+}
+

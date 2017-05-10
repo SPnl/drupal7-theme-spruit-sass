@@ -1,0 +1,54 @@
+/* HERO */
+#hero {
+    padding: 110px 15px;
+    background: $color3-bg;
+}
+
+.hero-card {
+    padding: 30px;
+    background: #fff;
+    border-left: 5px solid $color1;
+    margin: 0 auto;
+}
+.hero-card h1 {
+    margin: 0;
+}
+
+/* MEDIA */
+@media screen and (min-width: 576px){
+    .hero-card {
+        width: 540px;
+        max-width: 100%;
+    }
+    .hero-card em {
+        font-size: 1.2em;
+    }
+}
+@media screen and (min-width: 768px){
+    .hero-card {
+        width: 720px;
+        max-width: 100%;
+    }
+    .hero-card em {
+        font-size: 1.3em;
+    }
+}
+@media screen and (min-width: 992px){
+    .hero-card {
+        width: 960px;
+        max-width: 100%;
+    }
+    .hero-card em {
+        font-size: 1.4em;
+    }
+}
+@media screen and (min-width: 1200px){
+    .hero-card {
+        width: 1140px;
+        max-width: 100%;
+    }
+    .hero-card em {
+        font-size: 1.5em;
+    }
+}
+

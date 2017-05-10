@@ -1,0 +1,21 @@
+@media only screen and (min-width: 768px) {
+  .site-header .site-branding .site-logo {
+    height: 45px;
+  }
+  .content .vimeo-video iframe {
+    height: 440px;
+  }
+  .content .contact-form form{
+    font-size: 1.1em;
+    max-width: 640px;
+  }
+  .site-header .search-toggle {
+    text-align: right;
+   }
+  .site-header .search-toggle a {
+    color: #f60000;
+    text-decoration: none;
+    font-size: 2.1em;
+    margin-right: .4em;
+  }
+}

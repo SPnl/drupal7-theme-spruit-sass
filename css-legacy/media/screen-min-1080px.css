@@ -1,0 +1,19 @@
+@media only screen and (min-width: 1080px) {
+ 
+  .site-header .site-branding .site-logo {
+    height: 78px;
+    padding-left: .25em;
+  }
+  .site-header .search-toggle a {
+   font-size: 3.4em;
+  }
+  .primary-content .content .align-right {
+    margin-right: -3.2em;
+  }
+  .primary-content .content .align-left {
+    margin-left: -3.2em;
+  }
+  .content .vimeo-video iframe {
+     height: 610px;
+  }
+}

@@ -1,0 +1,36 @@
+/* NAVIGATION */
+
+
+/* BACK TO TOP */
+nav.top-nav {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  overflow: hidden;
+  padding: 1em;
+  z-index: 1;
+}
+nav.top-nav a {
+  //display: none;
+  //should be on! need to fix js
+  width: 4em;
+  background: $color1;
+  color: #fff;
+  float: right;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 2px 2px 1.4em rgba(2,2,2,.14);
+}
+nav.top-nav a:hover {
+  background: #000;
+}
+nav.top-nav a:before {
+  content: "^";
+  font-family: 'SPruit-icons';
+  font-size: 1.8em;
+}
+nav.top-nav a .text {
+  display: none;
+}
+

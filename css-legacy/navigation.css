@@ -1,0 +1,251 @@
+/* Basic navigation element */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: inline-block;
+}
+
+/* Site navigation */
+
+.site-navigation {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0;
+}
+.site-navigation .title {
+  display: none;
+}
+.site-navigation ul {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.site-navigation ul li {
+  text-transform: uppercase;
+  font-family: HelveticaInseratLTPro, 'Sans serif';
+  font-weight: normal;
+  font-style: normal;
+}
+.site-navigation ul li a,
+.site-navigation ul li a:link,
+.site-navigation ul li a:visited {
+  color: #f60000;
+  padding: .71em .5em;
+  background: transparent;
+  font-size: 1.4142em;
+  text-decoration: none;
+}
+.site-navigation ul li a:hover {
+  background: #fff;
+  color: #000;
+}
+
+.site-navigation li.active-trail a {
+  color: #aaa;
+  background: #fff;
+}
+.site-navigation .menu-toggle {
+  display: none;
+}
+
+/* Breadcrumbs */
+
+.breadcrumb {
+  margin: auto;
+  font-size: .9em;
+}
+.breadcrumb ul {
+  max-width: 960px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+  padding: 0  .4em .42em .4em;
+}
+
+.breadcrumb a {
+  margin-right: .4em;
+  color: #aaa;
+  text-decoration: none;
+}
+
+/* Content menu */
+.content .menu {
+  overflow: hidden;
+  padding: 0;
+}
+.content .menu li {
+  color: #f60000;
+}
+
+/* Primary content navigation (menus) */
+
+.primary-content .menu {
+ list-style: none;
+ font-family: HelveticaNeueLTStd-BdCn, 'Sans serif';
+}
+.primary-content .menu li a {
+  text-decoration: none !Important;
+}
+.primary-content .menu li:hover a:hover, 
+.primary-content .menu li:hover:before {
+  color: #f60000;
+}
+.primary-content .menu .active {
+  color: #a1a1a1;
+}
+.primary-content .menu .menu {
+  margin: 0;
+  padding: .4em .72em;
+}
+
+/* Highlight content navigation (menus) */
+
+.highlight-content .block-menu .title {
+  display: none;
+}
+
+.page .highlight-content .block-menu {
+  max-width: 100%;
+  border: none;
+  margin: 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.highlight-content .block-menu ul {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  padding: .1em;
+}
+
+.highlight-content .block-menu li {
+  display: inline-block;
+  font-family: HelveticaNeueLTStd-BdCn, 'Sans serif';
+  text-transform: uppercase;
+}
+
+.highlight-content .block-menu li a {
+  display: inline-block;
+  padding: .4em;
+  border: 1px solid #ddd;
+  color: #888;
+  text-decoration: none;
+}
+
+
+/* Return to top navigation */
+nav.top-nav {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  overflow: hidden;
+  padding: 1em;
+  z-index: 1;
+}
+nav.top-nav a {
+  display: none;
+  width: 4em;
+  background: #F00;
+  color: #fff;
+  float: right;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 2px 2px 1.4em rgba(2,2,2,.14);
+}
+nav.top-nav a:hover {
+  background: #000;
+}
+nav.top-nav a:before {
+  content: "^";
+  font-family: 'SPruit-icons';
+  font-size: 1.8em;
+}
+nav.top-nav a .text {
+  display: none;
+}
+
+/* Default pager */
+.pager {
+  display: table;
+}
+.pager li {
+  display: table-cell;
+  padding: .4em;
+  font-family: HelveticaNeueLTStd-BdCn, 'Sans serif';
+  text-transform: uppercase;
+}
+.pager li a,
+.pager li a:link,
+.pager li a:visited {
+  padding: .4em .72em;
+  background: #000;
+  color: #fff;
+}
+.pager li a:hover {
+  border: none;
+  color: #000;
+  background: #fff;
+}
+.pager .pager-ellipsis {
+  color: #aaa;
+}
+
+/* Navigation in content */
+
+.content .content-menu {
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+.content .content-menu li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-right: .4em;
+  text-transform: uppercase;
+}
+
+.content .content-menu li a {
+  display: inline-block;
+  padding: .4em;
+  margin: 0;
+  border: 1px solid #f60000;
+}
+
+.content .content-menu li a:hover {
+  background: #000;
+  border-color: #000;
+  color: #fff !important;
+}
+
+/* Pager: Load more */
+
+.content .stream .pager-load-more {
+  margin: 2.4em auto 1.8em auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1180px;
+}
+.content .stream .pager-load-more li{
+  margin: 0;
+  padding: 0;
+}
+.content .stream .pager-load-more a{
+  background: #f60000;
+  color: #fff;
+  font-size: 1.14em;
+  margin: 0;
+  padding: .72em 1.4em;
+}
+.content .stream .pager-load-more a:hover{
+  background: #000;
+  color: #fff;
+}

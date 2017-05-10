@@ -1,0 +1,67 @@
+/* SECONDARY ACTIONS */
+.secondary-content {
+    background: $color1;
+    padding: 30px 0;
+    margin: 0;
+}
+
+.secondary-content ul {
+    padding: 0;
+    margin: 0;
+}
+.secondary-content li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+.secondary-content .volg-ons a {
+    color: #fff;
+}
+
+.secondary-content .volg-ons li a {
+    font-family: SPruit-icons;
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    border: 1px solid #fff;
+    line-height: 56px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    transition: all 0.2s ease;
+}
+.secondary-content .volg-ons li a:hover{
+    background: #000;
+    border-color: #000;
+    color: #fff;
+}
+
+// doe mee
+.secondary-content ul.doemee {
+    padding: 0;
+    text-align: right;
+}
+
+
+// align buttons center for smaller viewports
+@media only screen and (max-width: 768px) {
+    .secondary-content {
+        padding: 15px 0; //reduce padding height for mobile
+    }
+    .secondary-content ul,
+    .secondary-content ul.doemee {
+        text-align: center;
+    }
+}
+
+// reduce padding for doemee buttons
+@media only screen and (max-width: 420px) {
+    .doemee .btn,
+    .doemee a.btn,
+    .doemee .btn-invert,
+    .doemee a.btn-invert {
+        padding: 15px 23px;
+    }
+}

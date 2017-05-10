@@ -1,0 +1,100 @@
+
+.messages {
+  padding: .72em;
+}
+.messages .message {
+  padding: .72em 1.4em;
+  max-width: 960px;
+  margin: .4em auto;
+  text-align: center;
+  font-size: .9em;
+  text-shadow: 1px 1px 0 rgba(2,2,2,.1)
+}
+.messages ul {
+  text-align: left;
+}
+.messages .message:before {
+  font-family: 'SPruit-Icons';
+  font-size: 1.14em;
+}
+
+.messages .status   { background: #5f7; }
+.messages .warning   { background: #ff2; }
+.messages .error   { background: #fff1f1; border: 2px solid #faa; }
+
+.messages .status:before  { content: '\e606'; }
+.messages .warning:before { content: '\e607'; }
+.messages .error:before   { content: '\e605';  vertical-align: -1px; color: #f60000;}
+
+.messages .message a { background: rgba(254,254,254,.9); padding: .17em .4em;}
+ 
+.browser-upgrade {
+  background : #ff5;
+  text-align : center;
+  font-size  : .9em;
+  padding    : .4em 0;
+  margin     : 0;
+}
+
+.tabs {
+  overflow: hidden;
+  width: 100%;
+}
+
+.tabs ul {
+  margin: 0 auto;;
+  padding: 0 1.4em;
+  max-width: 960px;
+}
+
+.tabs li {
+  display: inline-block;
+  padding: 0;
+  margin: 4px;
+}
+
+.tabs li a {
+  color: #333;
+  background: #ddd;
+  padding: .4em .72em;
+  font-size: .8em;
+  text-decoration: none;
+}
+
+.tabs li a:hover {
+  background: #000;
+  color: #fff;
+}
+
+.tabs li.active {
+  display: none;
+}
+
+/* Action buttons, links */
+
+.primary-content .primary-action {
+  border: 1px solid #f60000;
+  padding: 1em 1.4em;
+  display: inline-block;
+  font-family: HelveticaInseratLTPro, 'Sans serif';
+  text-transform: uppercase;
+}
+
+.primary-content .primary-action:hover {
+  color: #fff;
+  background: #f60000;
+  border: 1px solid #f60000;
+  text-decoration: none;
+}
+
+.dev-query {
+  background: rgba(20,1,1,.9);
+  padding: .4em;
+  font-family: monospace;
+  color: rgb(254,250,250);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: .9em;
+}

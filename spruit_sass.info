@@ -1,0 +1,68 @@
+name = spruit_sass
+description = A low maintenance SP base theme
+package = Other
+version = 0.1
+core = 7.x
+
+; SPruit core styhlesheets
+stylesheets[all][] = css/main.css
+;stylesheets[all][] = css-legacy/normalize.css
+stylesheets[screen][] = fonts/SPruit-icons.css
+;stylesheets[screen][] = css-legacy/basic-html.css
+;stylesheets[screen][] = css-legacy/page.css
+;stylesheets[screen][] = css-legacy/page-sections.css
+;stylesheets[screen][] = css-legacy/header.css
+;stylesheets[screen][] = css-legacy/navigation.css
+;stylesheets[screen][] = css-legacy/navigation-icons.css
+;stylesheets[screen][] = css-legacy/search.css
+;stylesheets[screen][] = css-legacy/content.css
+;stylesheets[screen][] = css-legacy/content-asides.css
+;stylesheets[screen][] = css-legacy/content-images.css
+;stylesheets[screen][] = css-legacy/highlight.css
+;stylesheets[screen][] = css-legacy/interface.css
+;stylesheets[screen][] = css-legacy/forms.css
+;stylesheets[screen][] = css-legacy/footer.css
+;stylesheets[screen][] = css-legacy/helper-classes.css
+
+; Tweaks of modules
+;stylesheets[screen][] = css-legacy/modules/book.css
+;stylesheets[screen][] = css-legacy/modules/owl.carousel.css
+
+; Centralized media queries
+;stylesheets[screen][] = css-legacy/media/screen-max-480px.css
+;stylesheets[screen][] = css-legacy/media/screen-min-768px.css
+;stylesheets[screen][] = css-legacy/media/screen-min-1080px.css
+
+; JavaScript
+scripts[] = js/vendor/modernizr-2.8.3.min.js
+scripts[] = js/vendor/jquery.waypoints.min.js
+scripts[] = js/vendor/owl.carousel.min.js
+scripts[] = js/main.js
+scripts[] = js/myfonts.js
+
+; Regions
+regions[highlight] = Highlighted content
+regions[content]   = Primary content
+regions[secondary] = Secondary content
+regions[footer]    = Footer content
+regions[search]    = Search
+
+; Breakpoints 
+;breakpoints[w320]  = (max-width: 320px)
+;breakpoints[w480]  = (min-width: 480px)
+;breakpoints[w680]  = (min-width: 680px)
+;breakpoints[w960]  = (min-width: 960px)
+;breakpoints[w1280] = (min-width: 1280px)
+;breakpoints[w1440] = (min-width: 1440px)
+
+; Panels support
+plugins[panels][layouts] = layouts
+
+; Unset these css
+settings[unset_styles][] = modules/system/system.menus.css
+settings[unset_styles][] = modules/system/system.messages.css
+settings[unset_styles][] = modules/system/system.theme.css
+settings[unset_styles][] = modules/field/theme/field.css
+settings[unset_styles][] = modules/node/node.css
+settings[unset_styles][] = modules/user/user.css
+settings[unset_styles][] = modules/book/book.css

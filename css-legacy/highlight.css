@@ -1,0 +1,14 @@
+.highlight-content {
+	background: #eee;
+	overflow: hidden;
+	margin-bottom: 1.4em;
+}
+
+.highlight-content .block {
+	background: #fff;
+	padding: .4em 1.4em !important;
+	border-bottom: 4px solid #ddd;
+	margin-bottom: 1.4em;
+	max-width: 960px;
+	margin: .72em auto;
+}

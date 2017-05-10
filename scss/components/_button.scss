@@ -1,0 +1,49 @@
+/* BUTTONS */
+
+.btn, a.btn {
+    font-family: "HelveticaInseratLTPro";
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: $color1;
+    padding: 1rem 3rem;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all 0.2s ease;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+.btn:hover, a.btn:hover,
+.btn-invert:hover, a.btn-invert:hover {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+    text-decoration: none;
+}
+.btn-invert, a.btn-invert {
+    @extend .btn;  // use default btn style
+    background: #fff;
+    color: $color1;
+    border: 1px solid $color1;
+}
+.btn-invert.tiny,
+.btn.tiny {
+    padding: .2rem .7rem;
+    font-size: 0.7rem;
+    letter-spacing: .2px;
+}
+.btn-invert.small,
+.btn.small {
+    padding: .4rem 1.4rem;
+    font-size: 1rem;
+    letter-spacing: .2px;
+}
+.btn-invert.large,
+.btn.large {
+    padding: 1.2rem 3.6rem;
+    font-size: 2rem;
+    letter-spacing: .2px;
+}
+
