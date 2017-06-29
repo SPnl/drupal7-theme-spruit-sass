@@ -1,7 +1,7 @@
 /* HERO */
 #hero {
     padding: 110px 15px;
-    background: $color3-bg;
+    background: $color2-bg;
 }
 
 .hero-card {
@@ -9,6 +9,7 @@
     background: #fff;
     border-left: 5px solid $color1;
     margin: 0 auto;
+    box-shadow: $box-shadow;
 }
 .hero-card h1 {
     margin: 0;
