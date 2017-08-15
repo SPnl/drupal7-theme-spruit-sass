@@ -7,7 +7,7 @@
     text-transform: uppercase;
     text-decoration: none;
     background: $color1;
-    padding: 15px 31px;
+    padding: 16px 32px;
     color: #fff;
     border: 1px solid #fff;
     transition: all 0.2s ease;
@@ -30,19 +30,19 @@
 }
 .btn-invert.tiny,
 .btn.tiny {
-    padding: 7px 15px; // -1px to correct border
+    padding: 7px 16px; // -1px to correct border
     font-size: 0.625rem; //10px
     letter-spacing: .2px;
 }
 .btn-invert.small,
 .btn.small {
-    padding: 7px 15px; // -1px to correct border
+    padding: 7px 16px; // -1px to correct border
     font-size: 1rem; //16px
     letter-spacing: .2px;
 }
 .btn-invert.large,
 .btn.large {
-    padding: 15px 31px; // -1px to correct border
+    padding: 15px 32px; // -1px to correct border
     font-size: 2rem; //32px
     letter-spacing: .2px;
 }
