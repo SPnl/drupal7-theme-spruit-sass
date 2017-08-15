@@ -1,49 +1,52 @@
 /* WEBFORM */
 
+.webform-component-textarea .grippie { 
+    display: none; //removes module gripbar for old browsers
+}
+
 legend {
     font-size: 1.5rem;
-    font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+    font-family: $font-primary;
+    text-transform: uppercase;
 }
-.form-wrapper {
-    max-width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-}
-@media only screen and (min-width:500px){
-    .form-wrapper {
-        padding:30px;
-    }
-    legend {
-        margin-left: -15px;
-    }
+fieldset {
+    border: none;
+    padding: 0 16px;
+    margin: 0;
 }
 .form-actions {
-    max-width: 470px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 16px;
+    margin: 0;
     text-align: right;
 }
 
 .form-item {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 .form-select {
-    padding: 0.8rem;
+    padding: 8px;
     font-family: $font-strong;
-    font-size: 0.9em;
-    border: none;
-    background: #f1f1f1;
+    font-size: 1rem;
+    background: #fafafa;
+    border:1px solid #ddd;
 }
 .form-item label {
-    margin: 16px 0 0 0;
+    margin: 24px 0 8px 0;
     font-weight: normal;
     font-family: $font-middle;
     font-size: 1.125rem;
 }
+.webform-component-checkboxes {
+    margin-top: 24px;
+}
+.form-checkboxes .form-item,
+.form-radios .form-item {
+    display: table; // to prevent label text wrapping underneath
+}
 .form-item .description {
     font-size: 0.85em;
-    color: #d1d1d1;
+    color: #bbb;
     padding-top: 5px;
 }
 
@@ -51,13 +54,19 @@ legend {
 .form-item .form-textarea {
     max-width:100%;
     width: 100%;
-    padding: .72em;
-    background: #eee;
+    padding: 16px;
+    background: #fafafa;
+    border:1px solid #ddd;
     color: #333;
-    border: none;
     font-family: $font-strong;
 }
-
+.form-radios {
+    padding-left: 5px;
+}
+.form-type-checkbox input[type="checkbox"] + label {
+    display: table-cell; // to prevent label text wrapping underneath
+    padding-top: 10px; // to prevent label text wrapping underneath
+}
 .form-type-checkbox input[type="checkbox"] {
     display: none;
 }
@@ -67,17 +76,19 @@ legend {
     content: 'v';
     color: #fff;
     background: #fff;
-    padding: .30em .32em;
-    margin-right: .72em;
+    padding: 6px;
+    margin-right: 8px;
     border: 2px solid #333;
-    border-radius: .14em;
-    font-size: .92em;
+    font-size: 1rem;
+    display: table-cell; // to prevent label text wrapping underneath
+    float: left; // to prevent label text wrapping underneath
+    margin-top: -8px; // to prevent label text wrapping underneath
 }
 .form-type-checkbox input:checked + label:before {
     content: 'v';
-    color: #f00;
+    color: $color1;
     background: #fff;
-    border-color: #f00;
+    border-color: $color1;
 }
 .form-type-checkbox input:checked + label {
     color: $color1;
@@ -89,21 +100,20 @@ legend {
 .form-item .form-textarea:focus,
 .form-item .form-text:focus, {
     outline:none; //disable browser default focus
-    box-shadow:0 0 5px 0 #888;
+    box-shadow:0 0 5px 0 #c8c8c8;
 }
 input.webform-previous,
 input.button-primary {
     font-family: $font-primary;
-    font-weight: normal;
-    font-size: 1em;
     text-transform: uppercase;
     background: $color1;
-    padding: 1rem 3rem;
+    padding: 16px 32px;
     color: #fff;
     border: 1px solid $color1;
     transition: all 0.2s ease;
     outline:none; //disable browser default focus
     cursor: pointer;
+    min-width: 300px;
 }
 input.webform-previous {
     background: #fff;
@@ -119,7 +129,7 @@ input.button-primary:hover {
 @media only screen and (max-width:500px){
     .form-submit {
       width:100%;
-      margin-bottom:6px;
+      margin-bottom:8px;
     }
 }
 

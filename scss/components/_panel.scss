@@ -1,12 +1,12 @@
 /* SPRUIT PANELS */
 #spruit-panels {
     background: $color3-bg;
-    padding:30px 0;
+    padding: 32px 0;
 }
 .spruit-panel {
     background: #fff;
     transition: all .2s ease;
-    padding: 15px 15px 30px 15px;
+    padding: 16px 16px 32px 16px;
     max-width: 300px; //set a max-width for xs (needs to be better)
     margin-left: auto; //center panel for xs
     margin-right: auto;
@@ -14,15 +14,14 @@
 }
 .spruit-panel:hover {
     box-shadow: 0 0 6px 0 rgba(7,7,33,.2);
-    margin-top: -15px;
+    margin-top: -16px;
 }
 .spruit-panel:hover h1 {
     color:$color1;
 }
 .spruit-panel img {
-    width: calc(100% + 30px);
+    max-width: calc(100% + 32px);
     height: auto;
-    margin: -15px;
-    padding-bottom: 20px;
+    margin: -16px -16px 16px -16px;
 }
 

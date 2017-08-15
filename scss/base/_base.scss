@@ -1,12 +1,61 @@
+/* BASE STYLING */
+
+
 /* FONTSIZE */
 
 /* FONT MARGIN AND PADDING */
-h1,h2,h3,h4,h5,h6 {margin:0 0 1.2rem 0;}
-p {margin:0 0 1.2rem 0;}
+h1,h2,h3,h4,h5,h6 {
+    margin:0 0 1rem 0;
+    line-height:1;
+}
+p {
+    margin:0 0 1rem 0;
+}
 
 /* DEFAULT FONTSIZE */  //col-xs
-html {font-size:16px;} 
-p {font-size:1.2rem;} //18px
+html {
+    font-size:16px; //set as root size
+    line-height: 1;
+} 
+p {
+    font-size:1rem; //16px
+    line-height: 1.5rem; //24px
+}
+@media screen and (min-width: 768px){
+    p {
+        font-size:1.2rem; //18px
+    }
+}
+h1 {
+    font-size: 2rem; //36px
+}
+h2 {
+    font-size: 1.5rem; //27px
+    margin-top: 8px;
+}   
+h3 {
+    font-size: 1.17rem; //21px
+    margin-top: 14px;
+}   
+h4 {
+    font-size: 1rem; //18px
+    margin-top: 16px;
+}   
+h5 {
+    font-size: 0.83rem; //15px
+    margin-top: 19px;
+}   
+h6 {
+    font-size: 0.67rem; //12px
+    margin-top: 22px;
+}   
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*
 h1 {font-size:1.6em;}
 h2 {font-size:1.5em;}
 h3 {font-size:1.4em;}
@@ -21,8 +70,8 @@ h6 {font-size:1.1em;}
     h4 {font-size:1.6em;}
     h5 {font-size:1.4em;}
     h6 {font-size:1.2em;}
-    .col-sm-3 {font-size:0.4em;}
-    .col-sm-4 {font-size:0.6em;}
+    .col-sm-3 {font-size:0.4em;} // Needs to be fixed. Setting a font-size on col-* causes issues with all other font-size related elements (form/fields/buttons) inside that col-*
+    .col-sm-4 {font-size:0.6em;} // This is used to make the header font responsive inside smaller columns
     .col-sm-6 {font-size:0.8em;}
 }
 @media screen and (min-width: 768px){ //col-md
@@ -36,7 +85,8 @@ h6 {font-size:1.1em;}
     .col-md-4 {font-size:0.6em;}
     .col-md-6 {font-size:0.8em;}
 }
-/*
+*/
+/* oud
 @media screen and (min-width: 992px){ //col-lg
     h1 {font-size:3em;}
     h2 {font-size:2.4em;}
@@ -49,6 +99,7 @@ h6 {font-size:1.1em;}
     .col-lg-6 {font-size:0.8em;}
 }
 */
+/*
 @media screen and (min-width: 992px){ //col-lg
     h1 {font-size:3.4em;}
     h2 {font-size:3.0em;}
@@ -71,3 +122,4 @@ h6 {font-size:1.1em;}
     .col-xl-4 {font-size:0.6em;}
     .col-xl-6 {font-size:0.8em;}
 }
+*/

@@ -1,6 +1,6 @@
 /* HERO */
 #hero {
-    padding: 110px 15px;
+    padding: 30px 15px;
     background: $color2-bg;
 }
 
@@ -26,6 +26,9 @@
     }
 }
 @media screen and (min-width: 768px){
+    #hero {
+        padding: 60px 15px;
+    }
     .hero-card {
         width: 720px;
         max-width: 100%;
@@ -44,6 +47,9 @@
     }
 }
 @media screen and (min-width: 1200px){
+    #hero {
+        padding: 110px 15px;
+    }
     .hero-card {
         width: 1140px;
         max-width: 100%;

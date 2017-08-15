@@ -25,8 +25,8 @@
       <?php endif; ?>
       </div>
       <?php if ($main_menu): ?>
+        <div class="menu-toggle"><button><span class="text">Menu</span></button></div>
         <nav class="site-navigation">
-          <div class="menu-toggle"><button><span class="text">Menu</span></button></div>
           <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('menu primary-menu')), 'heading' => '')); ?>
         </nav>
       <?php endif; ?>
@@ -71,7 +71,6 @@
           <?php print render($page['secondary']); ?>
         </div>
       <?php endif; ?>
-      <nav class="top-nav"><a href="#top"><span class="text">Top</span></a></nav>
     <footer class="site-footer" id="site-footer">
       <?php print render($page['footer']); ?>
     </footer>

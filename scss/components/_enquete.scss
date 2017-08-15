@@ -1,0 +1,57 @@
+/* ENQUETE */
+.enquete {
+	background: #f1f1f1;
+	padding: 16px 16px 48px 16px;
+}
+@media screen and (min-width: 768px){
+	.enquete .node-webform {
+		padding: 32px 16px;
+	}
+}
+
+.enquete .form-wrapper,
+.enquete .form-actions {
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+.enquete .form-wrapper {
+	border: 1px solid #ddd;
+	margin-bottom: 32px;
+	background: #fff;
+	padding-top: 16px;
+}
+.enquete legend {
+	background: $color1-bg;
+	border: 1px solid #ddd;
+	border-bottom: none;
+	padding: 8px 16px;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media screen and (max-width: 670px){
+	.enquete {
+		padding: 16px 0px 48px 0px;
+	}
+	.enquete .form-wrapper {
+		padding-bottom: 16px;
+	}
+}
+@media screen and (min-width: 670px){
+	.enquete legend {
+		padding: 16px 32px;
+	}
+}
+.enquete-intro {
+	overflow: hidden; //fixes padding for children with float
+	padding: 80px 0;
+}
+@media screen and (min-width: 670px){
+	.enquete .form-wrapper {
+		padding: 32px 150px 64px 150px;
+	}
+	.enquete .form-actions {
+		padding: 0;
+	}
+
+}

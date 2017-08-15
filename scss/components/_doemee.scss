@@ -1,0 +1,37 @@
+/* DOE MEE PAGE */
+.page-doemee .primary-content .panel-2 {
+    background: #fff;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+.page-doemee #doemee-banner {
+    min-height: 130px;
+    background-size: cover;
+}
+.page-doemee .form-actions {
+    text-align: center;
+    padding: 16px;
+}
+
+@media screen and (min-width: 400px){
+    .page-doemee #doemee-banner {
+        min-height: 200px;
+    }
+}
+@media screen and (min-width: 768px){
+    .page-doemee #doemee-banner {
+        min-height: 300px;
+    }
+}
+@media screen and (min-width: 990px){
+    .page-doemee #doemee-banner {
+        min-height: 440px;
+    }
+    .page-doemee input.webform-previous,
+    .page-doemee input.button-primary {
+        min-width: 100%; // overwrite webform.scss
+    }
+    .page-doemee .primary-content .panel-2 {
+        margin-top: 110px;
+    }
+}

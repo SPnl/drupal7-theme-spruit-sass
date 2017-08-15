@@ -1,54 +1,58 @@
 /* FOOTER */
-.site-footer {
-    padding-top: 30px;
-}
-.site-footer img.site-logo {
-    max-height: 80px;
-    width: auto;
-}
-.site-footer h1 {
+footer {
+    img.site-logo {
+        max-height: 50px;
+        width: auto;
+    }
+    h1 {
     font-size: 1rem;
     letter-space: 1px;
     font-family: $font-middle;
     margin-bottom: 5px;
-}
-.site-footer p {
-    font-size: 1rem;
-}
-.site-footer a {
-    text-decoration: none;
-}
-.site-footer ul {
-    margin: 0;
-    padding: 0 0 30px 0;
-}
-.site-footer li {
-    list-style: none;
-}
-.site-footer li a {
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    padding: 2px 0;
-    color: #000;
-    display: inline-block;
-}
-.site-footer li a:hover {
-    color: $color1;
-    text-decoration: none;
-}
-.page-wrapper:after {
-    font-family: SPruit-Icons;
-    content: 'T';
-    line-height: 1;
-    display: block;
-    height: 32px;
-    color: $color1;
-    overflow: hidden;
-    width: 100%;
-    text-align: center;
-    font-size: 45px;
-}
+    }
+    p {
+        font-size: 1rem;
+    }
+    a {
+        text-decoration: none;
+    }
+    ul {
+        margin: 0;
+        padding: 0 0 30px 0;
+    }
+    li {
+        list-style: none;
+    }
+    li a {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        padding: 2px 0;
+        color: #000;
+        display: inline-block;
+    }
+    li a:hover {
+        color: $color1;
+        text-decoration: none;
+    }
+    // Only shows if there is a block in footer
+    .container {
+        background: #fff;
+        padding-top: 15px;
+    }
+    .container:after {
+        font-family: SPruit-Icons;
+        content: 'T';
+        line-height: 1;
+        display: block;
+        height: 32px;
+        color: $color1;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        font-size: 45px;
+    }
 
-.site-footer .footer-menu a {
-    font-size: 1rem;
+    .footer-menu a {
+        font-size: 1rem;
+    }
 }

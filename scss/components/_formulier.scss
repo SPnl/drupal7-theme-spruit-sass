@@ -38,16 +38,19 @@
 #formulier-slide #slide-content {
     max-width: 100vw;
     text-align: center;
-}
-#formulier-slide #slide-content h2 {
-    font-size: 2em;
+    padding: 0 15px;
     margin: 10px 0;
+}
+@media screen and (min-width: 992px){
+    #formulier-slide #slide-content h2 {
+        font-size: 2em;
+    }
 }
 #formulier {
     background: #fff;
     padding: 1px 15px 45px 15px;
     max-width: 960px;
-    margin: 0 auto 110px auto;
+    //margin: 0 auto 110px auto;
     //box-shadow: $box-shadow;
 }
 #formulier img.banner {

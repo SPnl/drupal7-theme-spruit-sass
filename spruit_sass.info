@@ -1,4 +1,4 @@
-name = spruit_sass
+name = Spruit Sass
 description = A low maintenance SP base theme
 package = Other
 version = 0.1
@@ -6,32 +6,8 @@ core = 7.x
 
 ; SPruit core styhlesheets
 stylesheets[all][] = css/main.css
-;stylesheets[all][] = css-legacy/normalize.css
 stylesheets[screen][] = fonts/SPruit-icons.css
-;stylesheets[screen][] = css-legacy/basic-html.css
-;stylesheets[screen][] = css-legacy/page.css
-;stylesheets[screen][] = css-legacy/page-sections.css
-;stylesheets[screen][] = css-legacy/header.css
-;stylesheets[screen][] = css-legacy/navigation.css
-;stylesheets[screen][] = css-legacy/navigation-icons.css
-;stylesheets[screen][] = css-legacy/search.css
-;stylesheets[screen][] = css-legacy/content.css
-;stylesheets[screen][] = css-legacy/content-asides.css
-;stylesheets[screen][] = css-legacy/content-images.css
-;stylesheets[screen][] = css-legacy/highlight.css
-;stylesheets[screen][] = css-legacy/interface.css
-;stylesheets[screen][] = css-legacy/forms.css
-;stylesheets[screen][] = css-legacy/footer.css
-;stylesheets[screen][] = css-legacy/helper-classes.css
-
-; Tweaks of modules
-;stylesheets[screen][] = css-legacy/modules/book.css
-;stylesheets[screen][] = css-legacy/modules/owl.carousel.css
-
-; Centralized media queries
-;stylesheets[screen][] = css-legacy/media/screen-max-480px.css
-;stylesheets[screen][] = css-legacy/media/screen-min-768px.css
-;stylesheets[screen][] = css-legacy/media/screen-min-1080px.css
+stylesheets[screen][] = css/shame.css
 
 ; JavaScript
 scripts[] = js/vendor/modernizr-2.8.3.min.js

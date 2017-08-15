@@ -1,4 +1,4 @@
-/* social share */
+/* SOCIAL SHARE RIGHT SIDE */
 .primary-content .content .social-share ul {
   padding: 0;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
@@ -54,4 +54,42 @@
 /* alleen voor mobiel laten zien */
 .no-touch .social-share .whatsapp {
   display: none;
+}
+
+
+/* SOCIAL SHARE BUTTONS */
+ul.share {
+  margin: 0;
+  padding: 0;
+}
+ul.share li {
+  display: inline-block;
+}
+ul.share li a {
+  min-width: 130px;
+}
+
+.btn.facebook {
+    background: $facebook;
+}
+.btn.facebook:hover {
+    background: darken($facebook, 5%);
+}
+.btn.twitter {
+    background: $twitter;
+}
+.btn.twitter:hover {
+    background: darken($twitter, 5%);
+}
+.btn.linkedin {
+    background: $linkedin;
+}
+.btn.linkedin:hover {
+    background: darken($linkedin, 5%);
+}
+.btn.email {
+    background: $email;
+}
+.btn.email:hover {
+    background: darken($email, 5%);
 }

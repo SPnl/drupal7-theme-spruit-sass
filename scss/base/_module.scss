@@ -1,6 +1,6 @@
 /* BASE */
 @import 'normalize'; //import first!
+@import 'variables'; //global variables
+//@import 'mixins';
 
-@import 'fontsize';
-@import 'maintheme';
-@import 'typography';
+@import 'base'; //basic html elements

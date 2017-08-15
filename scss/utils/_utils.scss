@@ -1,3 +1,17 @@
+/* BASIC UTILS */
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+
 /* =========================================================================
    Helper classes
    ========================================================================== */
@@ -65,3 +79,4 @@
 .clearfix:after {
   clear: both;
 }
+

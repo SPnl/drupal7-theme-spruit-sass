@@ -1,7 +1,62 @@
-/* ANYTHING THAT NEEDS TO BE FIXED LATER */
+/* SHAME
+ * Use this for quick-fixes
+ */
 
 
-// displays a link after comfirmation webform 'terug naar het formulier'
+
+// prevents a white gap below doe mee form
+.page-doemee .primary-content {
+    min-height: calc(100vh - 72px);
+}
+
+
+
+
+
+
+// removes a drupal link after comfirmation webform 'terug naar het formulier'
 .links {
     display: none;
 }
+
+/* HEADER */
+.primary-content header .title {
+    font-size: 2.83em;
+}
+
+
+
+// adjust drupal header size
+@media screen and (min-width: 576px){
+    .primary-content header .title,
+    h2.pane-title {
+        //width: 510px;
+        max-width: 100%;
+        margin: 0 auto 1.2rem auto;
+    }
+}
+@media screen and (min-width: 768px){
+    .primary-content header .title,
+    h2.pane-title {
+        //width: 690px;
+        max-width: 100%;
+        margin: 0 auto 1.2rem auto;
+    }
+}
+@media screen and (min-width: 992px){
+    .primary-content header .title,
+    h2.pane-title {
+        //width: 930px;
+        max-width: 100%;
+        margin: 0 auto 1.2rem auto;
+    }
+}
+@media screen and (min-width: 1200px){
+    .primary-content header .title,
+    h2.pane-title {
+        //width: 1110px;
+        max-width: 100%;
+        margin: 0 auto 1.2rem auto;
+    }
+}
+
