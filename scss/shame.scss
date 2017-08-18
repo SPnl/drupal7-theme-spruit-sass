@@ -2,11 +2,6 @@
  * Use this for quick-fixes
  */
 
-// prevents a white gap below doe mee form
-.page-doemee .primary-content {
-    min-height: calc(100vh - 184px);
-}
-
 // removes a drupal link after comfirmation webform 'terug naar het formulier'
 .links {
     display: none;

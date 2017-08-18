@@ -5,44 +5,57 @@
 /* SITE HEADER */
 
 #site-header {
-  //overflow: hidden; // show overflow for hamburger menu
-  position: relative; // so that navigation aligns absolute on parent
-  display: table;
-  width: 100%;
+    //overflow: hidden; // show overflow for hamburger menu
+    position: relative; // so that navigation aligns absolute on parent
+    display: table;
+    width: 100%;
 
-  /* Faux top-border */
-  background: #fff; /* Old browsers */
-  border-top: 5px solid $color1;
-  //border-bottom: 1px solid #ddd;
+    /* Faux top-border */
+    background: #fff; /* Old browsers */
+    border-top: 5px solid $color1;
+    //border-bottom: 1px solid #ddd;
 }
 
 header .site-branding {
-  display: table-cell;
-  padding: 15px;
-  width: 120px;
-  text-align: left;
-  vertical-align: middle;
+    display: table-cell;
+    padding: 8px;
+    width: 120px;
+    text-align: left;
+    vertical-align: middle;
 }
 
 header .site-logo {
-  //height: 52px;
   display: inline-block;
 }
 
 header .site-logo img {
-  height: 35px;
+  height: 20px;
   width: auto;
+}
+@media screen and (min-width: 576px){
+    header .site-logo img {
+        height: 35px;
+        width: auto;
+    }
+    header .site-branding {
+        padding: 16px;
+    }
+    header nav ul li a,
+    header nav ul li a:link,
+    header nav ul li a:visited {
+        padding: 16px;
+    }
 }
 
 header .site-name {
-  margin: 0;
-  padding: 0;
-  font-size: 1.4142em;
+    margin: 0;
+    padding: 0;
+    font-size: 1.4142em;
 }
 
 header .site-name a {
-  text-decoration: none;
-  color: #222;
+    text-decoration: none;
+    color: #222;
 }
 
 
@@ -81,47 +94,47 @@ header .site-name a {
 /* SITE NAVIGATION */
 
 header nav {
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  padding: 0;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
 }
 header nav .title {
-  display: none;
+    display: none;
 }
 header nav ul {
-  max-width: 960px;
-  margin: 0 auto;
-  text-align: center!important;
-  padding: 0;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center!important;
+    padding: 0;
 }
 header nav ul li {
-  text-transform: uppercase;
-  font-family: HelveticaInseratLTPro, 'Sans serif';
-  font-weight: normal;
-  font-style: normal;
-  display: inline-block;
+    text-transform: uppercase;
+    font-family: $font-primary;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
 }
 header nav ul li a,
 header nav ul li a:link,
 header nav ul li a:visited {
-  color: #f60000;
-  padding: 15px;
-  background: transparent;
-  font-size: 1.4142em;
-  text-decoration: none;
+    color: $color1;
+    padding: 8px;
+    background: transparent;
+    font-size: 1.4142em;
+    text-decoration: none;
 }
 header nav ul li a:hover {
-  background: #fff;
-  color: #000;
+    background: #fff;
+    color: #000;
 }
 
 header nav ul li.active-trail a {
-  color: #aaa;
-  background: #fff;
+    color: #aaa;
+    background: #fff;
 }
 header .menu-toggle {
-  display: none; //disable hamburger menu
+    display: none; //disable hamburger menu
 }
 
 /* HAMBURGER MENU */

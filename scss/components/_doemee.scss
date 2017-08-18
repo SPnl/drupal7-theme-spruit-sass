@@ -1,21 +1,63 @@
 /* DOE MEE PAGE */
+#doemee-banner {
+    min-height: 30vh;
+    background-size: cover;
+    background-position: 0 23%;
+    background-image: url("/files/RS25523_1703HeerlenSP21_1000.jpg");
+}
+#doemee-webform {
+    background: #fff;
+    padding: 32px;
+}
+#doemee-webform fieldset {
+    padding: 0 0 16px 0;
+}
+
+@media screen and (max-width: 768px) {
+    #doemee-webform .node-webform {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 768px) {
+    #doemee-banner {
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-image: url("/files/RS25523_1703HeerlenSP21_1980.jpg");
+    }
+    #doemee-webform {
+        position: absolute;
+        top: 8%;
+        right: 16%;
+        border: 1px solid #ddd;
+        max-width: 400px;
+    }
+}
+
+/*
 .page-doemee .primary-content .panel-2 {
     background: #fff;
     margin-top: 0;
     margin-bottom: 60px;
 }
 .page-doemee #doemee-banner {
-    min-height: 130px;
+    min-height: 170px;
     background-size: cover;
 }
 .page-doemee .form-actions {
     text-align: center;
-    padding: 16px;
+}
+.page-doemee .node-webform {
+    //padding: 0 16px; // some extra padding
+}
+.page-doemee .form-item label {
+    margin: 0;
 }
 
 @media screen and (min-width: 400px){
     .page-doemee #doemee-banner {
-        min-height: 200px;
+        min-height: 230px;
     }
 }
 @media screen and (min-width: 768px){
@@ -25,7 +67,7 @@
 }
 @media screen and (min-width: 990px){
     .page-doemee #doemee-banner {
-        min-height: 440px;
+        min-height: 515px;
     }
     .page-doemee input.webform-previous,
     .page-doemee input.button-primary {
@@ -35,3 +77,4 @@
         margin-top: 110px;
     }
 }
+*/
