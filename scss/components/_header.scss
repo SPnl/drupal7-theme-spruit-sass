@@ -5,15 +5,11 @@
 /* SITE HEADER */
 
 #site-header {
-    //overflow: hidden; // show overflow for hamburger menu
     position: relative; // so that navigation aligns absolute on parent
     display: table;
     width: 100%;
-
-    /* Faux top-border */
-    background: #fff; /* Old browsers */
+    background: #fff; 
     border-top: 5px solid $color1;
-    //border-bottom: 1px solid #ddd;
 }
 
 header .site-branding {
@@ -25,17 +21,22 @@ header .site-branding {
 }
 
 header .site-logo {
-  display: inline-block;
-}
-
-header .site-logo img {
-  height: 20px;
-  width: auto;
+   img, 
+   svg {
+     display: inline-block;
+     height: 20px;
+     width: auto;
+   }
+   svg {
+     fill: $color1;
+   }
 }
 @media screen and (min-width: 576px){
-    header .site-logo img {
-        height: 35px;
-        width: auto;
+    header .site-logo {
+        img,svg {
+           height: 35px;
+           width: auto;
+        }
     }
     header .site-branding {
         padding: 16px;
