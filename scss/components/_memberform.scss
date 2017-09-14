@@ -1,0 +1,35 @@
+/* CUSTOM SP MEMBERFORM */
+#memberform_form_wrapper {
+	background: #f1f1f1;
+	padding: 1px 0; /* 1px prevents margin collapse */
+}
+#memberform_form_wrapper form {
+    background: #fff;
+    padding-bottom: 32px;
+    margin: 0 auto 32px auto;
+}
+@media screen and (min-width: 960px){
+	#memberform_form_wrapper form {
+	    max-width: 960px;
+	    margin: 114px auto;
+	}
+}
+#memberform_form_wrapper form .memberform {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#memberform_form_wrapper form h3,
+#memberform_form_wrapper form p {
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#memberform_form_wrapper .validation-error input {
+	border: 1px solid red;
+}
+
+#memberform_form_wrapper .form_header {
+    margin-bottom: 32px;
+}
