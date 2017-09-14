@@ -40,11 +40,20 @@ fieldset {
     border:1px solid #ddd;
 }
 .form-item label {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     font-weight: normal;
     font-family: $font-middle;
     letter-spacing: .3px;
 }
+.form-required {
+  color: $color1;
+}
+input,textarea {
+  &::placeholder {
+     color: #ccc;
+  }
+}
+
 @media screen and (min-width: 768px){
     .form-item label {
         font-size: 1.125rem;
