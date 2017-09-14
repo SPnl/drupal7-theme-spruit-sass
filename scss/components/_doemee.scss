@@ -1,16 +1,20 @@
 /* DOE MEE PAGE */
 #doemee-banner {
-    min-height: 30vh;
+    min-height: 24vh;
     background-size: cover;
-    background-position: 0 23%;
-    background-image: url("/files/RS25523_1703HeerlenSP21_1000.jpg");
+    background-position: top center;
+    background-image: url("/files/doemee_front_max-768.jpg");
 }
 #doemee-webform {
     background: #fff;
-    padding: 32px;
-}
-#doemee-webform fieldset {
-    padding: 0 0 16px 0;
+    padding: 0 32px;
+
+    fieldset {
+        padding: 0 0 16px 0;
+    } 
+    .intro {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -21,17 +25,22 @@
 }
 @media screen and (min-width: 768px) {
     #doemee-banner {
-        min-height: 100vh;
-        background-size: cover;
-        background-position: center;
-        background-image: url("/files/RS25523_1703HeerlenSP21_1980.jpg");
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        top: auto;
+        display: block;
+        background-image: url("/files/doemee_front_max-1980.jpg");
     }
     #doemee-webform {
         position: absolute;
-        top: 8%;
-        right: 16%;
         border: 1px solid #ddd;
+        box-shadow: 0 0 12rem rgba(0,0,0,.1);
         max-width: 400px;
+        margin: 80px;
+        top: 0;
+        right: 0;
+          
     }
 }
 
