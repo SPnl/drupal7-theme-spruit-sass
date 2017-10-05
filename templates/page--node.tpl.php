@@ -5,9 +5,9 @@
  * Default theme implementation to display a single Drupal page.
  */
 ?>
-  <div class="page-wrapper"><div class="page">
-    <header class="site-header">
-
+  <div class="page-wrapper">
+    <div class="page">
+    <header class="site-header" id="site-header">
       <div class="site-branding">
       <?php if ($logo): ?>
         <div class="site-logo">
@@ -25,6 +25,7 @@
       <?php endif; ?>
       </div>
       <?php if ($main_menu): ?>
+        <div class="menu-toggle"><button><span class="text">Menu</span></button></div>
         <nav class="site-navigation">
           <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('menu primary-menu')), 'heading' => '')); ?>
         </nav>
@@ -42,7 +43,6 @@
       </div>
     <?php endif; ?>
 
-    
     <?php if ($page['highlight']): ?>
       <div class="highlight-content"><?php print render($page['highlight']); ?></div>
     <?php endif; ?>
@@ -63,7 +63,7 @@
           <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
 
         <a id="primary-content"></a>
-        <main class="content"><?php print render($page['content']); ?></main>
+        <div class="content"><?php print render($page['content']); ?></div>
       </div>
 
       <?php if ($page['secondary']): ?>
@@ -71,9 +71,8 @@
           <?php print render($page['secondary']); ?>
         </div>
       <?php endif; ?>
-    </main>
-
-    <footer class="site-footer">
+    <footer class="site-footer" id="site-footer">
       <?php print render($page['footer']); ?>
     </footer>
-  </div></div>
+  </div>
+</div>
