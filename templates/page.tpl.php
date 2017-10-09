@@ -12,7 +12,7 @@
       <?php if ($logo): ?>
         <div class="site-logo">
           <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-            <?php include('inc/logo.tpl.php'); ?>
+            <?php include("inc/logo.tpl.php"); ?>
           </a>
         </div>
         <?php endif; ?>
