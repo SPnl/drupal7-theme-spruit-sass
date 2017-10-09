@@ -149,7 +149,41 @@ input.button-primary:hover {
     color:#fff;
     border-color:#000;
 }
-    
+
+/* Form styling custom classes */
+
+.horizontal {
+  overflow: hidden;
+  .form-item {
+    display: block;
+    float: left;
+    overflow: hidden;
+    height: auto;
+    margin-right: 16px;
+  }
+}
+
+.block-select .form-item {
+  label {
+    border: 2px solid #333;
+    padding: 16px 24px;
+    background: #fafafa;
+    display: block;
+    cursor: pointer;
+    &:hover{
+      border-color: $color1;
+      color: $color1;
+    }
+  }
+  input {
+    display: none;
+  }
+  input:checked + label {
+    background-color: #333;
+    color: #fff;
+  }
+}
+
 @media only screen and (max-width:500px){
     .form-submit {
       width:100%;
@@ -173,3 +207,5 @@ input.button-primary:hover {
        border: 2px solid rgb(236, 27, 35);
     }
 }
+
+
