@@ -3,14 +3,11 @@
 /**
  * @file
  * Default theme implementation to display the basic html structure of a single Drupal page.
- */
-?><!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="nl-NL"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="nl-NL"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="nl-NL"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="nl-NL"> <!--<![endif]-->
+ */ ?>
+<!doctype html>
+<html class="no-js" lang="nl-NL">
   <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <?php print $head; ?>
     <title><?php print $head_title; ?></title>
     <?php print $styles; ?>
