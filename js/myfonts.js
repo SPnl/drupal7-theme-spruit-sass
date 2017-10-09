@@ -54,8 +54,7 @@ else {
     script.match("://") || "/" == script.charAt(0) || (script = "./" + script);
     path = script.replace(/\\/g, "/").replace(/\/[^\/]*\/?$/, "")
 }
-/* fixen var wfpath = Drupal.settings.pathToTheme + "/fonts/" */
-var wfpath = "/sites/all/themes/spruit_sass/fonts/"
+var wfpath = Drupal.settings.pathToTheme + "/fonts/"
   , browsers = [{
     regex: "MSIE (\\d+\\.\\d+)",
     versionRegex: "new Number(RegExp.$1)",
