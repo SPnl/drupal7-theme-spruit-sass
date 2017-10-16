@@ -61,6 +61,17 @@
     }
   };
 
+  Drupal.behaviors.PageBack = {
+    attach: function (context, settings) {
+      $('a.back').click(function(){
+          if(document.referrer.indexOf(window.location.hostname) != -1){
+              parent.history.back();
+              return false;
+          }
+      });
+    }
+  };
+
 /*  Drupal.behaviors.SiteWaypoints = {
     attach: function(context,settings) {
       // Back to top button
