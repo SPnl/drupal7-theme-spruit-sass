@@ -1,0 +1,28 @@
+/* MODAL */
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 16px;
+    width: 100%;
+    z-index: 9000; //should always be top
+}
+
+#modal .pane-content {
+    background: #fff;
+    max-width: 640px;
+    padding: 16px;
+    max-height: 80vh; // set max-height to handle overflow and scrolling
+    overflow: auto; // add scrolloption for small viewports
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 32px);
+    border-top: 8px solid $color1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow: 16px 16px 16px #101010;
+}

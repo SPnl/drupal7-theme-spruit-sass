@@ -70,6 +70,7 @@
     }
   };
 
+
   Drupal.behaviors.PageBack = {
     attach: function (context, settings) {
       $('a.back').click(function(){
@@ -80,6 +81,8 @@
       });
     }
   };
+
+
 
 /*  Drupal.behaviors.SiteWaypoints = {
     attach: function(context,settings) {

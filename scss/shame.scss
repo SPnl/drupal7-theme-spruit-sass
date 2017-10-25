@@ -48,3 +48,47 @@
     }
 }
 
+
+// THEATHER VOOR ELKAAR
+#theater-banner {
+    min-height: 24vh;
+    background-size: cover;
+    background-position: top center;
+    background-image: url("/files/tve-small.jpg");
+}
+
+@media screen and (max-width: 768px) {
+    #theater-webform .node-webform,#doemee-webform .node-webform {
+        max-width:540px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #theater-banner,#doemee-banner {
+        position:relative;
+        width: 100%;
+        top: auto;
+        display: block;
+    }
+
+    #doemee-banner {
+        background-image: url("/files/doemee_front_max-1980.jpg");
+        height: 100vh;
+    }
+
+    #theater-banner {
+        background-image: url("/files/g_TVE.jpg");
+        height: 130vh;
+    }
+
+    #doemee-webform {
+        position: absolute;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 12rem rgba(0,0,0,0.1);
+        max-width: 400px;
+        margin: 68px;
+        top: 0;
+        right: 0;
+    }
+}
