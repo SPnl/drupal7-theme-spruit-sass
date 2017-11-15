@@ -2,6 +2,11 @@
  * Use this for quick-fixes
  */
 
+ .primary-content{
+    min-height:86vh;  // set a minimum height to fix footer for 16:9
+}
+
+
 // removes a drupal link after comfirmation webform 'terug naar het formulier'
 .links {
     display: none;
@@ -49,11 +54,11 @@
 }
 
 
-// THEATHER VOOR ELKAAR
+// THEATER VOOR ELKAAR
 #theater-banner {
-    min-height: 24vh;
+    min-height: 39vw;
     background-size: cover;
-    background-position: top center;
+    background-position: top left;
     background-image: url("/files/tve-small.jpg");
 }
 
@@ -79,7 +84,9 @@
 
     #theater-banner {
         background-image: url("/files/g_TVE.jpg");
+        //background-size: 450px 300px;
         height: 130vh;
+        background-repeat: no-repeat;
     }
 
     #doemee-webform {
@@ -92,3 +99,5 @@
         right: 0;
     }
 }
+
+
