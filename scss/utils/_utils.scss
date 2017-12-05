@@ -83,3 +83,13 @@
 .viewport-height {
   height: 100vh;
 }
+.viewport-full-background {
+  position:relative;
+  width: 100%;
+  height: 100vh;
+  top: auto;
+  display: block;
+  background-attachment: fixed;
+  background-size:100% auto;
+  background-color: #aaa;
+}
