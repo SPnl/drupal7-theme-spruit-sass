@@ -68,27 +68,3 @@ ul.share li {
 ul.share li a {
     min-width: 130px;
 }
-.btn.facebook {
-    background: $facebook;
-}
-.btn.facebook:hover {
-    background: darken($facebook, 5%);
-}
-.btn.twitter {
-    background: $twitter;
-}
-.btn.twitter:hover {
-    background: darken($twitter, 5%);
-}
-.btn.linkedin {
-    background: $linkedin;
-}
-.btn.linkedin:hover {
-    background: darken($linkedin, 5%);
-}
-.btn.email {
-    background: $email;
-}
-.btn.email:hover {
-    background: darken($email, 5%);
-}

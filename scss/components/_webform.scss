@@ -38,6 +38,8 @@ fieldset {
     font-size: 1rem;
     background: #fafafa;
     border:1px solid #ddd;
+    width: 100%;
+    text-overflow: ellipsis;
 }
 .form-item label {
     margin-bottom: 8px;

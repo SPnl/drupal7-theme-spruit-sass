@@ -1,15 +1,25 @@
 /* BASIC UTILS */
+
+// TEXT
 .text-center {
-    text-align: center;
+    text-align: center!important;
 }
 .text-left {
-    text-align: left;
+    text-align: left!important;
 }
 .text-right {
-    text-align: right;
+    text-align: right!important;
 }
+.text-justify {
+    text-align: justify!important;
+}
+.text-muted {
+    color: #999!important;
+}
+
+// VISIBILITY
 .overflow-hidden {
-    overflow: hidden;
+    overflow: hidden!important;
 }
 
 /* =========================================================================
@@ -32,14 +42,15 @@
  */
 
 .invisible {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    visibility: hidden;
 }
 
 /*
@@ -50,12 +61,12 @@
 
 .invisible.focusable:active,
 .invisible.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
 }
 
 /*
@@ -63,7 +74,7 @@
  */
 
 .invisible {
-  visibility: hidden;
+
 }
 
 /*
@@ -72,8 +83,8 @@
 
 .clearfix:before,
 .clearfix:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
 
 .clearfix:after {
@@ -84,12 +95,19 @@
   height: 100vh;
 }
 .viewport-full-background {
-  position:relative;
-  width: 100%;
-  height: 100vh;
-  top: auto;
-  display: block;
-  background-attachment: fixed;
-  background-size:100% auto;
-  background-color: #aaa;
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    top: auto;
+    display: block;
+    background-attachment: fixed;
+    background-size:100% auto;
+    background-color: #aaa;
+}
+
+.content-fill {
+   width: 100%;
+   max-width: 960px;
+   height: 100%;
+   max-height: 960px;
 }

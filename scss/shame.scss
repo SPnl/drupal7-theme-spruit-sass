@@ -17,7 +17,15 @@
     font-size: 2.83em;
 }
 
-
+.title .crown {
+  display: inline-block;
+  border-bottom: 2px solid #333333;
+  font-size: .42em;
+}
+.title .subject {
+  display: block;
+  font-size: 1.4em;
+}
 
 // adjust drupal header size
 @media screen and (min-width: 576px){
@@ -98,6 +106,30 @@
         top: 0;
         right: 0;
     }
+}
+
+
+// Size my content
+
+.content-size-ratio-1-1 {
+   height: 320px;
+   width: 100%;
+}
+
+@media screen and (min-width: 768px) { 
+  .content-size-ratio-1-1 {
+     height: 768px;
+     width: 100%;
+     max-width: 768px;
+   }  
+}
+
+@media screen and (min-width: 960px) {  
+  .content-size-ratio-1-1 {
+     height: 960px;
+     width: 100%;
+     max-width: 960px;
+   }
 }
 
 

@@ -1,0 +1,82 @@
+/* VOORELKAAR LANDINGPAGE */
+
+.page-voorelkaar .voorelkaar-webform {
+	background-image: url("https://doemee.sp.nl/files/doemee_front_max-1980.jpg");
+	background-size: cover;
+	background-position: top center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	padding: 32px 0px;
+	min-height: 80vh;
+}
+.page-voorelkaar .voorelkaar-webform h1 {
+    //border-top: 3px solid rgba(0, 0, 0, 0.75);
+    //border-bottom: 3px solid rgba(0, 0, 0, 0.75);
+    padding: 8px 0;
+    //text-align: center;
+    margin-bottom: 1rem;
+}
+.page-voorelkaar .voorelkaar-webform form {
+	//border-top: 8px solid #ffe21c;
+	//border-top-left-radius: 4px;
+	//border-top-right-radius: 4px;
+	max-width: 500px;
+	padding: 1rem 2rem 4rem 2rem; //needs media
+	color: #000;
+	//background: rgba(255, 226, 28, 0.95);
+	background: #fff;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+	float: right;
+}
+@media (min-width: 650px){
+	.page-voorelkaar .voorelkaar-webform {
+		padding: 4rem 80px 4rem 80px;
+	}
+}
+@media (max-width: 650px){
+	.page-voorelkaar .voorelkaar-webform form {
+		margin: 0 auto;
+	}
+}
+.page-voorelkaar #voorelkaar-gaverder {
+    display: table; //to fix flow
+    width: 100%;
+    padding: 16px 0;
+    background: $color1;
+    //box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+.page-voorelkaar #voorelkaar-footer {
+	min-height: 600px;
+	//background: #f1f1f1;
+}
+.page-voorelkaar #voorelkaar-gaverder a.btn.whatsapp {
+	background: $color1;
+	margin-left: 1rem;
+}
+.page-voorelkaar #voorelkaar-gaverder a.btn.whatsapp:hover {
+	background: $whatsapp;
+	border: 1px solid $whatsapp;
+}
+.page-voorelkaar #voorelkaar-gaverder a.btn.whatsapp:after {
+	display: block;
+	content: ' ';
+	height: 20px;
+	width: 20px;
+	background-image:url("https://www-cdn.whatsapp.net/img/v4/whatsapp-logo.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: right;
+	position: relative;
+	top: -3px;
+	right: -6px;
+}
+/*
+.page-voorelkaar #voorelkaar-gaverder a.btn.whatsapp:after {
+    content: ' w ';
+    font-family: SPruit-icons;
+    font-size: 1rem;
+    position: relative; // to fix align
+    top: -2px;
+    right: 0;
+}
+*/

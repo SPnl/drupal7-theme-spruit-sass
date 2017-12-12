@@ -18,12 +18,13 @@ html {
     line-height: 1;
 } 
 p {
-    font-size:1rem; //16px
+    font-size: 1rem; //16px
     line-height: 1.5rem; //24px
 }
 @media screen and (min-width: 768px){
     p {
-        font-size:1.2rem; //18px
+        font-size:1.125rem; // 18px
+        line-height: 1.62rem; // 26px 
     }
 }
 h1 {
