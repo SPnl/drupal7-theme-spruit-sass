@@ -34,6 +34,10 @@
 
  ? 2014 MyFonts Inc
 */
+if (typeof Drupal.settings.pathToTheme == 'undefined') {
+  Drupal.settings.pathToTheme = "/sites/all/themes/spruit_sass";
+}
+
 var protocol = document.location.protocol;
 "https:" != protocol && (protocol = "http:");
 var count = document.createElement("script");
