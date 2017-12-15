@@ -1,0 +1,15 @@
+.banner-image-cover {
+  min-height: 230px;
+  min-height: 33vh; // A third of the height
+  width: 100%;
+  background-size: cover;
+  background-color: #fafafa;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .banner-image-cover {
+    min-height: 1068px; // For your ancient browser
+    min-height: 100vh;
+  }
+}
