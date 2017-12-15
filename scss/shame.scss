@@ -1,4 +1,4 @@
-/* SHAME
+/* SHAME:
  * Use this for quick-fixes
  */
 
@@ -61,7 +61,6 @@
     }
 }
 
-
 // THEATER VOOR ELKAAR
 #theater-banner {
     min-height: 39vw;
@@ -78,16 +77,11 @@
 }
 
 @media screen and (min-width: 768px) {
-    #theater-banner,#doemee-banner {
+    #theater-banner {
         position:relative;
         width: 100%;
         top: auto;
         display: block;
-    }
-
-    #doemee-banner {
-        background-image: url("/files/doemee_front_max-1980.jpg");
-        height: 100vh;
     }
 
     #theater-banner {
@@ -96,40 +90,74 @@
         height: 130vh;
         background-repeat: no-repeat;
     }
+}
 
-    #doemee-webform {
-        position: absolute;
-        border: 1px solid #ddd;
-        box-shadow: 0 0 12rem rgba(0,0,0,0.1);
-        max-width: 400px;
-        margin: 68px;
-        top: 0;
-        right: 0;
+// BANNER IMAGES 
+
+#roemer-bedankt-banner {
+    background-image: url("/files/roemer_768.jpg");
+}
+#lilian-2017-banner {
+    background-image: url("/files/lilian_768.jpg");
+}
+
+@media screen and (min-width: 768px) {
+    #roemer-bedankt-banner {
+        background-image: url("/files/roemer_1980.jpg");
+    }
+    #lilian-2017-banner {
+        background-image: url("/files/lilian_1920.jpg");
+    } 
+    .secondary-actions-bar #lilian-2017-banner {
+        min-height: 86vh;
     }
 }
 
+/* Doe Mee Voor Elkaar style */
 
-// Size my content
-
-.content-size-ratio-1-1 {
-   height: 320px;
-   width: 100%;
+.empty-header #site-header,
+.page-doemee #site-header {
+  background: transparent;
+  position: absolute;
+  border: none;
 }
 
-@media screen and (min-width: 768px) { 
-  .content-size-ratio-1-1 {
-     height: 768px;
-     width: 100%;
-     max-width: 768px;
-   }  
+.empty-header,
+.page-doemee {
+  border-top: 4px solid #ec1b23;
 }
 
-@media screen and (min-width: 960px) {  
-  .content-size-ratio-1-1 {
-     height: 960px;
-     width: 100%;
-     max-width: 960px;
-   }
+/* Whatsapp knop aanpassing - beetje lomp, sorry Chris. (Stijn) */
+
+#doemee-rodebalk .meer-weten {
+  display: block;
+  padding: .72em 0;
+  font-family: "HelveticaNeueLTStd-BdCn", sans-serif;
+  font-weight: normal;
+}
+.whatsapp-link {
+  color: #fff;
 }
 
+.whatsapp-link img {
+  display: inline-block;
+  margin: 0 8px; vertical-align: -5px;
+  height: 24px; display: inline-block; 
+}
 
+.whatsapp-link .text {
+  display: inline-block;
+}
+
+#doemee-rodebalk .meer-weten.immobile {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  #doemee-rodebalk .meer-weten.mobile {
+    display: none;
+  }
+  #doemee-rodebalk .meer-weten.immobile {
+    display: block;
+  }
+}
