@@ -2,17 +2,6 @@
 .webform-component-textarea .grippie { 
     display: none; //removes module gripbar for old browsers
 }
-/*
-input {
-    transition: ease .5s all;
-}
-input.valid {
-    border-left: 4px solid green!important;
-}
-*/
-form {
-    //padding: 32px 0;
-}
 legend {
     font-size: 1.5rem;
     font-family: $font-primary;
@@ -20,7 +9,7 @@ legend {
 }
 fieldset {
     border: none;
-    padding: 16px 0;
+    padding: 1rem 0;
     margin: 0;
 }
 .form-actions {
@@ -30,10 +19,10 @@ fieldset {
 }
 .form-item {
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 .form-select {
-    padding: 8px;
+    padding: .5rem;
     font-family: $font-strong;
     font-size: 1rem;
     background: #fafafa;
@@ -41,8 +30,11 @@ fieldset {
     width: 100%;
     text-overflow: ellipsis;
 }
+.webform-datepicker .form-select {
+    width: auto; //fixes 100% width on form-select
+}
 .form-item label {
-    margin-bottom: 8px;
+    margin-bottom: .5rem;
     font-weight: normal;
     font-family: $font-middle;
     letter-spacing: .3px;
@@ -78,14 +70,14 @@ input,textarea {
 .form-item .form-textarea {
     max-width:100%;
     width: 100%;
-    padding: 16px;
+    padding: 1rem;
     background: #fafafa;
     border:1px solid #ddd;
     color: #333;
     font-family: $font-strong;
 }
 .form-radios {
-    padding-left: 5px;
+    padding-left: .5rem;
 }
 .form-type-checkbox input[type="checkbox"] + label {
     display: table-cell; // to prevent label text wrapping underneath
@@ -101,12 +93,12 @@ input,textarea {
     color: #fff;
     background: #fff;
     padding: 6px;
-    margin-right: 8px;
+    margin-right: .5rem;
     border: 2px solid #333;
     font-size: 1rem;
     display: table-cell; // to prevent label text wrapping underneath
     float: left; // to prevent label text wrapping underneath
-    margin-top: -8px; // to prevent label text wrapping underneath
+    margin-top: -.5rem; // to prevent label text wrapping underneath
 }
 .form-type-checkbox input:checked + label:before {
     content: 'v';
@@ -133,7 +125,7 @@ input.button-primary {
     font-family: $font-primary;
     text-transform: uppercase;
     background: $color1;
-    padding: 16px 32px;
+    padding: 1rem 2rem;
     color: #fff;
     border: 1px solid $color1;
     transition: all 0.2s ease;
@@ -161,14 +153,14 @@ input.button-primary:hover {
     float: left;
     overflow: hidden;
     height: auto;
-    margin-right: 16px;
+    margin-right: 1rem;
   }
 }
 
 .block-select .form-item {
   label {
     border: 2px solid #333;
-    padding: 16px 24px;
+    padding: 1rem 1.5rem;
     background: #fafafa;
     display: block;
     cursor: pointer;
@@ -189,7 +181,7 @@ input.button-primary:hover {
 @media only screen and (max-width:500px){
     .form-submit {
       width:100%;
-      margin-bottom:8px;
+      margin-bottom:.5rem;
     }
 }
 
@@ -201,7 +193,7 @@ input.button-primary:hover {
         padding: 12px;
         line-height: 1;
         display: block;
-        margin: 8px 0;
+        margin: .5rem 0;
     }
     .form-item input.error, 
     .form-item textarea.error, 

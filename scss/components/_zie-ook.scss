@@ -1,0 +1,25 @@
+/* ZIE OOK */
+.zie-ook ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.zie-ook .time {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: .8rem;
+}
+.zie-ook li {
+	background: #fff;
+	border: 1px solid #ddd;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+.zie-ook a {
+	text-decoration: none;
+	color: #000;
+	transition: all 0.2s ease;
+	&:hover h2 {
+		color: $color1;
+	}
+}

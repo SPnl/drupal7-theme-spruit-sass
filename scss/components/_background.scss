@@ -3,9 +3,13 @@
 }
 .background-dark {
   background: $color3;
-  color: $color2;
+  //color: $color2; // should not be used
 }
 .background-highlight {
   background: $color1; 
-  color: $color2;
+  //color: $color2; // should not be used
+}
+
+.background-white {
+	background: #fff;
 }

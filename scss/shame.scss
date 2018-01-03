@@ -5,61 +5,12 @@
  .primary-content{
     min-height:86vh;  // set a minimum height to fix footer for 16:9
 }
-
-
 // removes a drupal link after comfirmation webform 'terug naar het formulier'
 .links {
     display: none;
 }
 
-/* HEADER */
-.primary-content header .title {
-    font-size: 2.83em;
-}
 
-.title .crown {
-  display: inline-block;
-  border-bottom: 2px solid #333333;
-  font-size: .42em;
-}
-.title .subject {
-  display: block;
-  font-size: 1.4em;
-}
-
-// adjust drupal header size
-@media screen and (min-width: 576px){
-    .primary-content header .title,
-    h2.pane-title {
-        //width: 510px;
-        max-width: 100%;
-        margin: 0 auto 1.2rem auto;
-    }
-}
-@media screen and (min-width: 768px){
-    .primary-content header .title,
-    h2.pane-title {
-        //width: 690px;
-        max-width: 100%;
-        margin: 0 auto 1.2rem auto;
-    }
-}
-@media screen and (min-width: 992px){
-    .primary-content header .title,
-    h2.pane-title {
-        //width: 930px;
-        max-width: 100%;
-        margin: 0 auto 1.2rem auto;
-    }
-}
-@media screen and (min-width: 1200px){
-    .primary-content header .title,
-    h2.pane-title {
-        //width: 1110px;
-        max-width: 100%;
-        margin: 0 auto 1.2rem auto;
-    }
-}
 
 // THEATER VOOR ELKAAR
 #theater-banner {
@@ -100,6 +51,11 @@
 #lilian-2017-banner {
     background-image: url("/files/lilian_768.jpg");
 }
+#rood-banner {
+    background-image: url("/files/rood_1920.jpg");
+}
+
+
 
 @media screen and (min-width: 768px) {
     #roemer-bedankt-banner {
@@ -107,57 +63,57 @@
     }
     #lilian-2017-banner {
         background-image: url("/files/lilian_1920.jpg");
-    } 
-    .secondary-actions-bar #lilian-2017-banner {
-        min-height: 86vh;
+        background-position: 50% 0;
+        min-height: 680px; //depends on webform height
+        height: 86vh;
     }
+    #rood-banner {
+        background-image: url("/files/rood_1920.jpg");
+        min-height: 860px; //depends on webform height
+        height: calc(100vh - 122px);
+    } 
 }
 
 /* Doe Mee Voor Elkaar style */
 
 .empty-header #site-header,
 .page-doemee #site-header {
-  background: transparent;
-  position: absolute;
-  border: none;
+    background: transparent;
+    position: absolute;
+    border: none;
 }
 
 .empty-header,
 .page-doemee {
-  border-top: 4px solid #ec1b23;
+    border-top: 4px solid #ec1b23;
 }
 
-/* Whatsapp knop aanpassing - beetje lomp, sorry Chris. (Stijn) */
+// Whatsapp knop aanpassing - beetje lomp, sorry Chris. (Stijn)
 
 #doemee-rodebalk .meer-weten {
-  display: block;
-  padding: .72em 0;
-  font-family: "HelveticaNeueLTStd-BdCn", sans-serif;
-  font-weight: normal;
+    display: block;
+    padding: .72em 0;
+    font-family: "HelveticaNeueLTStd-BdCn", sans-serif;
+    font-weight: normal;
 }
 .whatsapp-link {
-  color: #fff;
+    color: #fff;
+}
+#doemee-rodebalk .meer-weten.mobile .text,
+#doemee-rodebalk .meer-weten.immobile {
+    display: none;
 }
 
 .whatsapp-link img {
-  display: inline-block;
-  margin: 0 8px; vertical-align: -5px;
-  height: 24px; display: inline-block; 
+    display: inline-block;
+    margin: 0 8px; vertical-align: -5px;
+    height: 24px; display: inline-block; 
 }
-
-.whatsapp-link .text {
-  display: inline-block;
-}
-
-#doemee-rodebalk .meer-weten.immobile {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
-  #doemee-rodebalk .meer-weten.mobile {
-    display: none;
-  }
-  #doemee-rodebalk .meer-weten.immobile {
-    display: block;
-  }
+    #doemee-rodebalk .meer-weten.mobile {
+        display: none;
+    }
+    #doemee-rodebalk .meer-weten.immobile {
+        display: block;
+    }
 }

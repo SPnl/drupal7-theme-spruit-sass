@@ -48,6 +48,49 @@
     letter-spacing: .2px;
 }
 
+// GHOST BUTTON (needs work!)
+.btn-ghost-color1 {
+    background: none!important;
+    color: $color1!important;
+    border: 3px solid $color1!important;
+    &:hover {
+        background: rgba($color1, .5)!important;
+    }
+}
+.btn-ghost-color2 {
+    background: none!important;
+    color: $color2!important;
+    border: 3px solid $color2!important;
+    &:hover {
+        background: rgba($color2, .5)!important;
+    }
+}
+.btn-ghost-color3 {
+    background: none!important;
+    color: $color3!important;
+    border: 3px solid $color3!important;
+    &:hover {
+        background: rgba($color3, .5)!important;
+    }
+}
+.btn-ghost-color4 {
+    background: none!important;
+    color: $color4!important;
+    border: 3px solid $color4!important;
+    &:hover {
+        background: rgba($color4, .5)!important;
+    }
+}
+.btn-ghost-color5 {
+    background: none!important;
+    color: $color5!important;
+    border: 3px solid $color5!important;
+    &:hover {
+        background: rgba($color5, .5)!important;
+    }
+}
+
+// SOCIAL BUTTONS
 .btn.facebook {
     background: $facebook;
 }

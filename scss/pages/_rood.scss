@@ -1,0 +1,30 @@
+/* ROOD */
+
+.page-rood .site-logo {
+	display: none; //removes standard SP logo
+}
+
+
+#rood-webform {
+    background: #fff;
+    padding: 32px;
+    z-index: 1; // always show even if parent is smaller because of absolute position
+}
+@media screen and (max-width: 768px) {
+    #rood-webform .node-webform {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #rood-webform {
+        position: absolute;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 12rem rgba(0,0,0,.1);
+        max-width: 400px;
+        margin: 68px;
+        top: 0;
+        left: 0;
+    }
+}

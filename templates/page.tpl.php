@@ -11,7 +11,7 @@
       <div class="site-branding">
       <?php if ($logo): ?>
         <div class="site-logo">
-          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+          <a href="https://www.sp.nl/?landing=0" title="<?php print t('Home'); ?>" rel="home" id="logo">
             <?php include("inc/logo.tpl.php"); ?>
           </a>
         </div>

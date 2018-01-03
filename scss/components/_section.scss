@@ -3,12 +3,29 @@
 
 
 .section {
-	padding: 3rem 1rem;
+    padding: 3rem 1rem;
 }
-@media (min-width: 768px){
-	.section {
-		padding: 5rem 1rem;
-	}
+.section-col {
+    padding: 3rem 1rem; //needs work
+}
+.section-full {
+    padding: 3rem 0rem;
+    min-height: 100vh;
+    position: relative;
+}
+.section-full .pane-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 768px){
+    .section {
+        padding: 5rem 0rem;
+    }
+    .section-col {
+        padding: 5rem 1rem;
+    }
 }
 
 hr {
