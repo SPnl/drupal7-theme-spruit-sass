@@ -11,6 +11,15 @@ $color1-bg: #FFFFFF; // White
 $color2-bg: #F5F5F5; // Almost white
 $color3-bg: #DDDDDD; // Grey
 
+// DEFAULT COLORS
+$default: grey;
+$warning: orange;
+$success: green;
+$primary: $color1;
+$info: blue;
+$warning: yellow;
+$danger: red;
+
 // TYPOGRAPHY
 //@import url(https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Roboto+Condensed|Lato);
 //$font-title: 'Roboto Slab', serif;

@@ -34,9 +34,9 @@
     border-bottom: none;
 }
 .social-share li span {
-    font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+    font-family: $font-middle;
     text-align: center;
-    background: #EC1B23;
+    background: $color1;
     line-height: 42px;
     color: white;
     z-index: -500;
