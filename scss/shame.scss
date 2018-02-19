@@ -51,11 +51,40 @@
 #lilian-2017-banner {
     background-image: url("/files/lilian_768.jpg");
 }
+#lilian-bernie-banner {
+    background-image: url("/files/lilian_768_podium.jpg");
+}
 #rood-banner {
     background-image: url("/files/rood_1920.jpg");
 }
+// Lilian tekst
+#lilian-header-tekst {
+    color: white;
+    position: absolute;
+    top: 3%;
+    left: 20%;
+    width: 30%;
+    font-size: 3rem;
+    display: inline;
+}
+
+.red-text {
+    color: red;
+}
 
 
+@media screen and (min-width: 720px) {
+    // Lilian tekst
+    #lilian-header-tekst {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 8%;
+        font-size: 5rem;
+        display: inline;
+        width: 30%;
+    }
+}
 
 @media screen and (min-width: 768px) {
     #roemer-bedankt-banner {
@@ -67,11 +96,27 @@
         min-height: 680px; //depends on webform height
         height: 86vh;
     }
+    #lilian-bernie-banner {
+        background-image: url("/files/lilian_1920_podium.jpg");
+        background-position: 90% 0;
+        min-height: 800px; //depends on webform height
+        height: 86vh;
+    }
     #rood-banner {
         background-image: url("/files/rood_1920.jpg");
         min-height: 860px; //depends on webform height
         height: calc(100vh - 122px);
     } 
+}
+
+@media screen and (min-width: 1180px) {
+    #lilian-bernie-banner {
+        background-image: url("/files/lilian_1920_podium.jpg");
+        background-position: 50% 50%;
+        min-height: 800px; //depends on webform height
+        left: 0%;
+        height: 86vh;
+    }
 }
 
 /* Doe Mee Voor Elkaar style */
