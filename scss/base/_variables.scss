@@ -12,13 +12,13 @@ $color2-bg: #F5F5F5; // Almost white
 $color3-bg: #DDDDDD; // Grey
 
 // DEFAULT COLORS
-$default: grey;
-$warning: orange;
-$success: green;
+$default: #ddd; //grey
+$success: #28a745; //green
 $primary: $color1;
-$info: blue;
-$warning: yellow;
-$danger: red;
+$secondary: $color3;
+$info: #17a2b8; //cyan
+$warning: #ffc107; //yellow
+$danger: #dc3545; //red
 
 // TYPOGRAPHY
 //@import url(https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Roboto+Condensed|Lato);

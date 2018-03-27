@@ -44,6 +44,9 @@
 }
 
 // BANNER IMAGES 
+#lilian-ing-banner {
+    background-image: url("/files/bankiers3.png");
+}
 
 #roemer-bedankt-banner {
     background-image: url("/files/roemer_768.jpg");
@@ -99,13 +102,13 @@
     #lilian-bernie-banner {
         background-image: url("/files/lilian_1920_podium.jpg");
         background-position: 90% 0;
-        min-height: 800px; //depends on webform height
+        min-height: 861px; //depends on webform height
         height: 86vh;
     }
     #lilian-header-tekst {
         color: white;
         position: absolute;
-        top: 50%;
+        top: 10%;
         left: 8%;
         font-size: 5rem;
         display: inline;
