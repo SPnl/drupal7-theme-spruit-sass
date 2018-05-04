@@ -47,7 +47,7 @@
       <div class="highlight-content"><?php print render($page['highlight']); ?></div>
     <?php endif; ?>
 
-    <?php print $messages; ?>
+
 
       <div class="primary-content">
         <?php if ($title): ?>
@@ -63,6 +63,8 @@
           <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
 
         <a id="primary-content"></a>
+
+        <?php print $messages; ?>
         <div class="content"><?php print render($page['content']); ?></div>
       </div>
 

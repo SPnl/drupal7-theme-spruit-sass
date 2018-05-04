@@ -17,15 +17,10 @@ $success: #28a745; //green
 $primary: $color1;
 $secondary: $color3;
 $info: #17a2b8; //cyan
-$warning: #ffc107; //yellow
+$warning: #fff154; // warm, friendly yellow
 $danger: #dc3545; //red
 
 // TYPOGRAPHY
-//@import url(https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Roboto+Condensed|Lato);
-//$font-title: 'Roboto Slab', serif;
-//$font-body: 'Roboto', sans-serif;
-//$font-body: 'Lato', sans-serif;
-
 $font-primary: 'HelveticaInseratLTPro', sans-serif;
 $font-strong: 'HelveticaNeueLTStd-Md','Helvetica Neue',Helvetica,'Roboto Sans','Segoe UI',Arial,'Lucida Grande',sans-serif;
 $font-middle: 'HelveticaNeueLTStd-BdCn','Helvetica Neue',Helvetica,'Roboto Sans','Segoe UI',Arial,'Lucida Grande',sans-serif;
@@ -46,5 +41,7 @@ $instagram: #125688;
 $youtube: #bb0000;
 $googleplus: #dd4b39;
 $dropbox: #007ee5;
-
 $email: $color1;
+
+// SIZING
+$content-width: 1180px; // Maximum width of content

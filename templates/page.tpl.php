@@ -47,8 +47,6 @@
       <div class="highlight-content"><?php print render($page['highlight']); ?></div>
     <?php endif; ?>
 
-    <?php print $messages; ?>
-
       <div class="primary-content">
         <?php if ($title): ?>
         <header class="content-header">
@@ -59,6 +57,8 @@
         <?php endif; ?>
           <?php print render($tabs); ?>
           <?php print render($page['help']); ?>
+
+          <?php print $messages; ?>
 
           <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
 

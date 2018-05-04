@@ -1,4 +1,17 @@
 /* FOOTER */
+
+@mixin decorative-tomato {
+    font-family: $sp-icons;
+    content: 'T';
+    line-height: 1;
+    display: block;
+    height: 48px;
+    color: $color1;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+}
 footer {
     img.site-logo {
         max-height: 50px;
@@ -33,54 +46,33 @@ footer {
     li a:hover {
         color: $color1;
         text-decoration: none;
-    }
-    // Only shows if there is a block in footer
+    } // Only shows if there is a block in footer
     .container {
         background: #fff;
         padding-top: 16px;
+        &:after {
+            @include decorative-tomato;
+        }
     }
-    .container:after {
-        font-family: $sp-icons;
-        content: 'T';
-        line-height: 1;
-        display: block;
-        height: 32px;
-        color: $color1;
-        overflow: hidden;
-        width: 100%;
-        text-align: center;
-        font-size: 45px;
-    }
-
     .footer-menu a {
         font-size: 1rem;
     }
 }
-
-
 // SHORT FOOTER
 .footer-short {
     text-align: center;
     color: #aaa;
     background: #fafafa;
-    padding: 3rem 0 0 0;
-    //margin-top: 3rem;
+    padding: 1rem;
+    padding-top: 2.1rem; //margin-top: 3rem;
+    padding-bottom: 0;
+    &:after {
+        @include decorative-tomato;
+    }
 }
 .footer-short p {
     font-size: .8rem;
 }
 .footer-short a {
     color: #888;
-}
-.footer-short:after {
-    font-family: SPruit-Icons;
-    content: 'T';
-    line-height: 1;
-    display: block;
-    height: 32px;
-    color: $color1;
-    overflow: hidden;
-    width: 100%;
-    text-align: center;
-    font-size: 45px;
 }

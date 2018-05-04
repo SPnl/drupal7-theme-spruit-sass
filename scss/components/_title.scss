@@ -1,64 +1,21 @@
 // TITLE SHAME
-
 /* HEADER */
-.primary-content header .title {
-    font-size: 2.83em;
-}
 
-.title .crown {
-  display: inline-block;
-  border-bottom: 2px solid #333333;
-  font-size: .42em;
-}
-.title .subject {
-  display: block;
-  font-size: 1.4em;
-}
-
-// adjust drupal header size - SHAME
-/*
-@media screen and (min-width: 576px){
-    .primary-content header .title,
-    h2.pane-title {
-        //width: 510px;
-        max-width: 100%;
-        margin: 0 auto 1.2rem auto;
+.primary-content .content-header {
+    padding: 0 16px;
+    .title {
+        font-size: 2.83em;
+        max-width: $content-width;
+        margin: auto;
     }
 }
-@media screen and (min-width: 768px){
-    .primary-content header .title,
-    h2.pane-title {
-        //width: 690px;
-        max-width: 100%;
-        margin: 0 auto 1.2rem auto;
-    }
-}
-@media screen and (min-width: 992px){
-    .primary-content header .title,
-    h2.pane-title {
-        //width: 930px;
-        max-width: 100%;
-        margin: 0 auto 1.2rem auto;
-    }
-}
-@media screen and (min-width: 1200px){
-    .primary-content header .title,
-    h2.pane-title {
-        //width: 1110px;
-        max-width: 100%;
-        margin: 0 auto 1.2rem auto;
-    }
-}
-*/
-
 // TITLE OPTIMIZED
-
-@media screen and (min-width: 992px){
-	h1.pane-title {
-		font-size: 3rem;
-		margin: 2rem 0 1rem 0;
-	}
-	h2.pane-title {
-		//font-size: 2.5rem;
-	}
+@media screen and (min-width: 992px) {
+    h1.pane-title {
+        font-size: 3rem;
+        margin: 2rem 0 1rem 0;
+    }
+    h2.pane-title {
+        //font-size: 2.5rem;
+    }
 }
