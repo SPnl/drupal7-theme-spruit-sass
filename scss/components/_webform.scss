@@ -1,5 +1,6 @@
 /* Webform specific elements */
-.webform-component-textarea .grippie { 
+
+.webform-component-textarea .grippie {
     display: none; //removes module gripbar for old browsers
 }
 .webform-datepicker .form-select {
@@ -8,9 +9,9 @@
 .webform-component-checkboxes {
     margin-top: 24px;
 }
-
 /* Webform inline error module */
-.webform-client-form { 
+
+.webform-client-form {
     div.error {
         background: #fffaa9;
         color: inherit;
@@ -19,18 +20,21 @@
         display: block;
         margin: .5rem 0;
     }
-    .form-item input.error, 
-    .form-item textarea.error, 
-    .form-item select.error {
-       border: 2px solid rgb(236, 27, 35);
+    .form-item input.error, .form-item textarea.error, .form-item select.error {
+        border: 2px solid rgb(236, 27, 35);
     }
 }
-
 /* Styling of individual webform nodes */
+
 .node-webform {
-	padding: 16px;
-	.field-introduction {
-	     max-width: $content-width;
-	     margin: auto;
-	}
+    padding: 16px;
+    .field-introduction, {
+        max-width: $content-width;
+        margin: auto;
+    }
+}
+.webform-confirmation {
+    max-width: $content-width;
+    margin: auto;
+    margin-top: 1rem;
 }
