@@ -30,4 +30,5 @@ function spruit_sass_preprocess_page(&$variables) {
   if (isset($variables['node']->type)) {
     $variables['theme_hook_suggestions'][]='page__'.$variables['node']->type;
   }
+  
 }

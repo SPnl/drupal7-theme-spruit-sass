@@ -1,0 +1,26 @@
+// STICKYFOOTER
+// requires js/stickyfooter.js
+
+#stickyfooter {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    padding: 8px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    z-index: 1;
+    transform: translate(0%, 100%);
+    transition: .4s ease all;
+}
+#stickyfooter.open {
+	transform: translate(0%, 0%);
+}
+#stickyfooter .btn {
+	border: none; // removes default border
+}
+@media (min-width: 767px){
+	#stickyfooter {
+		display: none;
+	}
+}

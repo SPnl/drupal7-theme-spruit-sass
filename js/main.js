@@ -81,6 +81,14 @@
     }
   };
 
+  Drupal.behaviors.WebformSliderToggle = {
+    attach: function (context, settings) {
+      $('.webformslider-toggle').click(function(){
+        $(".webformslider").toggleClass("open");
+      });
+    }
+  };
+
 /*  Drupal.behaviors.SiteWaypoints = {
     attach: function(context,settings) {
       // Back to top button

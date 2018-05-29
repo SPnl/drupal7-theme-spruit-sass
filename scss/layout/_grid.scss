@@ -94,6 +94,12 @@
         max-width: 100%;
     }
 }
+@media screen and (min-width: 2280px){
+    .container {
+        width: 50%; //replaces static width for large screen formats
+        max-width: 100%;
+    }
+}
 
 /* MEDIA XS */
 .col-xs-1 {float: left; width: 8.333333%;}

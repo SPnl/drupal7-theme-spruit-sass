@@ -10,7 +10,7 @@ legend {
 }
 fieldset {
     border: none;
-    padding: 1rem 0;
+    padding: 16px 0;
     margin: 0;
 }
 input,textarea {
@@ -27,21 +27,22 @@ input,textarea {
 }
 .form-item {
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
 }
 .form-select {
-    padding: .5rem;
+    padding: 8px;
     font-family: $font-strong;
     font-size: 1rem;
     background: #fafafa;
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
     width: 100%;
     text-overflow: ellipsis;
 }
 
 .form-item label {
     display: inline-block;
-    margin-bottom: .5rem;
+    margin-bottom: 2px;
+    margin-top: 6px;
     font-weight: normal;
     font-family: $font-middle;
     letter-spacing: .3px;
@@ -91,12 +92,12 @@ input,textarea {
     color: #fff;
     background: #fff;
     padding: 6px;
-    margin-right: .5rem;
+    margin-right: 8px;
     border: 2px solid #333;
     font-size: 1rem;
     display: table-cell; // to prevent label text wrapping underneath
     float: left; // to prevent label text wrapping underneath
-    margin-top: -.5rem; // to prevent label text wrapping underneath
+    margin-top: -8px; // to prevent label text wrapping underneath
 }
 .form-type-checkbox input:checked + label:before {
     content: 'v';
@@ -123,7 +124,7 @@ input.button-primary {
     font-family: $font-primary;
     text-transform: uppercase;
     background: $color1;
-    padding: 1rem 2rem;
+    padding: 16px 32px;
     color: #fff;
     border: 1px solid $color1;
     transition: all 0.2s ease;
@@ -151,14 +152,14 @@ input.button-primary:hover {
     float: left;
     overflow: hidden;
     height: auto;
-    margin-right: 1rem;
+    margin-right: 16px;
   }
 }
 
 .block-select .form-item {
   label {
     border: 2px solid #333;
-    padding: 1rem 1.5rem;
+    padding: 16px 24px;
     background: #fafafa;
     display: block;
     cursor: pointer;
@@ -179,7 +180,7 @@ input.button-primary:hover {
 @media only screen and (max-width:500px){
     .form-submit {
       width:100%;
-      margin-bottom:.5rem;
+      margin-bottom: 8px;
     }
 }
 

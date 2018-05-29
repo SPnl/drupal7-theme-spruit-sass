@@ -10,13 +10,13 @@ a#logo svg {
     position: absolute;
     top: 8px;
     z-index: 3;
-    margin-left: -.5rem;
+    margin-left: -8px;
 }
 @media screen and (min-width: 576px) {
     a#logo svg {
         height: 100px;
         max-width: 84px; // prevents centering for IE
-        margin-left: -1rem;
+        margin-left: -16px;
     }
     .site-logo {
     min-height: 32px;

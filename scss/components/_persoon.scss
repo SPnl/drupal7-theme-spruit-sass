@@ -1,0 +1,18 @@
+/* PERSOON */
+div.persoon {
+    display: inline-block;
+    background: #f1f1f1;
+    padding: 24px 32px;
+    border-left: solid 4px #f30000;
+    margin-top: 16px;
+}
+
+div.persoon .naam {
+	font-size: 21px;
+	display: block;
+}
+div.persoon .functie {
+	padding-top: 8px;
+	font-size: 14px;
+	display: block;
+}

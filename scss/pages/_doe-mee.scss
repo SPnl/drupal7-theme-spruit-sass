@@ -1,0 +1,277 @@
+/* DOE MEE NODE STYLE */
+.node-type-doe-mee .content-header {
+	display: none;
+}
+.node-type-doe-mee .site-branding {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	z-index: 2;
+}
+.node-type-doe-mee #site-header {
+	border-top: none;
+}
+.node-type-doe-mee .leftside .btn {
+	border: none;
+}
+.node-type-doe-mee ul.primary {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	z-index: 1;
+}
+
+// end shame
+
+// LAYOUT
+.fullscreen {
+	position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+    height: 100vh;
+    border-top: 5px solid $color1;
+}
+
+.leftside {
+	position: fixed;
+    left: 0px;
+    top: 5px; // to see top border
+    bottom: 0px;
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    padding-right: 32px;
+    padding-left: 32px;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -ms-flex-pack: center;
+    justify-content: center;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -ms-flex-align: center;
+    align-items: center;
+    // background-image: url(https://doemee.sp.nl/files/lilian_1920_podium.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    text-align: center;
+}
+
+.rightside {
+	position: fixed;
+    top: 5px; // to see top border
+    right: 0px;
+    bottom: 0px;
+    overflow-y: auto;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    float: right;
+    background-color: #fff;
+}
+.rightside section.article-content {
+	padding: 80px 64px 112px;
+}
+
+.leftoverlay {
+	position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    padding-top: 0px;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -ms-flex-pack: center;
+    justify-content: center;
+	    -webkit-box-align: start;
+	    -webkit-align-items: flex-start;
+	    -ms-flex-align: start;
+    align-items: flex-start;
+    background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .0), rgba(0, 0, 0, .2));
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .0), rgba(0, 0, 0, .2));
+}
+// WEBSLIDER
+.webformslider {
+	position: fixed;
+    left: 0px;
+    top: 5px; // to see top border
+    bottom: 0px;
+    z-index: 9999;
+    display: flex;
+    flex-flow: column;
+    overflow: auto;
+    width: 50%;
+    height: 100%;
+    //padding: 80px 64px 64px 48px;
+    background-color: #f1f1f1;
+	    -webkit-transform: translate(-100%, 0px);
+	    -ms-transform: translate(-100%, 0px);
+    transform: translate(-100%, 0px);
+    transition: transform 600ms 0ms;
+}
+.webformslider.open {
+	transform-style: preserve-3d;
+    transform: translateX(0px) translateY(0px) translateZ(0px);
+}
+.webformslider-toggle.close {
+    position: fixed;
+    color: #000;
+    right: 4px;
+    top: 4px;
+    font-family: SPruit-icons;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.webformslider-toggle.close:hover {
+    color: $color1;
+}
+.webformslider form {
+	max-width: 640px;
+	padding: 32px;
+	align-self: flex-start;
+}
+.webformslider .footer-short {
+	align-self: flex-end;
+	background: #f2f2f2;
+}
+
+// TITLE BLOCK
+.titlewrapper {
+    position: static;
+    z-index: 10;
+    display: block;
+    max-width: 540px;
+	    -webkit-align-self: flex-end;
+	    -ms-flex-item-align: flex-end;
+    align-self: flex-end;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, .31);
+    padding-bottom: 10vw; //relative padding vs viewport width
+}
+.titleblock {
+    display: block;
+	    -webkit-box-pack: justify;
+	    -webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+    justify-content: space-between;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -ms-flex-align: center;
+    align-items: center;
+}
+.sidetitle {
+    width: 100%;
+    font-family: $font-primary;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, .21);
+    color: #fff;
+}
+.subtitle {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -ms-flex-pack: center;
+    justify-content: center;
+	    -webkit-box-align: stretch;
+	    -webkit-align-items: stretch;
+	    -ms-flex-align: stretch;
+    align-items: stretch;
+    font-family: $font-middle;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.4em;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+}
+// RIGHTSIDE
+.time {
+	font-size: .75rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 4px;
+}
+.rightside .field.body p:first-child {
+	font-family: $font-strong;
+}
+
+// MEDIA
+@media (max-width: 767px){
+	.fullscreen {
+	    position: static; // enable scrolling
+	}
+	.leftside {
+	    position: relative;
+	    //display: block; breaks flex-end from titlewrapper
+	    top: 0; // fix 5px
+	    width: 100%;
+	    // height: auto;
+	    padding-top: 32px;
+	    padding-bottom: 40px;
+	}
+	.rightside {
+	    position: relative;
+	    overflow: visible;
+	    width: 100%;
+	    height: auto;
+	    float: none;
+	}
+	.rightside section.article-content {
+		padding: 32px;
+	}
+	.leftoverlay {
+	    position: absolute;
+	    left: 0px;
+	    top: 0px;
+	    right: 0px;
+	    bottom: 0px;
+	    display: block;
+	    background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+	    background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+	}
+	.titlewrapper {
+	    position: relative;
+	    max-width: none;
+		//    -webkit-align-self: flex-start;
+		//   -ms-flex-item-align: start;
+	    // align-self: flex-start;
+	}
+	.titleblock {
+	    padding: 32px 0px;
+	}
+	.webformslider {
+		width: 100%;
+		//padding: 32px;
+	}
+}
+@media (max-width: 600px){
+	.sidetitle {
+		font-size: 2rem;
+		line-height: 1.2;
+	}
+	.subtitle {
+		font-size: 1.2rem;
+		line-height: 1.2;
+	}
+	.leftside .btn {
+		padding: 12px 24px;
+	}
+}

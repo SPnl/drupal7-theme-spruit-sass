@@ -13,8 +13,11 @@ stylesheets[screen][] = css/shame.css
 scripts[] = js/vendor/modernizr-2.8.3.min.js
 scripts[] = js/vendor/jquery.waypoints.min.js
 scripts[] = js/vendor/owl.carousel.min.js
+;bron https://github.com/jonathantneal/flexibility
+scripts[] = js/flexibility.js
 scripts[] = js/main.js
 scripts[] = js/myfonts.js
+scripts[] = js/stickyfooter.js
 
 ; Regions
 regions[highlight] = Highlighted content
@@ -24,12 +27,11 @@ regions[footer]    = Footer content
 regions[search]    = Search
 
 ; Breakpoints 
-;breakpoints[w320]  = (max-width: 320px)
-;breakpoints[w480]  = (min-width: 480px)
-;breakpoints[w680]  = (min-width: 680px)
-;breakpoints[w960]  = (min-width: 960px)
-;breakpoints[w1280] = (min-width: 1280px)
-;breakpoints[w1440] = (min-width: 1440px)
+;breakpoints[w0]    = (min-width: 0px)
+;breakpoints[w576]  = (min-width: 576px)
+;breakpoints[w768]  = (min-width: 768px)
+;breakpoints[w992]  = (min-width: 992px)
+;breakpoints[w1200] = (min-width: 1200px)
 
 ; Panels support
 plugins[panels][layouts] = layouts

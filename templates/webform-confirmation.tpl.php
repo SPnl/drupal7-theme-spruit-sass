@@ -19,20 +19,42 @@
  * - $url: The URL of the form (or for in-block confirmations, the same page).
  */
 ?>
+<style>
+/* quickfix */
+header.content-header {
+	display: none!important;
+}
+.page {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    overflow: auto;
+}
+</style>
+
 <?php print $progressbar; ?>
 
-<div class="webform-confirmation">
-  <?php if ($confirmation_message): ?>
-    <?php print $confirmation_message ?>
-  <?php else: ?>
-  	<h1>Bedankt!</h1>
-    <p>Bedankt voor je steun voor onze actie. We nemen snel contact met je op.</p>
-  <?php endif; ?>
-  <h3>Privacy</h3>
-      <p>Je gegevens worden opgeslagen door de SP en enkel gebruikt voor deze actie, tenzij je zelf op het formulier iets anders hebt aangegeven. Als je vragen hebt over hoe we omgaan met je gegevens, lees ons <a href="https://www.sp.nl/privacy">privacy statement</a> of neem contact op met <a href="mailto:privacy@sp.nl">privacy@sp.nl</a>
-
-<?php dpm($node); ?>
-
+<div class="container">
+	<div class="row">
+		<div class="offset-md-2 col-md-8 text-center">
+			<div class="webform-confirmation">
+			  	<?php if ($confirmation_message): ?>
+			    	<?php print $confirmation_message ?>
+			  	<?php else: ?>
+				  	<h1>Bedankt!</h1>
+				    <p>Bedankt voor je steun voor onze actie. We nemen snel contact met je op.</p>
+			  	<?php endif; ?>
+			</div>
+			<div class="webform-privacy-statement text-center">
+				<p style="margin-top:64px; font-size: 0.8rem;border-top: 1px solid #ddd;padding-top: 16px;color: #aaa;">Je gegevens worden opgeslagen door de SP en enkel gebruikt voor deze actie, tenzij je zelf op het formulier iets anders hebt aangegeven. Als je vragen hebt over hoe we omgaan met je gegevens, lees ons <a style="color:#888;" href="https://www.sp.nl/privacy">privacy statement</a> of neem contact op met <a style="color:#888; href="mailto:privacy@sp.nl">privacy@sp.nl</a></p>
+			</div>
+		</div>
+	</div>
 </div>
 
 <div class="links">
