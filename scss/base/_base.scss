@@ -5,6 +5,8 @@
 html {
     font-size: 16px; //set as root size
     line-height: 1;
+    width: 100%; // set ICB
+    height: 100%;
 }
 @media screen and (min-width: 1980px){
     html {

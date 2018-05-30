@@ -10,6 +10,35 @@ $image_uri = $content['field_cta_image']['#items'][0]['uri'];
 $style = 'splitscreen';
 $background = image_style_url($style, $image_uri); 
 
+// retrieve overlay setting from node and add as class later
+$i = $content['field_cta_overlay'][0]['#markup'];
+switch ($i){
+  case '0%':
+    $overlay = '';
+    break;
+  case '10%':
+    $overlay = 'overlay-10';
+    break;
+  case '20%':
+    $overlay = 'overlay-20';
+    break;
+  case '30%':
+    $overlay = 'overlay-30';
+    break;
+  case '40%':
+    $overlay = 'overlay-40';
+    break;
+  case '50%':
+    $overlay = 'overlay-50';
+    break;
+  case '60%':
+    $overlay = 'overlay-60';
+    break;
+  case '70%':
+    $overlay = 'overlay-70';
+    break;
+}
+
 ?>
 <div class="webformslider">
   <a href="#" class="webformslider-toggle close">x</a>
@@ -25,7 +54,7 @@ $background = image_style_url($style, $image_uri);
         <a href="#" class="btn webformslider-toggle"><?php print render($content['field_cta_button']); ?></a>
       </div>
     </div>
-    <div class="leftoverlay"></div>
+    <div class="leftoverlay <?php print $overlay; ?>"></div>
   </div>
 
   <div class="rightside">
@@ -46,6 +75,7 @@ $background = image_style_url($style, $image_uri);
         hide($content['webform']);
         hide($content['field_cta_image']);
         hide($content['field_cta_title']);
+        hide($content['field_cta_overlay']);
       ?>
       <span class="time"><?php print format_date($node->created, 'custom', 'j F Y');?></span>
       <h1><?php print render($title); ?></h1>
