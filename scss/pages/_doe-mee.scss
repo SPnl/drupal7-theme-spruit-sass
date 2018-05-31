@@ -23,8 +23,23 @@
 	text-align: center;
 	z-index: 1;
 }
+// CONFIRMATION PAGE
+.page-node-done .webform-confirmation h2 {
+	font-size: 1rem;
+	margin-top: 32px;
+}
+.page-node-done .webform-privacy-statement p {
+	margin-top:64px;
+	font-size: 0.8rem;
+	border-top: 1px solid #ddd;
+	padding-top: 16px;
+	color: #aaa;
+}
+.page-node-done .webform-privacy-statement a {
+	color:#888;
+}
 
-// end shame
+// END SHAME
 
 // LAYOUT
 .fullscreen {

@@ -11,10 +11,12 @@
 }
 // TITLE OPTIMIZED
 @media screen and (min-width: 992px) {
+    h1.title,
     h1.pane-title {
         font-size: 3rem;
         margin: 2rem 0 1rem 0;
     }
+    h2.title,
     h2.pane-title {
         //font-size: 2.5rem;
     }

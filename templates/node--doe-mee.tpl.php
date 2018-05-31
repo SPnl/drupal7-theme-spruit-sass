@@ -76,6 +76,8 @@ switch ($i){
         hide($content['field_cta_image']);
         hide($content['field_cta_title']);
         hide($content['field_cta_overlay']);
+        hide($content['field_bedankt_title']);
+        hide($content['field_bedankt_body']);
       ?>
       <span class="time"><?php print format_date($node->created, 'custom', 'j F Y');?></span>
       <h1><?php print render($title); ?></h1>

@@ -18,6 +18,25 @@
  * - $sid: The unique submission ID of this submission.
  * - $url: The URL of the form (or for in-block confirmations, the same page).
  */
+
+
+
+// pm(get_defined_vars());
+dpm($variables['node']);
+
+// check if node type == doe mee
+if ($node->type == 'doe_mee'){
+	$options = ['absolute'=> TRUE];
+	$link = urlencode(url("node/$node->nid", $options));
+	$node_title = urlencode($node->title);
+	$cta_title = urlencode($node->field_cta_title['und'][0]['value']);
+	$cta_subtitle = urlencode($node->field_cta_subtitle['und'][0]['value']);
+	$facebook = 'https://www.facebook.com/sharer/sharer.php?u='.$link;
+	$twitter = 'https://twitter.com/home?status='.$cta_title.' - Ga naar: '.$link;
+	$linkedin = 'https://www.linkedin.com/shareArticle?mini=true&url='.$link.'&title='.$cta_title.'&summary=&source=';
+	$email = 'mailto:%20?&subject='.$node_title.'&body=Meld je ook aan via: '.$link.'%3Fref%3Dshare-mail';
+}
+
 ?>
 <style>
 /* quickfix */
@@ -45,13 +64,23 @@ header.content-header {
 			<div class="webform-confirmation">
 			  	<?php if ($confirmation_message): ?>
 			    	<?php print $confirmation_message ?>
-			  	<?php else: ?>
-				  	<h1>Bedankt!</h1>
+			  	<?php elseif ($node->type == 'doe_mee'): ?>
+				  	<h1 class="title"><?php print $node->field_bedankt_title['und'][0]['value'];?></h1>
+				    <p><?php print $node->field_bedankt_body['und'][0]['value'];?></p>
+				    <h2>Help mee door deze actie te delen</h2>
+				    <ul class="share">
+					  <li><a target="_blank" class="btn small facebook" href="<?php print $facebook; ?>">Facebook</a></li>
+					  <li><a target="_blank" class="btn small twitter" href="<?php print $twitter; ?>">Twitter</a></li>
+					  <li><a target="_blank" class="btn small linkedin" href="<?php print $linkedin; ?>">Linkedin</a></li>
+					  <li><a class="btn small email" href="<?php print $email; ?>">E-mail</a></li>
+					</ul>
+				<?php else: ?>
+					<h1 class="title">Bedankt!</h1>
 				    <p>Bedankt voor je steun voor onze actie. We nemen snel contact met je op.</p>
 			  	<?php endif; ?>
 			</div>
 			<div class="webform-privacy-statement text-center">
-				<p style="margin-top:64px; font-size: 0.8rem;border-top: 1px solid #ddd;padding-top: 16px;color: #aaa;">Je gegevens worden opgeslagen door de SP en enkel gebruikt voor deze actie, tenzij je zelf op het formulier iets anders hebt aangegeven. Als je vragen hebt over hoe we omgaan met je gegevens, lees ons <a style="color:#888;" href="https://www.sp.nl/privacy">privacy statement</a> of neem contact op met <a style="color:#888; href="mailto:privacy@sp.nl">privacy@sp.nl</a></p>
+				<p>Je gegevens worden opgeslagen door de SP en enkel gebruikt voor deze actie, tenzij je zelf op het formulier iets anders hebt aangegeven. Als je vragen hebt over hoe we omgaan met je gegevens, lees ons <a href="https://www.sp.nl/privacy">privacy statement</a> of neem contact op met <a href="mailto:privacy@sp.nl">privacy@sp.nl</a></p>
 			</div>
 		</div>
 	</div>
