@@ -5,12 +5,11 @@
  */
 
 // set variables for background image for leftside
-$image_uri = $content['field_cta_image']['#items'][0]['uri'];
-// $style = $content['field_cta_image'][0]['#item']['image_style'];
-$style = 'splitscreen';
-$background = image_style_url($style, $image_uri); 
+$background_image_uri = $content['field_cta_image']['#items'][0]['uri'];
+$background_image_style = 'splitscreen';
+$background_image = image_style_url($background_image_style, $background_image_uri); 
 
-// retrieve overlay setting from node and add as class later
+// retrieve overlay setting from node and add as css class later
 $i = $content['field_cta_overlay'][0]['#markup'];
 switch ($i){
   case '0%':
@@ -39,6 +38,10 @@ switch ($i){
     break;
 }
 
+// get taxonomy information
+$personen = $node->field_personen['und'];
+dpm($personen);
+
 ?>
 <div class="webformslider">
   <a href="#" class="webformslider-toggle close">x</a>
@@ -46,12 +49,12 @@ switch ($i){
 </div>
 <div class="fullscreen clearfix <?php print $classes; ?>"<?php print $attributes; ?>>
   
-  <div class="leftside" style="background-image:url(<?php print $background; ?>)">
+  <div class="leftside" style="background-image:url(<?php print $background_image; ?>)">
     <div class="titlewrapper">
       <div class="titleblock">
         <h1 class="sidetitle"><?php print $content['field_cta_title'][0]['#markup']; ?></h1>
         <div class="subtitle"><?php print render($content['field_cta_subtitle']); ?></div>
-        <a href="#" class="btn webformslider-toggle"><?php print render($content['field_cta_button']); ?></a>
+        <button class="btn webformslider-toggle"><?php print render($content['field_cta_button']); ?></button>
       </div>
     </div>
     <div class="leftoverlay <?php print $overlay; ?>"></div>
@@ -78,10 +81,29 @@ switch ($i){
         hide($content['field_cta_overlay']);
         hide($content['field_bedankt_title']);
         hide($content['field_bedankt_body']);
+        hide($content['field_personen']);
       ?>
       <span class="time"><?php print format_date($node->created, 'custom', 'j F Y');?></span>
       <h1><?php print render($title); ?></h1>
       <article><?php print render($content); ?></article>
+      <?php
+        if (!empty($personen)){
+          print '<div id="personen-wrapper">';
+            print "<h2>Betrokken SP'ers</h2>";
+            foreach ($personen as $x=>$persoon){
+              $persoon_image_uri = $persoon['taxonomy_term']->field_introductie_afbeelding['und'][0]['uri'];
+              $persoon_image_style = 'persoon';
+              $persoon_image = image_style_url($persoon_image_style, $persoon_image_uri);
+
+              print '<div class="persoon">';
+              print '<div class="afbeelding"><img src="'.$persoon_image.'"></div>';
+              print '<h3>'.$persoon['taxonomy_term']->name.'</h3>';
+              print '<span class="functie">'.$persoon['taxonomy_term']->field_rol_of_functie['und'][0]['value'].'</span>';
+              print '</div>';
+            }
+          print '</div>';
+        }
+      ?>
     </section>
     
     <footer class="footer-short">
@@ -89,7 +111,7 @@ switch ($i){
     </footer>
 
     <div id="stickyfooter">
-        <a href="#" class="btn-invert small webformslider-toggle"><?php print render($content['field_cta_button']); ?></a>
+        <button class="btn small webformslider-toggle"><?php print render($content['field_cta_button']); ?></button>
     </div>
 
     <?php print render($content['links']); ?>

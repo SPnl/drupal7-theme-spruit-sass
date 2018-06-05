@@ -5,10 +5,9 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: #fff;
+    background: $color1;
     padding: 8px;
     text-align: center;
-    border-top: 1px solid #ddd;
     z-index: 1;
     transform: translate(0%, 100%);
     transition: .4s ease all;

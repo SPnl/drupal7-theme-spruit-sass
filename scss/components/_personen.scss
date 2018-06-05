@@ -1,0 +1,47 @@
+/* PERSONEN */
+
+// END SHAME
+#personen-wrapper h2 {
+	color: $color1;
+	border-top: 1px solid #f1f1f1;
+	padding-top: 32px;
+	margin-top: 64px;
+	position: relative;
+}
+#personen-wrapper h2:before {
+	position: relative;
+	content: 'T';
+	font-family: $sp-icons;
+	line-height: 32px;
+	display: block;
+	width: 32px;
+	height: 32px;
+	background: coral;
+	text-align: center;
+	margin-left: -16px;
+	top: -48px;
+	left: 50%;
+	background: #fff;
+}
+#personen-wrapper .persoon {
+	width: 100%;
+	display: inline-block;
+	margin: 0 0 16px 0;
+}
+#personen-wrapper .afbeelding {
+	height: 125px;
+	width: 125px;
+	margin-right: 16px;
+	float: left;
+	background: #f1f1f1;
+}
+#personen-wrapper span.functie {
+	font-size: .8rem;
+}
+
+@media screen and (min-width: 1600px){
+	#personen-wrapper .persoon {
+		float: left;
+		width: 50%;
+	}
+}

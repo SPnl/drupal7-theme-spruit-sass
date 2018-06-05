@@ -29,7 +29,7 @@
 	margin-top: 32px;
 }
 .page-node-done .webform-privacy-statement p {
-	margin-top:64px;
+	margin-top: 64px;
 	font-size: 0.8rem;
 	border-top: 1px solid #ddd;
 	padding-top: 16px;
@@ -74,7 +74,6 @@
 	    -webkit-align-items: center;
 	    -ms-flex-align: center;
     align-items: center;
-    // background-image: url(https://doemee.sp.nl/files/lilian_1920_podium.jpg);
     background-position: 50% 50%;
     background-size: cover;
     text-align: center;
@@ -96,6 +95,7 @@
 }
 .rightside section.article-content {
 	padding: 80px 64px 112px;
+	flex: 0 0 auto; /* IE11 fix */
 }
 
 .leftoverlay {
@@ -153,7 +153,7 @@
 .webformslider {
 	position: fixed;
     left: 0px;
-    top: 5px; // to see top border
+    top: 0px;
     bottom: 0px;
     z-index: 9999;
     display: flex;
@@ -166,13 +166,14 @@
 	    -ms-transform: translate(-100%, 0px);
     transform: translate(-100%, 0px);
     transition: transform 600ms 0ms;
+    border-top: 5px solid $color1;
 }
 .webformslider.open {
 	transform-style: preserve-3d;
     transform: translateX(0px) translateY(0px) translateZ(0px);
 }
 .webformslider-toggle.close {
-    position: fixed;
+    position: absolute;
     color: #000;
     right: 4px;
     top: 4px;
@@ -191,6 +192,7 @@
 .webformslider .footer-short {
 	align-self: flex-end;
 	background: #f2f2f2;
+	flex: 1 1 auto; /* IE11 FIX */
 }
 
 // TITLE BLOCK
