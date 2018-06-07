@@ -1,9 +1,5 @@
 (function ($) {
 
-  $(document).ready(function(){
-    console.log( "stickyfooter.js loaded" );
-  });
-
   // shows/hides a sticky footer after y scroll
   Drupal.behaviors.StickyFooter = {
     attach: function (context, settings) {   

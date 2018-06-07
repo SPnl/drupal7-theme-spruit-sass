@@ -83,7 +83,7 @@ dpm($personen);
         hide($content['field_bedankt_body']);
         hide($content['field_personen']);
       ?>
-      <span class="time"><?php print format_date($node->created, 'custom', 'j F Y');?></span>
+      <span class="time"><?php // enable this to show created date: print format_date($node->created, 'custom', 'j F Y');?></span>
       <h1><?php print render($title); ?></h1>
       <article><?php print render($content); ?></article>
       <?php
