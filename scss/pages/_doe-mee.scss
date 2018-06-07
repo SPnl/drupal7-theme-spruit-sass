@@ -1,5 +1,10 @@
 /* DOE MEE NODE STYLE */
 // shame
+@media (max-width: 767px){
+	.hide-for-mobile {
+		display: hidden;
+	}
+}
 .node-type-doe-mee .content-header {
 	display: none;
 }
@@ -74,7 +79,7 @@
 	    -webkit-align-items: center;
 	    -ms-flex-align: center;
     align-items: center;
-    background-position: 50% 50%;
+    background-position: 50% 0%;
     background-size: cover;
     text-align: center;
 }
