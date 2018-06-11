@@ -28,13 +28,14 @@ dpm($variables['node']);
 if ($node->type == 'doe_mee'){
 	$options = ['absolute'=> TRUE];
 	$link = urlencode(url("node/$node->nid", $options));
-	$node_title = urlencode($node->title);
+	$node_title = htmlspecialchars($node->title);
 	$cta_title = urlencode($node->field_cta_title['und'][0]['value']);
 	$cta_subtitle = urlencode($node->field_cta_subtitle['und'][0]['value']);
 	$facebook = 'https://www.facebook.com/sharer/sharer.php?u='.$link;
-	$twitter = 'https://twitter.com/home?status='.$cta_title.' - Ga naar: '.$link;
+	$og_description = urlencode($node->metatags['nl']['og:description']['value']);
+	$twitter = 'https://twitter.com/home?status='.$og_description.' - Ga naar: '.$link;
 	$linkedin = 'https://www.linkedin.com/shareArticle?mini=true&url='.$link.'&title='.$cta_title.'&summary=&source=';
-	$email = 'mailto:%20?&subject='.$node_title.'&body=Meld je ook aan via: '.$link.'%3Fref%3Dshare-mail';
+	$email_body = rawurlencode($node->metatags['nl']['og:description']['value'].'<br>Meld je ook aan via: ').url("node/$node->nid", $options).'?ref=share-mail';
 }
 
 ?>
@@ -72,7 +73,7 @@ header.content-header {
 					  <li><a target="_blank" class="btn small facebook" href="<?php print $facebook; ?>">Facebook</a></li>
 					  <li><a target="_blank" class="btn small twitter" href="<?php print $twitter; ?>">Twitter</a></li>
 					  <li><a target="_blank" class="btn small linkedin" href="<?php print $linkedin; ?>">Linkedin</a></li>
-					  <li><a class="btn small email" href="<?php print $email; ?>">E-mail</a></li>
+					  <li><a class="btn small email" href="mailto: ?&subject=<?php print $node_title ?>&body=<?php print $email_body; ?>">E-mail</a></li>
 					</ul>
 				<?php else: ?>
 					<h1 class="title">Bedankt!</h1>
