@@ -44,7 +44,7 @@ dpm($personen);
 
 ?>
 <div class="webformslider">
-  <a href="#" class="webformslider-toggle close">x</a>
+  <a href="#" class="webformslider-close close">x</a>
   <?php print render($content['webform']); ?>
 </div>
 <div class="fullscreen clearfix <?php print $classes; ?>"<?php print $attributes; ?>>
@@ -54,7 +54,7 @@ dpm($personen);
       <div class="titleblock">
         <h1 class="sidetitle"><?php print $content['field_cta_title'][0]['#markup']; ?></h1>
         <div class="subtitle"><?php print render($content['field_cta_subtitle']); ?></div>
-        <button class="btn webformslider-toggle"><?php print render($content['field_cta_button']); ?></button>
+        <button class="btn webformslider-open"><?php print render($content['field_cta_button']); ?></button>
       </div>
     </div>
     <div class="leftoverlay <?php print $overlay; ?>"></div>
@@ -111,7 +111,7 @@ dpm($personen);
     </footer>
 
     <div id="stickyfooter">
-        <button class="btn small webformslider-toggle"><?php print render($content['field_cta_button']); ?></button>
+        <button class="btn small webformslider-open"><?php print render($content['field_cta_button']); ?></button>
     </div>
 
     <?php print render($content['links']); ?>

@@ -81,10 +81,17 @@
     }
   };
 
-  Drupal.behaviors.WebformSliderToggle = {
+  Drupal.behaviors.WebformSliderOpen = {
     attach: function (context, settings) {
-      $('.webformslider-toggle').click(function(){
-        $(".webformslider").toggleClass("open");
+      $('.webformslider-open').click(function(){
+        $(".webformslider").addClass("open");
+      });
+    }
+  };
+  Drupal.behaviors.WebformSliderClose = {
+    attach: function (context, settings) {
+      $('.webformslider-close').click(function(){
+        $(".webformslider").removeClass("open");
       });
     }
   };

@@ -177,7 +177,7 @@
 	transform-style: preserve-3d;
     transform: translateX(0px) translateY(0px) translateZ(0px);
 }
-.webformslider-toggle.close {
+.webformslider-close.close {
     position: absolute;
     color: #000;
     right: 4px;
@@ -186,7 +186,7 @@
     font-size: 2rem;
     text-decoration: none;
 }
-.webformslider-toggle.close:hover {
+.webformslider-close.close:hover {
     color: $color1;
 }
 .webformslider form {
