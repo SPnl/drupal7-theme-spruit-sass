@@ -40,7 +40,6 @@ switch ($i){
 
 // get taxonomy information
 $personen = $node->field_personen['und'];
-dpm($personen);
 
 ?>
 <div class="webformslider">
