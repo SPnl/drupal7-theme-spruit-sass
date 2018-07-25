@@ -21,8 +21,6 @@
 
 
 
-// pm(get_defined_vars());
-dpm($variables['node']);
 
 // check if node type == doe mee
 if ($node->type == 'doe_mee'){

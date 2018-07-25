@@ -41,6 +41,13 @@ switch ($i){
 // get taxonomy information
 $personen = $node->field_personen['und'];
 
+/*
+ * Check for copyright information and show it
+ */
+if (!empty($content['field_cta_image_copyright'][0]['#markup'])){
+  $copyright = 'Foto: '.$content['field_cta_image_copyright'][0]['#markup'];
+}
+
 ?>
 <div class="webformslider">
   <a href="#" class="webformslider-close close">x</a>
@@ -56,7 +63,9 @@ $personen = $node->field_personen['und'];
         <button class="btn webformslider-open"><?php print render($content['field_cta_button']); ?></button>
       </div>
     </div>
-    <div class="leftoverlay <?php print $overlay; ?>"></div>
+    <div class="leftoverlay <?php print $overlay; ?>">
+      <div class="copyright"><?php print $copyright; ?></div>
+    </div>
   </div>
 
   <div class="rightside">
@@ -76,6 +85,7 @@ $personen = $node->field_personen['und'];
         hide($content['links']);
         hide($content['webform']);
         hide($content['field_cta_image']);
+        hide($content['field_cta_image_copyright']);
         hide($content['field_cta_title']);
         hide($content['field_cta_overlay']);
         hide($content['field_bedankt_title']);

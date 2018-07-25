@@ -5,6 +5,11 @@
 		display: hidden;
 	}
 }
+.logged-in.node-type-doe-mee .messages { //show dpm() when logged-in
+	position: absolute;
+	z-index: 9;
+	background: #fff;
+}
 .node-type-doe-mee .content-header {
 	display: none;
 }
@@ -26,7 +31,7 @@
 	left: 0;
 	right: 0;
 	text-align: center;
-	z-index: 1;
+	z-index: 3;
 }
 // CONFIRMATION PAGE
 .page-node-done .webform-confirmation h2 {
@@ -47,6 +52,11 @@
 // END SHAME
 
 // LAYOUT
+.logged-in .webformslider,
+.logged-in .leftside,
+.logged-in .rightside {
+	top: 21px; // lowers fixed height for logged-in user
+}
 .fullscreen {
 	position: fixed;
     left: 0px;
@@ -57,7 +67,6 @@
     height: 100vh;
     border-top: 5px solid $color1;
 }
-
 .leftside {
 	position: fixed;
     left: 0px;
@@ -124,6 +133,14 @@
 	    -webkit-align-items: flex-start;
 	    -ms-flex-align: start;
     align-items: flex-start;
+    .copyright {
+    	font-size: .6rem;
+    	color: #A59494;
+    	text-align: right;
+    	width: 100%;
+    	padding: 8px 8px 0px 0px;
+    	display: block;
+    }
 }
 
 .leftoverlay.overlay-10 {
@@ -160,7 +177,7 @@
     left: 0px;
     top: 0px;
     bottom: 0px;
-    z-index: 9999;
+    z-index: 2;
     display: flex;
     flex-flow: column;
     overflow: auto;
