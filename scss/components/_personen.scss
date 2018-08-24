@@ -23,10 +23,15 @@
 	left: 50%;
 	background: #fff;
 }
+#personen-wrapper h3 {
+	font-family: $font-body;
+	text-transform: none;
+}
 #personen-wrapper .persoon {
 	width: 100%;
 	display: inline-block;
 	margin: 0 0 16px 0;
+	background: #f1f1f1;
 }
 #personen-wrapper .afbeelding {
 	height: 125px;

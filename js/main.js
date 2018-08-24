@@ -95,6 +95,14 @@
       });
     }
   };
+  Drupal.behaviors.WebformSliderMessage = {
+    attach: function (context, settings) {
+      // Quickfix to move webform error message (or any other message) generated on page.tpl.php to node--doe-mee.tpl.php
+      if ($('.webformslider')[0]) {
+        $(".messages").prependTo("form");
+      }
+    }
+  };
 
 /*  Drupal.behaviors.SiteWaypoints = {
     attach: function(context,settings) {

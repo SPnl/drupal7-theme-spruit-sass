@@ -41,17 +41,34 @@ input,textarea {
 
 .form-item label {
     display: inline-block;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     margin-top: 6px;
     font-weight: normal;
     font-family: $font-middle;
     letter-spacing: .3px;
+    width: 100%;
 }
 @media screen and (min-width: 768px){
     .form-item label {
         font-size: 1.125rem;
     }
 }
+
+// ADDS INLINE PREFIX USING FLOAT
+span.field-prefix {
+    float: left;
+    width: 2rem; 
+    height: 2.6rem; //quickfix
+    background: #ddd;
+    border: 1px solid #ddd;
+    padding: .72rem .5rem .72rem .5rem;
+    text-align: center;
+    font-family: $font-strong;
+}
+span.field-prefix + input {
+    width: calc(100% - 2rem)!important;
+}
+
 .form-required {
   color: $color1;
 }
@@ -61,7 +78,7 @@ input,textarea {
 }
 .form-item .description {
     font-size: 0.85em;
-    color: #bbb;
+    color: #888;
     padding-top: 5px;
 }
 
@@ -75,16 +92,16 @@ input,textarea {
     color: $color3;
     font-family: $font-strong;
 }
-.form-radios {
-    padding-left: .5rem;
-}
+.form-type-radio input[type="radio"] + label,
 .form-type-checkbox input[type="checkbox"] + label {
     display: table-cell; // to prevent label text wrapping underneath
     padding-top: 10px; // to prevent label text wrapping underneath
 }
+.form-type-radio input[type="radio"],
 .form-type-checkbox input[type="checkbox"] {
     display: none;
 }
+.form-type-radio input[type="radio"] + label:before,
 .form-type-checkbox input[type="checkbox"] + label:before {
     display: inline-block;
     font-family: 'SPruit-icons';
@@ -99,15 +116,18 @@ input,textarea {
     float: left; // to prevent label text wrapping underneath
     margin-top: -8px; // to prevent label text wrapping underneath
 }
+.form-type-radio input:checked + label:before,
 .form-type-checkbox input:checked + label:before {
     content: 'v';
     color: $color1!important; //important prevents hover state
     background: #fff;
     border-color: $color1;
 }
+.form-type-radio input:checked + label,
 .form-type-checkbox input:checked + label {
     color: $color1;
 }
+.no-touch .form-type-radio:hover input + label:before,
 .no-touch .form-type-checkbox:hover input + label:before {
     color: #aaa;
 }
@@ -117,6 +137,9 @@ input,textarea {
     outline:none; //disable browser default focus
     box-shadow: inset 0 0 16px rgba(1,1,1,.1);
     border-color: $color3;
+}
+input[type="file"] {
+    margin-bottom: .5rem; //adds extra margin between submit button and input for mobile
 }
 input.form-submit,
 input.webform-previous,

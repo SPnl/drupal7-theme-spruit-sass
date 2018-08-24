@@ -5,11 +5,13 @@
 		display: hidden;
 	}
 }
+/*
 .logged-in.node-type-doe-mee .messages { //show dpm() when logged-in
 	position: absolute;
 	z-index: 9;
 	background: #fff;
 }
+*/
 .node-type-doe-mee .content-header {
 	display: none;
 }
@@ -177,7 +179,7 @@
     left: 0px;
     top: 0px;
     bottom: 0px;
-    z-index: 2;
+    z-index: 12;
     display: flex;
     flex-flow: column;
     overflow: auto;
@@ -208,7 +210,7 @@
 }
 .webformslider form {
 	max-width: 640px;
-	padding: 32px;
+	padding: 2rem 2rem 6rem 2rem;
 	align-self: flex-start;
 }
 .webformslider .footer-short {
@@ -222,11 +224,11 @@
     position: static;
     z-index: 10;
     display: block;
-    max-width: 540px;
-	    -webkit-align-self: flex-end;
-	    -ms-flex-item-align: flex-end;
+    width: 100%;
+	//    -webkit-align-self: flex-end;
+	//    -ms-flex-item-align: flex-end;
     align-self: flex-end;
-    padding-bottom: 10vw; //relative padding vs viewport width
+    padding-bottom: 5vw; //relative padding vs viewport width
 }
 .titleblock {
     display: block;
@@ -282,6 +284,7 @@
 @media (max-width: 767px){
 	.fullscreen {
 	    position: static; // enable scrolling
+	    min-height: 134vw; // increases minimal height for mobile when horizontal
 	}
 	.leftside {
 	    position: relative;

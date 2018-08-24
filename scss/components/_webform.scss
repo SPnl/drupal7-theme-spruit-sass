@@ -1,4 +1,7 @@
 /* Webform specific elements */
+.form-managed-file .form-file {
+    margin-bottom: .5rem; //adds extra margin between choose file and submit button for mobile
+}
 
 .webform-component-textarea .grippie {
     display: none; //removes module gripbar for old browsers
@@ -13,12 +16,16 @@
 
 .webform-client-form {
     div.error {
-        background: #fffaa9;
+        background: #f3000061;
         color: inherit;
-        padding: 12px;
+        padding: 1rem;
         line-height: 1;
         display: block;
         margin: .5rem 0;
+        ul {
+            margin: 0;
+            padding-left: 1rem;
+        }
     }
     .form-item input.error, .form-item textarea.error, .form-item select.error {
         border: 2px solid rgb(236, 27, 35);

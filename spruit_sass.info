@@ -20,6 +20,9 @@ scripts[] = js/myfonts.js
 scripts[] = js/stickyfooter.js
 scripts[] = js/webform_validate.js
 
+; Temporary quickfixes
+scripts[] = js/shame.js
+
 ; Regions
 regions[highlight] = Highlighted content
 regions[content]   = Primary content
