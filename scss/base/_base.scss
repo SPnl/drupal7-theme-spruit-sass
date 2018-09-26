@@ -28,11 +28,22 @@ p {
     margin: 0 0 1rem 0;
     font-size: 1rem; //16px
     line-height: 1.5rem; //24px
+
+    strong {
+      font-weight: normal;
+      font-family: $font-strong;
+    }
+}
+ul {
+   line-height: 1.5rem;  
 }
 @media screen and (min-width: 768px){
     p {
         font-size: 1.125rem; // 18px
         line-height: 1.62rem; // 26px 
+    }
+    ul {
+        line-height: 1.62rem;
     }
 }
 h1 {
