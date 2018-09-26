@@ -32,34 +32,34 @@
     <?php endif; ?>
   </head>
   <body>
-  <style>
-       @media only screen
-        and (min-device-width: 320px)
-        and (max-device-width: 680px){
-          #message-content {
-            width: 100%!important;
-          }
-      }
-   </style>
-
-       <table width="100%" border="0" cellpadding="0" cellspacing="0" id="message-wrapper">
+    <style>
+        @media only screen
+         and (min-device-width: 320px)
+         and (max-device-width: 680px){
+           #message-content {
+             width: 100%!important;
+           }
+       }
+    </style>
+    <div>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" id="message-wrapper">
         <tr>
-          <td align="center"">
+          <td align="center">
             <table width="100%" id="message-content">
               <tr border="0" cellpadding="0" cellspacing="0">
-            <td>
-              <?php print $body; ?>
-            </td>
-         </tr>
-         <tr border="0" cellpadding="0" cellspacing="0">
-             <td id="message-footer">
-               <p><small>Deze mail is verzonden door de SP aan <em><?php print $recipient; ?></em><br/>Als je geen mails meer van ons wilt ontvangen op dit adres <a href="mailto:geenmail@sp.nl">meld je dan af</a></small></p>
-             </td>
-         </tr>
+                <td>
+                  <?php print $body; ?>
+                </td>
+              </tr>
             </table>
           </td>
         </tr>
-       </table>
+        <tr border="0" cellpadding="0" cellspacing="0">
+          <td id="message-footer">
+            <p><small>Deze mail is verzonden door de SP aan <em><?php print $recipient; ?></em><br/>Als je geen mails meer van ons wilt ontvangen op dit adres <a href="mailto:geenmail@sp.nl">meld je dan af</a></small></p>
+          </td>
+        </tr>
+      </table>
     </div>
   </body>
 </html>
