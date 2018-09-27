@@ -83,9 +83,15 @@
 
   Drupal.behaviors.WebformSliderOpen = {
     attach: function (context, settings) {
+      // Open slide on click
       $('.webformslider-open').click(function(){
         $(".webformslider").addClass("open");
       });
+      // Open slide if on 2nd step or higher. Used for multistep forms
+      var checkStep = document.getElementsByName("details[page_num]")[0].value;
+      if(checkStep > 1){
+        $(".webformslider").addClass("open");
+      }
     }
   };
   Drupal.behaviors.WebformSliderClose = {
