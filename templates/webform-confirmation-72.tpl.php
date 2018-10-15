@@ -65,11 +65,10 @@ header.content-header {
 
 <?php
   $submissions = webform_get_submissions($node->nid);
-  dpm($submissions);
   $url = "/vrienden/meet-en-greet";
   $data = array();
   if($submissions != NULL) {
-    if(!empty($submissions[$sid]->data[2][0])) {
+    if(!empty($submissions[$sid]->data[3][0])) {
       $data['eml'] = $submissions[$sid]->data[2][0];
     }
     if(!empty($submissions[$sid]->data[4][0])) {

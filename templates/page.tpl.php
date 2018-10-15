@@ -4,6 +4,14 @@
  * @file
  * Default theme implementation to display a single Drupal page.
  */
+
+// Redirect anonymous users to main site
+$logo_url = "https://www.sp.nl?landing=0";
+if ( $user->uid ) {
+  // Regular home link for logged-in users
+  $logo_url = "/";
+}
+
 ?>
   <div class="page-wrapper">
     <div class="page">
@@ -11,7 +19,7 @@
       <div class="site-branding">
       <?php if ($logo): ?>
         <div class="site-logo">
-          <a href="https://www.sp.nl/?landing=0" title="<?php print t('Home'); ?>" rel="home" id="logo">
+          <a href="<?php print($logo_url);?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
             <?php include("inc/logo.tpl.php"); ?>
           </a>
         </div>
