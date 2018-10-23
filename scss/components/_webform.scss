@@ -1,3 +1,8 @@
+// removes a drupal link after comfirmation webform 'terug naar het formulier'
+.links {
+    display: none;
+}
+
 /* Webform specific elements */
 .form-managed-file .form-file {
     margin-bottom: .5rem; //adds extra margin between choose file and submit button for mobile
