@@ -88,9 +88,11 @@
         $(".webformslider").addClass("open");
       });
       // Open slide if on 2nd step or higher. Used for multistep forms
-      var checkStep = document.getElementsByName("details[page_num]")[0].value;
-      if(checkStep > 1){
-        $(".webformslider").addClass("open");
+      if ($('input[name="details[page_num]"]').length) {
+        var checkStep = document.getElementsByName("details[page_num]")[0].value;
+        if(checkStep > 1){
+          $(".webformslider").addClass("open");
+        }
       }
     }
   };
