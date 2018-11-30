@@ -1,9 +1,9 @@
 // TITLE SHAME
 /* HEADER */
-
 .primary-content .content-header {
     padding: 0 16px;
     .title {
+        //this needs to be fixed by a parent container
         max-width: $content-width;
         margin-left: auto;
         margin-right: auto;
@@ -22,5 +22,11 @@
 @media screen and (max-width: 1300px) {
     .primary-content .content-header .title {
         text-align: center;
+    }
+}
+//this needs to be fixed by a parent container
+@media screen and (min-width: 2280px) {
+    .primary-content .content-header .title {
+        max-width: 50%;
     }
 }
