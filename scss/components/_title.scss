@@ -4,9 +4,12 @@
 .primary-content .content-header {
     padding: 0 16px;
     .title {
-        font-size: 2.83em;
         max-width: $content-width;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        //quickfix padding...this should be done by a parent container
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 // TITLE OPTIMIZED
@@ -14,10 +17,10 @@
     h1.title,
     h1.pane-title {
         font-size: 3rem;
-        margin: 2rem 0 1rem 0;
     }
-    h2.title,
-    h2.pane-title {
-        //font-size: 2.5rem;
+}
+@media screen and (max-width: 1300px) {
+    .primary-content .content-header .title {
+        text-align: center;
     }
 }

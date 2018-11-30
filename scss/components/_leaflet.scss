@@ -1,0 +1,28 @@
+/* LEAFLET */
+//SHAME
+.leaflet-container {
+	margin-bottom: 1rem;
+	font-family: $font-body;
+}
+.leaflet-control-container .leaflet-top {
+	top: auto;
+	bottom: 30px;
+}
+//END SHAME
+.leaflet-popup-content-wrapper {
+	border-radius: 0;
+}
+.leaflet-popup-content h1 {
+	font-size: 1rem;
+}
+.leaflet-container .leaflet-popup-content a {
+	color: #000;
+	text-decoration: none;
+}
+.leaflet-container .leaflet-popup-content a:hover {
+	color: $color1;
+}
+.leaflet-tagged-marker i {
+	font-family: $font-icons;
+	color: #fff;
+}
