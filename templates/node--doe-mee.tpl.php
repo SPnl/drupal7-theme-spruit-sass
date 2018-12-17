@@ -39,7 +39,7 @@ switch ($i){
 }
 
 // get taxonomy information
-$personen = $node->field_personen['und'];
+$personen = isset($node->field_personen) ? $node->field_personen['und'] : '';
 
 /*
  * Check for copyright information and show it

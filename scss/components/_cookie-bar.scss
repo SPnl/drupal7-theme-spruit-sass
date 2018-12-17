@@ -1,0 +1,56 @@
+/* ========================================================================== *\
+   Cookie Bar (EU Cookie Compliance Module)
+\* ========================================================================== */
+
+#sliding-popup {
+    background-color: #222;
+    height: auto;
+    width: 100%;
+    padding: .8rem;
+    box-shadow: 0 0 2em rgba(2, 2, 2, .2);
+    .popup-content {
+        max-width: 1200px;
+        #popup-buttons {
+            text-align: center;
+            float: none;
+            max-width: 100%;
+            button {
+                background-color: white;
+                border: solid 2px white;
+                font-size:  1rem;
+                font-family: "HelveticaInseratLTPro", sans-serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                margin: .5rem;
+                padding: .5rem 1.5rem;
+                color: #000;
+                &:hover, &:focus, &:active {
+                    border-color: #ec1b23;
+                    background: #ec1b23;
+                    color: white;
+                }
+            }
+        }
+        #popup-text {
+            padding-right: 1rem;
+            float: none;
+            max-width: 100%;
+        }
+    }
+    .popup-content p {
+        color: white;
+        font-size: .8rem;
+        line-height: 1.3;
+        margin: 0;
+        a {
+          color: inherit;
+          text-decoration: underline;
+        }
+    }
+    .eu-cookie-withdraw-tab {
+        background: rgba(0, 0, 0, 0.8);
+        font-size: 1.5rem;
+        padding: 1rem 1.5rem;
+        margin: 0;
+    }
+}
