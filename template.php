@@ -30,5 +30,10 @@ function spruit_sass_preprocess_page(&$variables) {
   if (isset($variables['node']->type)) {
     $variables['theme_hook_suggestions'][]='page__'.$variables['node']->type;
   }
+    
+  $variables['logo_url'] = 'https://www.sp.nl/?landing=0';
+  if (user_is_logged_in()) {
+    $variables['logo_url'] =  url('<front>');
+  }
   
 }

@@ -1,7 +1,5 @@
 /* HEADER */
 
-
-
 /* SITE HEADER */
 
 #site-header {
@@ -20,17 +18,6 @@ header .site-branding {
     vertical-align: middle;
 }
 
-header .site-logo {
-   img, 
-   svg {
-     display: inline-block;
-     height: 20px;
-     width: auto;
-   }
-   svg {
-     fill: $color1;
-   }
-}
 @media screen and (min-width: 576px){
     header .site-logo {
         img,svg {

@@ -5,8 +5,7 @@
     attach: function (context, settings) {   
 
       if ($(".error")[0]){
-        // opens slide for splitscreen webform
-        // document.getElementsByClassName('webformslider')[0].classList = 'webformslider open';
+        // open slide for splitscreen webform
         $(".webformslider").addClass("open");
       }
       

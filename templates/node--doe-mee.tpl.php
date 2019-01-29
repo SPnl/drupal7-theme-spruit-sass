@@ -60,7 +60,8 @@ if (!empty($content['field_cta_image_copyright'][0]['#markup'])){
       <div class="titleblock">
         <h1 class="sidetitle"><?php print $content['field_cta_title'][0]['#markup']; ?></h1>
         <div class="subtitle"><?php print render($content['field_cta_subtitle']); ?></div>
-        <button class="btn webformslider-open"><?php print render($content['field_cta_button']); ?></button>
+        <button class="btn webformslider-open" id="cta-primary"><?php print render($content['field_cta_button']); ?></button>
+        <div class="read-more mobile-only"><a href="#read-more" class="btn btn-ghost-color2 small scroll-to">Meer weten &#x21B4;</a></div>
       </div>
     </div>
     <div class="leftoverlay <?php print $overlay; ?>">
@@ -77,8 +78,9 @@ if (!empty($content['field_cta_image_copyright'][0]['#markup'])){
       </header>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
-
+    
     <section class="article-content"<?php print $content_attributes; ?>>
+      <a id="read-more"></a>
       <?php
         // We hide the comments and links now so that we can render them later.
         hide($content['comments']);
@@ -115,10 +117,6 @@ if (!empty($content['field_cta_image_copyright'][0]['#markup'])){
       ?>
     </section>
     
-    <footer class="footer-short">
-      <p>Meer informatie, <a href="https://www.sp.nl/privacy" target="_blank">privacy voorwaarden</a> en nieuws vind je op: <a href="https://www.sp.nl/?ref=doemee-sp-nl&landing=0"><strong>www.sp.nl</strong></a><br>&copy; <a href="https://www.sp.nl" target="_blank">SP</a> Snouckaertlaan 70, 3811 MB Amersfoort.</p>
-    </footer>
-
     <div id="stickyfooter">
         <button class="btn small webformslider-open"><?php print render($content['field_cta_button']); ?></button>
     </div>

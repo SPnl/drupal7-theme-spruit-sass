@@ -4,14 +4,6 @@
  * @file
  * Default theme implementation to display a single Drupal page.
  */
-
-// Redirect anonymous users to main site
-$logo_url = "https://www.sp.nl?landing=0";
-if ( $user->uid ) {
-  // Regular home link for logged-in users
-  $logo_url = "/";
-}
-
 ?>
   <div class="page-wrapper">
     <div class="page">
