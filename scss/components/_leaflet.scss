@@ -8,6 +8,18 @@
 	top: auto;
 	bottom: 30px;
 }
+.leaflet-clickable {
+	cursor: pointer;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    fill-rule: evenodd;
+    stroke: #b55757;
+    stroke-opacity: 0.5;
+    stroke-width: 1;
+    fill: #d86969;
+    fill-opacity: 0.2;
+}
+
 //END SHAME
 .leaflet-popup-content-wrapper {
 	border-radius: 0;
