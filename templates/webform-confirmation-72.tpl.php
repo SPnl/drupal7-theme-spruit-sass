@@ -61,31 +61,9 @@ header.content-header {
 			<div class="webform-confirmation">
 <h1>Bedankt voor je steun!</h1>
 <p>Wat fantastisch dat ook jij onze beweging steunt! Samen staan we op voor een rechtvaardige samenleving. We kiezen voor hoop. Hoop dat de rechtvaardigheid het wint van het ieder-voor-zich-denken. Door Vriend voor Rechtvaardigheid te worden heb jij een eerste stap gezet.</p>
-<p>Je ontvangt zo snel mogelijk jouw welkomstpakket. En er is meer: als vriend van rechtvaardigheid ben je van harte uitgenodigd om naar de speciale Meet & Greet met Lilian Marijnissen te komen!</p>
+<p>Je ontvangt zo snel mogelijk jouw welkomstpakket.</p>
 
-<?php
-  $submissions = webform_get_submissions($node->nid);
-  $url = "/vrienden/meet-en-greet";
-  $data = array();
-  if($submissions != NULL) {
-    if(!empty($submissions[$sid]->data[3][0])) {
-      $data['eml'] = $submissions[$sid]->data[2][0];
-    }
-    if(!empty($submissions[$sid]->data[4][0])) {
-      $data['tel'] = $submissions[$sid]->data[4][0];
-    }
-    if(count($data) == 2) {
-      $url = $url . "?eml=" . $data['eml'] . "&tel=" .$data['tel'];
-    } elseif(count($data) == 1) {
-      foreach($data as $key => $value) {
-         $url = $url ."?". $key ."=" .$value;
-      }
-    }
-  }
-?>
-<p><a href="<?php print($url); ?>" class="btn">Aanmelden voor <br/>Meet & greet</a></p>
-
-				    <h3>Of help meteen mee door meer mensen over onze beweging te vertellen:</h3>
+				    <h3>Help meteen mee door meer mensen over onze beweging te vertellen:</h3>
 				    <ul class="share">
 					  <li><a target="_blank" class="btn small facebook" href="<?php print $facebook; ?>">Facebook</a></li>
 					  <li><a target="_blank" class="btn small twitter" href="<?php print $twitter; ?>">Twitter</a></li>

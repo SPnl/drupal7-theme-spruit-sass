@@ -19,9 +19,6 @@
  * - $url: The URL of the form (or for in-block confirmations, the same page).
  */
 
-
-
-
 // check if node type == doe mee
 if ($node->type == 'doe_mee'){
 	$options = ['absolute'=> TRUE];
@@ -61,41 +58,18 @@ header.content-header {
 			<div class="webform-confirmation">
 <h1>Bedankt voor je steun!</h1>
 <p>Wat fantastisch dat ook jij onze beweging steunt! Samen staan we op voor een rechtvaardige samenleving. We kiezen voor hoop. Hoop dat de rechtvaardigheid het wint van het ieder-voor-zich-denken. Door Vriend voor Rechtvaardigheid te worden heb jij een eerste stap gezet.</p>
-<p>Je ontvangt zo snel mogelijk jouw welkomstpakket. En er is meer: als vriend van rechtvaardigheid ben je van harte uitgenodigd om naar de speciale vriendendag met Lilian Marijnissen te komen!</p>
+<p>Je ontvangt zo snel mogelijk jouw welkomstpakket.</p>
 
-<?php
-
-  $submissions = webform_get_submissions($node->nid);
-  $url = "/rechtvaardigheid/vriendendag?ref=doemee_internal";
-  $data = array();
-  if($submissions != NULL) {
-    if(!empty($submissions[$sid]->data[2][0])) {
-      $data['eml'] = $submissions[$sid]->data[2][0];
-    }
-    if(!empty($submissions[$sid]->data[3][0])) {
-      $data['tel'] = $submissions[$sid]->data[3][0];
-    }
-    if(!empty($submissions[$sid]->data[1][0])) {
-      $data['nm'] = $submissions[$sid]->data[1][0];
-    }
-
-    foreach($data as $key => $value) {
-      $url = $url . "&" . $key . "=" . urlencode($value);
-    }
-
-  }
-?>
-<p><a href="<?php print($url); ?>" class="btn">Aanmelden vriendendag</a></p>
-
-				    <h3>Of help meteen mee door meer mensen over onze beweging te vertellen:</h3>
+				    <h3>Help meteen mee</h3>
+ <p>Vertel mensen waarom jij je bij onze beweging hebt aangesloten.</p>
 				    <ul class="share">
-					  <li><a target="_blank" class="btn small facebook" href="<?php print $facebook; ?>">Facebook</a></li>
-					  <li><a target="_blank" class="btn small twitter" href="<?php print $twitter; ?>">Twitter</a></li>
-					  <li><a class="btn small email" href="mailto:?&subject=Word jij ook Vriend voor Rechtvaardigheid?&body=Ik%20vind%20dat%20het%20tijd%20is%20voor%20een%20rechtvaardig%20land.%20Want%20een%20samenleving%0Awaarin%20miljarden%20weggegeven%20worden%20aan%20buitenlandse%20aandeelhouders%20en%20multinationals,%20terwijl%20onze%20zorgverleners,%20agenten%20en%20leraren%20moeten%20vechten%20voor%20een%20beetje%20waardering,%20noem%20ik%20niet%20rechtvaardig.%20Wij%20gaan%20dat%20samen%20veranderen.%20Door%20Vriend%20voor%20Rechtvaardigheid%20te%20worden%20kan%20jij%20ook%20een%20eerste%20stap%20zetten.%20Doe%20jij%20ook%20mee?%20%0A%0AJe%20kunt%20je%20aanmelden%20op%20www.tijdvoorrechtvaardigheid.nl%20-%20dan%20ontvang%20je%20een%20mooi%20welkomstpakket!%0A%0ASamen%20staan%20we%20aan%20het%20begin%20van%20een%20nieuwe%20tijd.%20Een%20tijd%20voor%20rechtvaardigheid.">E-mail</a></li>
+					  <li><a target="_blank" class="btn small facebook" href="<?php print $facebook; ?>">Op Facebook</a></li>
+					  <li><a target="_blank" class="btn small twitter" href="<?php print $twitter; ?>">Op Twitter</a></li>
+					  <li><a class="btn small email" href="mailto:?&subject=Word jij ook Vriend voor Rechtvaardigheid?&body=Ik%20vind%20dat%20het%20tijd%20is%20voor%20een%20rechtvaardig%20land.%20Want%20een%20samenleving%0Awaarin%20miljarden%20weggegeven%20worden%20aan%20buitenlandse%20aandeelhouders%20en%20multinationals,%20terwijl%20onze%20zorgverleners,%20agenten%20en%20leraren%20moeten%20vechten%20voor%20een%20beetje%20waardering,%20noem%20ik%20niet%20rechtvaardig.%20Wij%20gaan%20dat%20samen%20veranderen.%20Door%20Vriend%20voor%20Rechtvaardigheid%20te%20worden%20kan%20jij%20ook%20een%20eerste%20stap%20zetten.%20Doe%20jij%20ook%20mee?%20%0A%0AJe%20kunt%20je%20aanmelden%20op%20www.tijdvoorrechtvaardigheid.nl%20-%20dan%20ontvang%20je%20een%20mooi%20welkomstpakket!%0A%0ASamen%20staan%20we%20aan%20het%20begin%20van%20een%20nieuwe%20tijd.%20Een%20tijd%20voor%20rechtvaardigheid.">Met een e-mail</a></li>
 					</ul>
 			</div>
 			<div class="webform-privacy-statement text-center">
-				<p>Je gegevens worden opgeslagen door de SP en alleen gebruikt voor 'Tijd voor Rechtvaardigheid', tenzij je meer hebt aangegeven. Als je vragen hebt over hoe we omgaan met je gegevens, lees ons <a href="https://www.sp.nl/privacy">privacy statement</a> of neem contact op met <a href="mailto:privacy@sp.nl">privacy@sp.nl</a></p>
+				<p>Je gegevens worden opgeslagen door de SP en alleen gebruikt voor om contact met je op te nemen over 'Tijd voor Rechtvaardigheid', tenzij je meer hebt aangegeven. Als je vragen hebt over hoe we omgaan met je gegevens, lees ons <a href="https://www.sp.nl/privacy">privacy statement</a> of neem contact op met <a href="mailto:privacy@sp.nl">privacy@sp.nl</a></p>
 			</div>
 		</div>
 	</div>
