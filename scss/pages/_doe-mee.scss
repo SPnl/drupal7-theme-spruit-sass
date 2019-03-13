@@ -245,14 +245,11 @@
 }
 .webformslider form {
     max-width: 640px;
-    padding: 2rem 2rem 6rem 2rem;
+    padding: 2rem 1rem 1rem 1rem;
     align-self: flex-start;
 }
 .webformslider .footer-short {
-    align-self: flex-end;
     background: #f2f2f2;
-    flex: 1 1 auto;
-    /* IE11 FIX */
 }
 // RIGHTSIDE
 .time {
@@ -319,5 +316,10 @@
         .hide-for-mobile {
             display: none;
         }
+    }
+}
+@media (min-width: 768px){
+    .webformslider .footer-short {
+        display: none;
     }
 }

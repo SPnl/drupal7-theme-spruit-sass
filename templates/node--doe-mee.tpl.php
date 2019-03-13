@@ -52,6 +52,9 @@ if (!empty($content['field_cta_image_copyright'][0]['#markup'])){
 <div class="webformslider">
   <a href="#" class="webformslider-close close">x</a>
   <?php print render($content['webform']); ?>
+      <div class="footer-short">
+      <p>Meer informatie, <a href="https://www.sp.nl/privacy" target="_blank">privacy voorwaarden</a> en nieuws vind je op: <a href="https://www.sp.nl/?ref=doemee-sp-nl&amp;landing=0"><strong>www.sp.nl</strong></a><br>© <a href="https://www.sp.nl" target="_blank">SP</a>Souckaertlaan 70, 3811 MB Amersfoort.</p>
+    </div>
 </div>
 <div class="fullscreen clearfix <?php print $classes; ?>"<?php print $attributes; ?>>
   
@@ -116,6 +119,9 @@ if (!empty($content['field_cta_image_copyright'][0]['#markup'])){
         }
       ?>
     </section>
+    <div class="footer-short">
+    <p>Meer informatie, <a href="https://www.sp.nl/privacy" target="_blank">privacy voorwaarden</a> en nieuws vind je op: <a href="https://www.sp.nl/?ref=doemee-sp-nl&amp;landing=0"><strong>www.sp.nl</strong></a><br>© <a href="https://www.sp.nl" target="_blank">SP</a> Snouckaertlaan 70, 3811 MB Amersfoort.</p>
+    </div>
     
     <div id="stickyfooter">
         <button class="btn small webformslider-open"><?php print render($content['field_cta_button']); ?></button>
