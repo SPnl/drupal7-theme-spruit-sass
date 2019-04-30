@@ -31,7 +31,7 @@ if ($node->type == 'doe_mee'){
 	$cta_subtitle = urlencode($node->field_cta_subtitle['und'][0]['value']);
 	$facebook = 'https://www.facebook.com/sharer/sharer.php?u='.$link;
 	$og_description = urlencode($node->metatags['nl']['og:description']['value']);
-	$twitter = 'https://twitter.com/home?status='.$og_description.' - Ga naar: '.$link;
+	$twitter = 'https://twitter.com/intent/tweet?text='.$og_description.urlencode(' - Ga naar: ').$link;
 	$linkedin = 'https://www.linkedin.com/shareArticle?mini=true&url='.$link.'&title='.$cta_title.'&summary=&source=';
 	$email_body = rawurlencode($node->metatags['nl']['og:description']['value'].'<br>Meld je ook aan via: ').url("node/$node->nid", $options).'?ref=share-mail';
 }
