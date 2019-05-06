@@ -1,0 +1,109 @@
+/* BIJEENKOMST */
+
+// UGLY LOGO AND HEADER QUICKFIX
+.node-type-bijeenkomst h1.title,
+.page-bijeenkomsten h1.title {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-bottom: 0;
+    padding-left: 60px!important;
+}
+.node-type-bijeenkomst .site-branding,
+.page-bijeenkomsten .site-branding{
+    padding: 0;
+}
+@media screen and (min-width: 576px){
+    .node-type-bijeenkomst h1.title,
+    .page-bijeenkomsten h1.title {
+        font-size: 2rem!important;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 90px!important;
+    }
+}
+@media screen and (min-width: 1280px){
+    .node-type-bijeenkomst h1.title,
+    .page-bijeenkomsten h1.title {
+        font-size: 3rem!important;
+        padding-left: 1rem!important;
+    }
+}
+// END UGLY LOGO AND HEADER QUICKFIX
+
+.node-type-bijeenkomst .date-display-range,
+.node-type-bijeenkomst .date-display-single {
+    display: inline-block;
+}
+.node-type-bijeenkomst .field.field-tijd,
+.node-type-bijeenkomst .field.field-waar {
+    background: #EEE;
+    padding: .5rem 1rem!important;
+    text-transform: capitalize;
+}
+.node-type-bijeenkomst .field.body {
+    margin-top: 2rem;
+}
+.page-bijeenkomsten .leaflet-container {
+    max-height: 60vh; //maxheight for smaller devices
+}
+.node-type-bijeenkomst .leaflet-container {
+    margin-bottom: 1rem;
+    max-height: 60vh; //maxheight for smaller devices
+}
+// OVERZICHT ALS LIJST
+.page-bijeenkomsten .view-bijeenkomsten ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.page-bijeenkomsten .view-bijeenkomsten.view-display-id-panel_pane_2 .view-content {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+}
+.page-bijeenkomsten .view-bijeenkomsten .views-row {
+    background: #F1F1F1;
+    padding: 3rem 1rem;
+    border: solid 5px #FFF;
+    text-align: center;
+    width: 100%;
+    min-width: 360px;
+}
+@media screen and (min-width:1000px){
+    .page-bijeenkomsten .view-bijeenkomsten .views-row {
+        width: 50%; // 2 columns
+    }
+}
+@media screen and (min-width:1210px){
+    .page-bijeenkomsten .view-bijeenkomsten .views-row {
+        width: 33.33%; // 3 columns
+    }
+}
+
+// END SHAME
+
+// NODE
+.node-type-bijeenkomst .primary-content {
+    min-height: 86vh; //prevent footer from floating
+}
+.node-type-bijeenkomst .field.field-geocoded {
+    max-width: 100%;
+    padding: 0;
+}
+.node-type-bijeenkomst .field {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.node-type-bijeenkomst form {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+@media screen and (min-width: 2280px) {
+	.node-type-bijeenkomst .field {
+		max-width: 50%;
+	}
+}
+// END SHAME

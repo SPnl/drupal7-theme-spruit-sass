@@ -1,9 +1,5 @@
 /* LEAFLET */
 //SHAME
-.leaflet-container {
-	margin-bottom: 1rem;
-	font-family: $font-body;
-}
 .leaflet-control-container .leaflet-top {
 	top: auto;
 	bottom: 30px;
@@ -21,18 +17,30 @@
 }
 
 //END SHAME
+.leaflet-container {
+	font-family: $font-body;
+	font-size: .8rem;
+	line-height: 1.5;
+	p {
+		font-size: .8rem;
+		line-height: 1.5;
+	}
+}
 .leaflet-popup-content-wrapper {
 	border-radius: 0;
 }
-.leaflet-popup-content h1 {
-	font-size: 1rem;
+.leaflet-popup-content h1,
+.leaflet-popup-content h2 {
+	font-size: 1.2rem;
 }
-.leaflet-container .leaflet-popup-content a {
-	color: #000;
+.leaflet-container .leaflet-popup-content h1 a,
+.leaflet-container .leaflet-popup-content h2 a {
+	color: $color1;
 	text-decoration: none;
 }
-.leaflet-container .leaflet-popup-content a:hover {
-	color: $color1;
+.leaflet-container .leaflet-popup-content h1 a:hover,
+.leaflet-container .leaflet-popup-content h2 a:hover {
+	color: #000;
 }
 .leaflet-tagged-marker i {
 	font-family: $font-icons;
