@@ -11,10 +11,8 @@ $background_image = image_style_url($background_image_style, $background_image_u
 
 // retrieve overlay setting from node and add as css class later
 $i = $content['field_cta_overlay'][0]['#markup'];
+$overlay = '';
 switch ($i){
-  case '0%':
-    $overlay = '';
-    break;
   case '10%':
     $overlay = 'overlay-10';
     break;
@@ -44,6 +42,7 @@ $personen = isset($node->field_personen) ? $node->field_personen['und'] : '';
 /*
  * Check for copyright information and show it
  */
+$copyright = '';
 if (!empty($content['field_cta_image_copyright'][0]['#markup'])){
   $copyright = 'Foto: '.$content['field_cta_image_copyright'][0]['#markup'];
 }
