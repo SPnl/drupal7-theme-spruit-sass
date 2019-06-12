@@ -62,7 +62,7 @@
 </div>
 <?php endif; ?>
 
-<?php if (!empty($content['fluied4'])) : ?>
+<?php if (!empty($content['fluid4'])) : ?>
 <div class="container-fluid panel-7">
   <div class="row">
     <?php print $content['fluid4']; ?>
