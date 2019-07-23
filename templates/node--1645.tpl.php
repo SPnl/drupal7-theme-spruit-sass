@@ -6,35 +6,8 @@
 
 // set variables for background image for leftside
 $background_image_uri = $content['field_cta_image']['#items'][0]['uri'];
-$background_image_style = 'splitscreen';
-$background_image = image_style_url($background_image_style, $background_image_uri); 
-
-// retrieve overlay setting from node and add as css class later
-$i = $content['field_cta_overlay'][0]['#markup'];
-$overlay = '';
-switch ($i){
-  case '10%':
-    $overlay = 'overlay-10';
-    break;
-  case '20%':
-    $overlay = 'overlay-20';
-    break;
-  case '30%':
-    $overlay = 'overlay-30';
-    break;
-  case '40%':
-    $overlay = 'overlay-40';
-    break;
-  case '50%':
-    $overlay = 'overlay-50';
-    break;
-  case '60%':
-    $overlay = 'overlay-60';
-    break;
-  case '70%':
-    $overlay = 'overlay-70';
-    break;
-}
+$background_image_style = 'original';
+$background_image = image_style_url($background_image_style, $background_image_uri);
 
 // get taxonomy information
 $personen = isset($node->field_personen['und']) ? $node->field_personen['und'] : '';
@@ -57,16 +30,16 @@ if (!empty($content['field_cta_image_copyright'][0]['#markup'])){
 </div>
 <div class="fullscreen clearfix <?php print $classes; ?>"<?php print $attributes; ?>>
   
-  <div class="leftside" style="background-image:url(<?php print $background_image; ?>)">
+  <div class="leftside">
     <div class="titlewrapper">
       <div class="titleblock">
-        <h1 class="sidetitle"><?php if(isset($content['field_cta_title'][0]['#markup'])) { print $content['field_cta_title'][0]['#markup']; } ?></h1>
-        <div class="subtitle"><?php if(isset($content['field_cta_subtitle'])) { print render($content['field_cta_subtitle']);} ?></div>
-        <button class="btn webformslider-open" id="cta-primary"><?php if (isset($content['field_cta_button'])) { print render($content['field_cta_button']); }?></button>
+        <h1 class="sidetitle"><?php //print $content['field_cta_title'][0]['#markup']; ?></h1>
+        <div class="subtitle"><?php //print render($content['field_cta_subtitle']); ?></div>
+        <button class="btn webformslider-open" id="cta-primary"><?php print render($content['field_cta_button']); ?></button>
         <div class="read-more mobile-only"><a href="#read-more" class="btn btn-ghost-color2 small scroll-to">Meer weten &#x21B4;</a></div>
       </div>
     </div>
-    <div class="leftoverlay <?php print $overlay; ?>">
+    <div class="leftoverlay <?php //print $overlay; ?>">
       <div class="copyright"><?php print $copyright; ?></div>
     </div>
   </div>
