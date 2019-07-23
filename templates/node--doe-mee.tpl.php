@@ -37,7 +37,7 @@ switch ($i){
 }
 
 // get taxonomy information
-$personen = isset($node->field_personen) ? $node->field_personen['und'] : '';
+$personen = isset($node->field_personen['und']) ? $node->field_personen['und'] : '';
 
 /*
  * Check for copyright information and show it
@@ -60,9 +60,9 @@ if (!empty($content['field_cta_image_copyright'][0]['#markup'])){
   <div class="leftside" style="background-image:url(<?php print $background_image; ?>)">
     <div class="titlewrapper">
       <div class="titleblock">
-        <h1 class="sidetitle"><?php print $content['field_cta_title'][0]['#markup']; ?></h1>
-        <div class="subtitle"><?php print render($content['field_cta_subtitle']); ?></div>
-        <button class="btn webformslider-open" id="cta-primary"><?php print render($content['field_cta_button']); ?></button>
+        <h1 class="sidetitle"><?php if(isset($content['field_cta_title'][0]['#markup'])) { print $content['field_cta_title'][0]['#markup']; } ?></h1>
+        <div class="subtitle"><?php if(isset($content['field_cta_subtitle'])) { print render($content['field_cta_subtitle']);} ?></div>
+        <button class="btn webformslider-open" id="cta-primary"><?php if (isset($content['field_cta_button'])) { print render($content['field_cta_button']); }?></button>
         <div class="read-more mobile-only"><a href="#read-more" class="btn btn-ghost-color2 small scroll-to">Meer weten &#x21B4;</a></div>
       </div>
     </div>
