@@ -207,3 +207,14 @@ input.button-primary:hover {
     }
 }
 
+// INPUT ERROR / VALID
+.required.valid {
+    //background: green;
+}
+.required.error {
+    background: #f2dede;
+    &::placeholder {
+        color: #d4aeae;
+        opacity: 1; /* Firefox */
+    }
+}

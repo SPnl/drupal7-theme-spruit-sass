@@ -115,4 +115,12 @@
             });
         }
     };
+    Drupal.behaviors.scrollToError = {
+        attach: function(context, settings) {
+            // on pageload scroll to first .error class
+            $('html, body').animate({
+                scrollTop: $(".error").offset().top
+            }, 100);
+        }
+    };
 })(jQuery);

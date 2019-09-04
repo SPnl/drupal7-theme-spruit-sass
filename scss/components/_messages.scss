@@ -1,8 +1,10 @@
 .messages {
 	max-width: $content-width;
-	margin: auto;
+	margin: auto auto 1rem auto;
 	padding: 1rem;
 	&.error {
-	  background: $warning; 
+	  background: #f2dede; 
+	  color: #a94442;
+	  border: 1px solid #ebccd1;
 	}
 }
