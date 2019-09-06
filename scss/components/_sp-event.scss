@@ -1,4 +1,8 @@
 /* SP EVENT */
+header .site-logo image,
+header .site-logo svg {
+	position: relative!important; //quickfix logo
+}
 .page-spevent .primary-content > .content {
 	min-height: 84vh; //needs to be fixed in main theme
 	max-width: 640px;
@@ -9,11 +13,6 @@
     padding-left: 0rem!important;
     padding-right: 0rem!important;
     text-align: center!important;
-}
-@media screen and (max-width: 640px){
-	header.content-header {
-		padding-left: 60px;
-	}
 }
 // END SHAME
 
