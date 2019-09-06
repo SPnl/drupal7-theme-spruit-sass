@@ -1,7 +1,7 @@
 /* SP EVENT */
-header .site-logo image,
-header .site-logo svg {
-	position: relative!important; //quickfix logo
+.page-spevent header .site-logo image,
+.page-spevent header .site-logo svg {
+	position: relative; //quickfix logo
 }
 .page-spevent .primary-content > .content {
 	min-height: 84vh; //needs to be fixed in main theme
