@@ -1,6 +1,9 @@
 /* SP EVENT */
 .page-spevent .primary-content > .content {
 	min-height: 84vh; //needs to be fixed in main theme
+	max-width: 640px;
+	margin: 0 auto;
+
 }
 .page-spevent .primary-content .content-header .title {
     padding-left: 0rem!important;
@@ -16,8 +19,6 @@
 
 // FORM
 .page-spevent form {
-	max-width: 640px;
-	margin: 0 auto;
 	padding: 0 1rem 4rem 1rem;
 }
 .page-spevent fieldset {
