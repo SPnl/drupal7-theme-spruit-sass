@@ -35,6 +35,7 @@
 // INLINE FIELDS
 [class*="form-item-access-code-"] {
 	display: inline-block;
+	margin-left: 4px; //quickfix
 }
 [class*="-postal-code"],
 [class*="-house-number"] {
