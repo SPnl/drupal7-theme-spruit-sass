@@ -117,10 +117,13 @@
     };
     Drupal.behaviors.scrollToError = {
         attach: function(context, settings) {
-            // on pageload scroll to first .error class
-            $('html, body').animate({
-                scrollTop: $(".error").offset().top
-            }, 100);
+            // on pageload check for .error class
+            if ($(".error")[0]){
+                // scroll to .error
+                $('html, body').animate({
+                    scrollTop: $(".error").offset().top
+                }, 100);
+            }
         }
     };
     Drupal.behaviors.trimEmailField = {
