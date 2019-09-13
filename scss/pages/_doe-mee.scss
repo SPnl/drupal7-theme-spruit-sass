@@ -236,6 +236,11 @@
     transform-style: preserve-3d;
     transform: translateX(0px) translateY(0px) translateZ(0px);
 }
+.webformslider.open-instant {
+    transition: transform 0ms 0ms; // open webformslide instant for multistep webform
+    transform-style: preserve-3d;
+    transform: translateX(0px) translateY(0px) translateZ(0px);
+}
 .webformslider-close.close {
     position: absolute;
     color: #000;
@@ -250,6 +255,7 @@
 }
 .webformslider form {
     max-width: 640px;
+    width: 100%;
     padding: 2rem 1rem 1rem 1rem;
     align-self: flex-start;
 }
