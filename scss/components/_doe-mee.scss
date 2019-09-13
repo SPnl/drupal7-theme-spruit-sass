@@ -3,6 +3,17 @@
 .node-type-doe-mee #site-footer {
     display: none; //quickfix
 }
+// experiment
+.node-type-doe-mee .btn {
+    box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12); //box-shadow--8
+    border-color: $color1;
+    &:hover {
+        background: $color1;
+        transform: scale(1.05);
+        box-shadow: 0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12); //box-shadow--24
+        border-color: $color1;
+    }
+}
 //end SHAME
 
 .node-type-doe-mee {
