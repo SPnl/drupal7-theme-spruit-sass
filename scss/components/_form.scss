@@ -72,16 +72,12 @@ span.field-prefix + input {
 .form-required {
   color: $color1;
 }
-.form-checkboxes .form-item,
-.form-radios .form-item {
-    display: table; // to prevent label text wrapping underneath
-}
+
 .form-item .description {
     font-size: 0.85em;
     color: #888;
     padding-top: 5px;
 }
-
 .form-item .form-text,
 .form-item .form-textarea {
     max-width:100%;
@@ -91,6 +87,11 @@ span.field-prefix + input {
     border: 1px solid $color4;
     color: $color3;
     font-family: $font-strong;
+}
+// RADIOS AND CHECKBOXES
+.form-checkboxes .form-item,
+.form-radios .form-item {
+    display: table; // to prevent label text wrapping underneath
 }
 .form-type-radio input[type="radio"] + label,
 .form-type-checkbox input[type="checkbox"] + label {
@@ -131,6 +132,18 @@ span.field-prefix + input {
 .no-touch .form-type-checkbox:hover input + label:before {
     color: #aaa;
 }
+// RADIOS AND CHECKBOXES - VOTING STYLE
+// add a .voting class as wrapper
+.voting .form-type-radio input[type="radio"] + label:before,
+.voting .form-type-checkbox input[type="checkbox"] + label:before {
+    background: #ffffff; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 51%, #000000 57%, #000000 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#ffffff 51%,#000000 57%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #ffffff 0%,#ffffff 51%,#000000 57%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    border-radius: 5px;
+}
+
 .form-item .form-select:focus,
 .form-item .form-textarea:focus,
 .form-item .form-text:focus, {
