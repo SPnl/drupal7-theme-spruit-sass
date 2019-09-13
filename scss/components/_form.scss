@@ -121,7 +121,7 @@ span.field-prefix + input {
     content: 'v';
     color: $color1!important; //important prevents hover state
     background: #fff;
-    border-color: $color1;
+    //border-color: $color1;
 }
 .form-type-radio input:checked + label,
 .form-type-checkbox input:checked + label {
