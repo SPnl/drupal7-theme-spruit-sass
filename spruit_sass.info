@@ -17,7 +17,7 @@ scripts[] = js/vendor/owl.carousel.min.js
 scripts[] = js/flexibility.js
 scripts[] = js/main.js
 scripts[] = js/myfonts.js
-scripts[] = js/stickyfooter.js
+;scripts[] = js/stickyfooter.js
 scripts[] = js/webform_validate.js
 
 ; Temporary quickfixes

@@ -1,23 +1,23 @@
 /* SP EVENT */
+.page-spevent header .site-logo image,
+.page-spevent header .site-logo svg {
+	position: relative; //quickfix logo
+}
 .page-spevent .primary-content > .content {
 	min-height: 84vh; //needs to be fixed in main theme
+	max-width: 640px;
+	margin: 0 auto;
+
 }
 .page-spevent .primary-content .content-header .title {
     padding-left: 0rem!important;
     padding-right: 0rem!important;
     text-align: center!important;
 }
-@media screen and (max-width: 640px){
-	header.content-header {
-		padding-left: 60px;
-	}
-}
 // END SHAME
 
 // FORM
 .page-spevent form {
-	max-width: 640px;
-	margin: 0 auto;
 	padding: 0 1rem 4rem 1rem;
 }
 .page-spevent fieldset {
@@ -35,6 +35,7 @@
 // INLINE FIELDS
 [class*="form-item-access-code-"] {
 	display: inline-block;
+	margin-left: 4px; //quickfix
 }
 [class*="-postal-code"],
 [class*="-house-number"] {
