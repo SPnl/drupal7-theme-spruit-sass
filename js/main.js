@@ -18,6 +18,7 @@
         }
         return items;
     }
+    /* currently not used
     Drupal.behaviors.OwlCarousel = {
         attach: function(context, settings) {
             $(".overview .view-content").owlCarousel({
@@ -49,6 +50,7 @@
             });
         }
     };
+    */
     Drupal.behaviors.SiteHeaderMenuToggle = {
         attach: function(context, settings) {
             $('.menu-toggle button', context).click(function(event) {

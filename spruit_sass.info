@@ -12,7 +12,7 @@ stylesheets[screen][] = css/shame.css
 ; JavaScript
 scripts[] = js/vendor/modernizr-2.8.3.min.js
 scripts[] = js/vendor/jquery.waypoints.min.js
-scripts[] = js/vendor/owl.carousel.min.js
+;scripts[] = js/vendor/owl.carousel.min.js
 ;bron https://github.com/jonathantneal/flexibility
 scripts[] = js/flexibility.js
 scripts[] = js/main.js
