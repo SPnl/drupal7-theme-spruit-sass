@@ -90,6 +90,15 @@
                     $(".webformslider").addClass("open-instant");
                 }
             }
+            // Click tracking
+            $('.webformslider-open-left').click(function() {
+                document.getElementsByName("submitted[track]")[0].value = "left";
+
+            });
+            $('.webformslider-open-right').click(function() {
+                document.getElementsByName("submitted[track]")[0].value = "right";
+
+            });
         }
     };
     Drupal.behaviors.WebformSliderClose = {

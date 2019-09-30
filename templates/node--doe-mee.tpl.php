@@ -62,7 +62,7 @@ if (!empty($content['field_cta_image_copyright'][0]['#markup'])){
       <div class="titleblock">
         <h1 class="sidetitle"><?php if(isset($content['field_cta_title'][0]['#markup'])) { print $content['field_cta_title'][0]['#markup']; } ?></h1>
         <div class="subtitle"><?php if(isset($content['field_cta_subtitle'])) { print render($content['field_cta_subtitle']);} ?></div>
-        <button class="btn webformslider-open" id="cta-primary"><?php if (isset($content['field_cta_button'])) { print render($content['field_cta_button']); }?></button>
+        <button class="btn webformslider-open webformslider-open-left" id="cta-primary"><?php if (isset($content['field_cta_button'])) { print render($content['field_cta_button']); }?></button>
         <div class="read-more mobile-only"><a href="#read-more" class="btn btn-ghost-color2 small scroll-to">Meer weten &#x21B4;</a></div>
       </div>
     </div>
