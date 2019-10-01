@@ -93,10 +93,22 @@
             // Click tracking
             $('.webformslider-open-left').click(function() {
                 document.getElementsByName("submitted[track]")[0].value = "left";
+                var breed = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+                var hoog = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+                console.log(breed);
+                console.log(hoog);
+                document.getElementsByName("submitted[breed]")[0].value = breed;
+                document.getElementsByName("submitted[hoog]")[0].value = hoog;
 
             });
             $('.webformslider-open-right').click(function() {
                 document.getElementsByName("submitted[track]")[0].value = "right";
+                var breed = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+                var hoog = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+                console.log(breed);
+                console.log(hoog);
+                document.getElementsByName("submitted[breed]")[0].value = breed;
+                document.getElementsByName("submitted[hoog]")[0].value = hoog;
 
             });
         }
