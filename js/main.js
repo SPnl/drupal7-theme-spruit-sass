@@ -131,7 +131,7 @@
     };
     Drupal.behaviors.smoothScroll = {
         attach: function(context, settings) {
-            $(".scroll-to").on('click', function(event) {
+            $(".scroll-to").click(function(event) {
                 event.preventDefault();
                 $([document.documentElement, document.body]).animate({
                     scrollTop: $($(this).attr('href')).offset().top - 16
