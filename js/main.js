@@ -141,12 +141,11 @@
     };
     Drupal.behaviors.scrollToError = {
         attach: function(context, settings) {
-
             // on pageload scroll to first .error class
             if (typeof $(".error") === 'defined') {
-              $('html, body').animate({
-                  scrollTop: $(".error").offset().top
-              }, 100);
+                $('html, body').animate({
+                    scrollTop: $(".error").offset().top
+                }, 100);
             }
         }
     };
@@ -155,10 +154,11 @@
         // The jquery clientside validation plugin doesn't allow trailing spaces for email input and responds with 'invalid email'.
         // The user can be unaware of the space and unable to continue the form
         attach: function(context, settings) {
-          $("input[type=email]").change(function(e){
-            emailTrimmed = $(this).val().replace(/ /g,'');
-            $(this).val(emailTrimmed);
-          });
+            $("input[type=email]").change(function(e) {
+                emailTrimmed = $(this).val().replace(/ /g, '');
+                $(this).val(emailTrimmed);
+            });
         }
     };
+
 })(jQuery);

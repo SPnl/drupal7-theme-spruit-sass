@@ -35,5 +35,5 @@ function spruit_sass_preprocess_page(&$variables) {
   if (user_is_logged_in()) {
     $variables['logo_url'] =  url('<front>');
   }
-  
+
 }

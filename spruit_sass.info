@@ -1,7 +1,7 @@
 name = Spruit Sass
-description = A low maintenance SP base theme
+description = SP base theme
 package = Other
-version = 0.1
+version = 1.1
 core = 7.x
 
 ; SPruit core styhlesheets
@@ -12,16 +12,10 @@ stylesheets[screen][] = css/shame.css
 ; JavaScript
 scripts[] = js/vendor/modernizr-2.8.3.min.js
 scripts[] = js/vendor/jquery.waypoints.min.js
-;scripts[] = js/vendor/owl.carousel.min.js
-;bron https://github.com/jonathantneal/flexibility
 scripts[] = js/flexibility.js
 scripts[] = js/main.js
 scripts[] = js/myfonts.js
-;scripts[] = js/stickyfooter.js
 scripts[] = js/webform_validate.js
-
-; Temporary quickfixes
-scripts[] = js/shame.js
 
 ; Regions
 regions[highlight] = Highlighted content
@@ -29,13 +23,6 @@ regions[content]   = Primary content
 regions[secondary] = Secondary content
 regions[footer]    = Footer content
 regions[search]    = Search
-
-; Breakpoints 
-;breakpoints[w0]    = (min-width: 0px)
-;breakpoints[w576]  = (min-width: 576px)
-;breakpoints[w768]  = (min-width: 768px)
-;breakpoints[w992]  = (min-width: 992px)
-;breakpoints[w1200] = (min-width: 1200px)
 
 ; Panels support
 plugins[panels][layouts] = layouts

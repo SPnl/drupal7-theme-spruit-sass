@@ -1,0 +1,42 @@
+.counter {
+	margin-bottom: 12px;
+	overflow: hidden;
+	width: 100%;
+	display: table;
+    .counter--target, 
+    .counter--count {
+    	font-family: $font-middle;
+    	color: $color3;
+    	text-align: center;
+    	display: table-cell;
+    	padding: 0;
+    	vertical-align: middle;
+    }
+    .counter--target {
+    	padding-left: 12px;
+    }
+    .counter--count {
+    	padding-right: 12px;
+    }
+    .counter--progress-wrapper {
+
+    	display: table-cell;
+    	width: 100%;
+    	padding: 0;
+    	vertical-align: middle;
+    }
+    .counter--progress {
+    	background: #fff;
+    	height: 16px;
+    	padding: 0;
+    	display: block;
+    	overflow: hidden;
+    	border-radius: 16px;
+    	background: #eee;
+        .progress--progress {
+        	height: 16px;
+        	background: $color3;
+        	display: block;
+        }
+    }
+}

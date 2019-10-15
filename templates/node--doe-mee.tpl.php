@@ -6,8 +6,10 @@
 
 // set variables for background image for leftside
 $background_image_uri = $content['field_cta_image']['#items'][0]['uri'];
-$background_image_style = 'splitscreen';
-$background_image = image_style_url($background_image_style, $background_image_uri); 
+$background_image = image_style_url('splitscreen', $background_image_uri);
+
+$state = drupal_get_query_parameters(['state']);
+
 
 // retrieve overlay setting from node and add as css class later
 $i = $content['field_cta_overlay'][0]['#markup'];
@@ -36,8 +38,9 @@ switch ($i){
     break;
 }
 
-// get taxonomy information
+// Get taxonomy information
 $personen = isset($node->field_personen['und']) ? $node->field_personen['und'] : '';
+
 
 /*
  * Check for copyright information and show it
@@ -51,10 +54,8 @@ if (!empty($content['field_cta_image_copyright'][0]['#markup'])){
 <div class="webformslider">
   <a href="#" class="webformslider-close close">x</a>
   <?php print render($content['webform']); ?>
-      <div class="footer-short">
-      <p>Meer informatie, <a href="https://www.sp.nl/privacy" target="_blank">privacy voorwaarden</a> en nieuws vind je op: <a href="https://www.sp.nl/?ref=doemee-sp-nl&amp;landing=0"><strong>www.sp.nl</strong></a><br>© <a href="https://www.sp.nl" target="_blank">SP</a>Souckaertlaan 70, 3811 MB Amersfoort.</p>
-    </div>
 </div>
+
 <div class="fullscreen clearfix <?php print $classes; ?>"<?php print $attributes; ?>>
   
   <div class="leftside" style="background-image:url(<?php print $background_image; ?>)">
@@ -83,22 +84,16 @@ if (!empty($content['field_cta_image_copyright'][0]['#markup'])){
     
     <section class="article-content"<?php print $content_attributes; ?>>
       <a id="read-more"></a>
-      <?php
-        // We hide the comments and links now so that we can render them later.
-        hide($content['comments']);
-        hide($content['links']);
-        hide($content['webform']);
-        hide($content['field_cta_image']);
-        hide($content['field_cta_image_copyright']);
-        hide($content['field_cta_title']);
-        hide($content['field_cta_overlay']);
-        hide($content['field_bedankt_title']);
-        hide($content['field_bedankt_body']);
-        hide($content['field_personen']);
-      ?>
-      <span class="time"><?php // enable this to show created date: print format_date($node->created, 'custom', 'j F Y');?></span>
       <h1><?php print render($title); ?></h1>
-      <article><?php print render($content); ?></article>
+      
+      <?php $counter_format = field_get_items('node', $node, 'field_counter_format'); ?>
+        
+        <?php if (!empty($counter_format[0]['value'])) {
+           include('inc/doe-mee-counter.tpl.php');
+        }
+        ?>
+
+      <article><?php print render($content['body']); ?></article>
       <?php
         if (!empty($personen)){
           print '<div id="personen-wrapper">';
@@ -119,13 +114,8 @@ if (!empty($content['field_cta_image_copyright'][0]['#markup'])){
       ?>
     </section>
     <div class="footer-short">
-    <p>Meer informatie, <a href="https://www.sp.nl/privacy" target="_blank">privacy voorwaarden</a> en nieuws vind je op: <a href="https://www.sp.nl/?ref=doemee-sp-nl&amp;landing=0"><strong>www.sp.nl</strong></a><br>© <a href="https://www.sp.nl" target="_blank">SP</a> Snouckaertlaan 70, 3811 MB Amersfoort.</p>
+      <p>De gegevens die je op deze site invult worden veilig opgeslagen door de SP. Meer informatie over het gebruik lees je in onze <a href="https://www.sp.nl/privacy" target="_blank">privacy voorwaarden</a></p>
+      <p>&copy; <a href="https://www.sp.nl" target="_blank">SP</a> Souckaertlaan 70, 3811 MB Amersfoort</p>
     </div>
-    
-    <div id="stickyfooter">
-        <button class="btn small webformslider-open"><?php print render($content['field_cta_button']); ?></button>
-    </div>
-
-    <?php print render($content['links']); ?>
   </div>
 </div>
