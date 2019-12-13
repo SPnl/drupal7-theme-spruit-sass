@@ -115,7 +115,7 @@ if (!empty($content['field_cta_image_copyright'][0]['#markup'])){
     </section>
     <div class="footer-short">
       <p>De gegevens die je op deze site invult worden veilig opgeslagen door de SP. Meer informatie over het gebruik lees je in onze <a href="https://www.sp.nl/privacy" target="_blank">privacy voorwaarden</a></p>
-      <p>&copy; <a href="https://www.sp.nl" target="_blank">SP</a> Souckaertlaan 70, 3811 MB Amersfoort</p>
+      <p>&copy; <a href="https://www.sp.nl" target="_blank">SP</a> Snouckaertlaan 70, 3811 MB Amersfoort</p>
     </div>
   </div>
 </div>
