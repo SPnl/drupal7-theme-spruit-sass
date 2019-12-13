@@ -79,3 +79,24 @@ div.webform-hidden {
 .page-energierekening .webform-component--stijging-energierekening input {
   max-width: 120px;
 }
+
+// SP MOLLIE QUICKFIX
+.page-donatie .primary-content .content-header .title,
+.page-node-1684 .primary-content .content-header .title {
+    max-width: 720px;
+}
+.page-donatie .primary-content,
+.page-node-1684 .primary-content {
+    min-height: calc(100vh - 180px);
+}
+@media screen and (max-width: 600px){
+    .page-donatie .primary-content,
+    .page-node-1684 .primary-content {
+        padding-top: 3rem;
+    }
+}
+#sp-mollie-form {
+  max-width: 720px;
+  padding: 0 1rem;
+  margin: 0 auto 3rem auto;
+}
