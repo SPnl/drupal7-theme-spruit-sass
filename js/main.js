@@ -160,5 +160,24 @@
             });
         }
     };
+    Drupal.behaviors.removeInvalidCharsTextarea = {
+        // QUICKFIX: Remove invalid chars (such as emoji) from text & textarea on change until UTF8mb4 support
+        attach: function(context, settings) {
+            $('input[type=text], textarea').change(function(e) {
+                // SET RANGE (using javascript UTF-16 code units)
+                var ranges = [
+                  '[\ue000-\uf8ff]',
+                  '[\u2011-\u26ff]',
+                  '\ud83c[\udf00-\udfff]', // U+1F300 to U+1F3FF
+                  '\ud83d[\udc00-\udfff]', // U+1F400 to U+1F64F
+                  '\ud83d[\ude80-\udeff]', // U+1F680 to U+1F6FF
+                  '\ud83e[\udd10-\uddff]'
+                ];             
+                // REMOVE INVALID CHARS
+                textCleaned = $(this).val().replace(new RegExp(ranges.join('|'), 'g'), ' ');
+                $(this).val(textCleaned);
+            });
+        }
+    };
 
 })(jQuery);
