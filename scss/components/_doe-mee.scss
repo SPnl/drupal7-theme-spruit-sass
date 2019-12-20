@@ -242,6 +242,7 @@
     transform: translate(-100%, 0px);
     transition: transform 600ms 0ms;
     border-top: 5px solid $color1;
+    padding-bottom: 4rem;
 }
 .webformslider.open {
     transform-style: preserve-3d;
