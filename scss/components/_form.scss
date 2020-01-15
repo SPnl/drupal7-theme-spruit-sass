@@ -99,7 +99,12 @@ span.field-prefix + input {
 }
 .form-type-radio input[type="radio"],
 .form-type-checkbox input[type="checkbox"] {
-    display: none;
+    opacity: 0; // display:none or visibility:hidden breaks accessibility
+}
+// fix accessibility for radio/checkbox by add focus effect on label
+.form-type-radio input:focus + label:before,
+.form-type-checkbox input:focus + label:before {
+    outline: 2px solid #0276BA;
 }
 .form-type-radio input[type="radio"] + label:before,
 .form-type-checkbox input[type="checkbox"] + label:before {
@@ -143,13 +148,6 @@ span.field-prefix + input {
     border-radius: 5px;
 }
 
-.form-item .form-select:focus,
-.form-item .form-textarea:focus,
-.form-item .form-text:focus, {
-    outline:none; //disable browser default focus
-    box-shadow: inset 0 0 16px rgba(1,1,1,.1);
-    border-color: $color3;
-}
 input[type="file"] {
     margin-bottom: .5rem; //adds extra margin between submit button and input for mobile
 }
@@ -163,7 +161,6 @@ input.button-primary {
     color: #fff;
     border: 1px solid $color1;
     transition: all 0.2s ease;
-    outline:none; //disable browser default focus
     cursor: pointer;
     min-width: 153px;
 }

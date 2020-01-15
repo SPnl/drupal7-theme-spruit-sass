@@ -79,3 +79,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+:focus {
+    outline: 2px solid #0276BA;
+}
