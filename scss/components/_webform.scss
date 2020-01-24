@@ -14,7 +14,8 @@
 .webform-datepicker .form-select {
     width: auto; //fixes 100% width on form-select
 }
-.webform-component-checkboxes {
+.webform-component-checkboxes,
+.webform-component-radios {
     margin-top: 24px;
 }
 /* Webform inline error module */
@@ -39,7 +40,6 @@
 /* Styling of individual webform nodes */
 
 .node-webform {
-    //padding: 16px;
     .field-introduction, {
         max-width: $content-width;
         margin: auto;

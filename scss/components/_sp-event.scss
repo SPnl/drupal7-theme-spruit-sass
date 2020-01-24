@@ -5,14 +5,18 @@
 }
 .page-spevent .primary-content > .content {
 	min-height: 84vh; //needs to be fixed in main theme
-	max-width: 640px;
+	max-width: 720px;
 	margin: 0 auto;
-
 }
 .page-spevent .primary-content .content-header .title {
     padding-left: 0rem!important;
     padding-right: 0rem!important;
     text-align: center!important;
+    max-width: 720px;
+    margin-top: .5em;
+}
+.page-spevent img.media-element {
+    margin-bottom: 1em;
 }
 // END SHAME
 
@@ -32,6 +36,11 @@
 	text-align: left;
 	margin-bottom: 1rem;
 }
+
+.page-spevent .form-item-acces-code label {
+    display: block;
+}
+
 // INLINE FIELDS
 [class*="form-item-access-code-"] {
 	display: inline-block;

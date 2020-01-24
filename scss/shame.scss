@@ -85,10 +85,6 @@ div.webform-hidden {
 .page-node-1684 .primary-content .content-header .title {
     max-width: 720px;
 }
-.page-donatie .primary-content,
-.page-node-1684 .primary-content {
-    min-height: calc(100vh - 180px);
-}
 @media screen and (max-width: 600px){
     .page-donatie .primary-content,
     .page-node-1684 .primary-content {
@@ -99,4 +95,8 @@ div.webform-hidden {
   max-width: 720px;
   padding: 0 1rem;
   margin: 0 auto 3rem auto;
+}
+// PREVENT FOOTER FLOATING MID PAGE
+.primary-content {
+    min-height: calc(100vh - 167px);
 }

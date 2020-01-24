@@ -160,6 +160,7 @@
             });
         }
     };
+    /*
     Drupal.behaviors.removeInvalidCharsTextarea = {
         // QUICKFIX: Remove invalid chars (such as emoji) from text & textarea on change until UTF8mb4 support
         attach: function(context, settings) {
@@ -179,5 +180,6 @@
             });
         }
     };
+    */
 
 })(jQuery);

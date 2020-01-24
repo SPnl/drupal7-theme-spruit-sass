@@ -2,6 +2,7 @@
 form {
     max-width: $content-width;
     margin: auto;
+    padding: 0 1rem 2rem 1rem;
 }
 legend {
     font-size: 1.5rem;
@@ -21,7 +22,6 @@ input,textarea {
 
 /* WEBFORM */
 .form-actions {
-    //padding: 0 16px;
     margin: 0;
     text-align: right;
 }
@@ -41,8 +41,8 @@ input,textarea {
 
 .form-item label {
     display: inline-block;
-    margin-bottom: 4px;
-    margin-top: 6px;
+    margin-bottom: 8px;
+    margin-top: 2px;
     font-weight: normal;
     font-family: $font-middle;
     letter-spacing: .3px;
@@ -91,6 +91,7 @@ span.field-prefix + input {
 .form-checkboxes .form-item,
 .form-radios .form-item {
     display: table; // to prevent label text wrapping underneath
+    margin-bottom: .5rem;
 }
 .form-type-radio input[type="radio"] + label,
 .form-type-checkbox input[type="checkbox"] + label {
@@ -100,6 +101,8 @@ span.field-prefix + input {
 .form-type-radio input[type="radio"],
 .form-type-checkbox input[type="checkbox"] {
     opacity: 0; // display:none or visibility:hidden breaks accessibility
+    position: absolute;
+    left: -9999px;
 }
 // fix accessibility for radio/checkbox by add focus effect on label
 .form-type-radio input:focus + label:before,
