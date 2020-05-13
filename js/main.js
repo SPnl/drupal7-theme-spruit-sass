@@ -160,6 +160,16 @@
             });
         }
     };
+    Drupal.behaviors.hideCookieBar = {
+        // QUICKFIX: Hides cookiebar if user adds input before accepting cookies
+        // This prevents user losing input after accepting terms
+        attach: function(context, settings) {
+            $(".webform-client-form input").focus(function() {
+                // Hide slidingbar
+                $('#sliding-popup').addClass("hidden");
+            });
+        }
+    };
     /*
     Drupal.behaviors.removeInvalidCharsTextarea = {
         // QUICKFIX: Remove invalid chars (such as emoji) from text & textarea on change until UTF8mb4 support
