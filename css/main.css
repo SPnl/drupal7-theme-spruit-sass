@@ -1719,7 +1719,7 @@ blockquote:after {
   text-transform: uppercase;
   margin-bottom: 4px; }
 
-.rightside .field.body p:first-child {
+.rightside .field.body .field-item > p:first-child {
   font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif; }
 
 @media (max-width: 600px) {
@@ -2019,7 +2019,7 @@ input::placeholder, textarea::placeholder {
   font-size: 1rem;
   background: #fafafa;
   border: 1px solid #ddd;
-  width: 100%;
+  /*width: 100%;*/
   text-overflow: ellipsis; }
 
 .form-item label {
@@ -2063,6 +2063,10 @@ span.field-prefix + input {
   border: 1px solid #DDDDDD;
   color: #333333;
   font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif; }
+
+.form-item .form-text.form-number {
+  max-width: none;
+  width: auto; }
 
 .form-checkboxes .form-item,
 .form-radios .form-item {
@@ -2141,7 +2145,8 @@ input.button-primary {
   border: 1px solid #EC1B23;
   transition: all 0.2s ease;
   cursor: pointer;
-  min-width: 153px; }
+  min-width: 153px;
+  margin-left: 8px; }
 
 input.webform-previous {
   background: #fff;
@@ -2152,6 +2157,16 @@ input.button-primary:hover {
   background: #000;
   color: #fff;
   border-color: #000; }
+
+.webform-progressbar-number {
+  display: inline-block;
+  background: #eee;
+  padding: 8px;
+  margin-bottom: 8px;
+  color: #666;
+  font-weight: bold;
+  font-size: .8em;
+  font-family: sans-serif; }
 
 /* Form styling custom classes */
 .horizontal {

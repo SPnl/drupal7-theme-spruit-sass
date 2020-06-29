@@ -281,7 +281,7 @@
     text-transform: uppercase;
     margin-bottom: 4px;
 }
-.rightside .field.body p:first-child {
+.rightside .field.body .field-item > p:first-child {
     font-family: $font-strong;
 }
 // MEDIA
