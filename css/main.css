@@ -1107,6 +1107,38 @@ img {
   .offset-xl-11 {
     margin-left: 91.666667%; } }
 /* COMPONENTS */
+/* SIMPLE ACCORDION */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s; }
+
+.accordion.active,
+.accordion:hover {
+  background-color: #ccc; }
+
+.accordion-panel {
+  padding: 0 1rem;
+  background-color: #f1f1f1;
+  display: none;
+  overflow: hidden; }
+
+button.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px; }
+
+button.accordion.active:after {
+  content: "\2212"; }
+
 .background-light {
   background: #F5F5F5; }
 

@@ -1,0 +1,42 @@
+/* SIMPLE ACCORDION */
+// requires main.js
+
+// Style the buttons that are used to open and close the accordion panel
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+// Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover)
+.accordion.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+// Style the accordion panel. Note: hidden by default
+.accordion-panel {
+  padding: 0 1rem;
+  background-color: #f1f1f1;
+  display: none;
+  overflow: hidden;
+}
+
+// OPEN & CLOSE BUTTON
+button.accordion:after {
+    content: '\002B'; // open
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212"; // close
+}
