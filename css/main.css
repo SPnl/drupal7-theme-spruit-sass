@@ -1109,35 +1109,40 @@ img {
 /* COMPONENTS */
 /* SIMPLE ACCORDION */
 .accordion {
-  background-color: #eee;
+  background-color: #f1f1f1;
   color: #444;
   cursor: pointer;
-  padding: 1rem;
+  padding: 0.75rem;
   width: 100%;
   text-align: left;
-  border: none;
+  border: 1px solid #bbb;
+  border-radius: 4px;
   outline: none;
   transition: 0.4s; }
 
+.accordion,
+.accordion-panel p {
+  font-size: .85rem; }
+
 .accordion.active,
 .accordion:hover {
-  background-color: #ccc; }
+  background-color: #dcdcdc; }
 
 .accordion-panel {
-  padding: 0 1rem;
+  padding: .75rem 1.75rem;
   background-color: #f1f1f1;
   display: none;
   overflow: hidden; }
 
-button.accordion:after {
-  content: '\002B';
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px; }
+button.accordion:before {
+  content: '>';
+  margin-right: 0.5rem;
+  display: inline-block;
+  transition: .2s ease;
+  color: #ec1b23; }
 
-button.accordion.active:after {
-  content: "\2212"; }
+button.accordion.active:before {
+  transform: rotate(90deg); }
 
 .background-light {
   background: #F5F5F5; }
