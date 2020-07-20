@@ -1,5 +1,4 @@
 /* BUTTONS */
-
 .btn, a.btn {
     font-family: $font-primary;
     font-weight: normal;
@@ -48,6 +47,7 @@
     letter-spacing: .2px;
 }
 
+
 // GHOST BUTTON (needs work!)
 .btn-ghost-color1 {
     background: none!important;
@@ -89,6 +89,7 @@
         background: rgba($color5, .5)!important;
     }
 }
+
 
 // SOCIAL BUTTONS
 .btn.facebook {
