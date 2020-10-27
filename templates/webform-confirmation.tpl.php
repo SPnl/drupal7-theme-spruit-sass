@@ -28,7 +28,7 @@ if ($node->type == 'doe_mee'){
 	$link = urlencode(url("node/$node->nid", $options));
 	$node_title = htmlspecialchars($node->title);
 	$cta_title = urlencode($node->field_cta_title['und'][0]['value']);
-	$cta_subtitle = urlencode($node->field_cta_subtitle['und'][0]['value']);
+	//$cta_subtitle = urlencode($node->field_cta_subtitle['und'][0]['value']);
 	$facebook = 'https://www.facebook.com/sharer/sharer.php?u='.$link;
 	$og_description = urlencode($node->metatags['nl']['og:description']['value']);
 	$twitter = 'https://twitter.com/intent/tweet?text='.$og_description.urlencode(' - Ga naar: ').$link;
