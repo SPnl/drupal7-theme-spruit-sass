@@ -27,7 +27,10 @@ if ($node->type == 'doe_mee'){
 	$options = ['absolute'=> TRUE];
 	$link = urlencode(url("node/$node->nid", $options));
 	$node_title = htmlspecialchars($node->title);
-	$cta_title = urlencode($node->field_cta_title['und'][0]['value']);
+        $cta_title="";
+        if(isset($node->field_cta_title['und'][0]['value'])){
+	  $cta_title = urlencode($node->field_cta_title['und'][0]['value']);
+        }
 	//$cta_subtitle = urlencode($node->field_cta_subtitle['und'][0]['value']);
 	$facebook = 'https://www.facebook.com/sharer/sharer.php?u='.$link;
 	$og_description = urlencode($node->metatags['nl']['og:description']['value']);
