@@ -90,11 +90,7 @@
                         <td align="center" class="content" valign="middle">
                           <p align="center" style="color:#a6a6a6; font-size:12px; font-family:Helvetica,Arial,sans-serif; margin-bottom:15px; padding:12px; line-height:13px;">
                             Je ontvangt deze mail omdat je een formulier op <?php print $domain; ?> hebt ingevuld. Is dat niet het geval,
-                            <?php if (!empty($unsubscribe_link)) : ?>
-                               klik dan <a href="<?php print $unsubscribe_link; ?>">hier</a> om je af te melden.
-                            <?php else : ?>
                                stuur dan een e-mail naar <a href="mailto:webmaster@sp.nl">webmaster@sp.nl</a>.
-                            <?php endif; ?>
                           </p>
                         </td>
                       </tr>
