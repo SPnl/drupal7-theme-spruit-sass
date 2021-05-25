@@ -93,21 +93,8 @@
         text-shadow: 2px 2px 14px #000;
     }
 }
-// CONFIRMATION PAGE
-.page-node-done .webform-confirmation h2 {
-    font-size: 1rem;
-    margin-top: 32px;
-}
-.page-node-done .webform-privacy-statement p {
-    margin-top: 64px;
-    font-size: 0.8rem;
-    border-top: 1px solid #ddd;
-    padding-top: 16px;
-    color: #aaa;
-}
-.page-node-done .webform-privacy-statement a {
-    color: #888;
-}
+
+
 // LAYOUT
 .logged-in .webformslider, .logged-in .leftside, .logged-in .rightside {
     top: 21px; // lowers fixed height for logged-in user
@@ -166,6 +153,9 @@
     flex: 0 0 auto;
     /* IE11 fix */
 }
+
+
+// OVERLAY
 .leftoverlay {
     position: absolute;
     left: 0px;
@@ -224,6 +214,8 @@
     background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
     background-image: linear-gradient(180deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
 }
+
+
 // WEBSLIDER
 .webformslider {
     position: fixed;
@@ -274,6 +266,8 @@
 .webformslider .footer-short {
     background: #f2f2f2;
 }
+
+
 // RIGHTSIDE
 .time {
     font-size: .75rem;
@@ -282,8 +276,28 @@
     margin-bottom: 4px;
 }
 .rightside .field.body .field-item > p:first-child {
-    font-family: $font-strong;
+    font-family: $font-body;
+    font-weight: 700;
 }
+
+
+// CONFIRMATION PAGE
+.page-node-done .webform-confirmation h2 {
+    font-size: 1rem;
+    margin-top: 32px;
+}
+.page-node-done .webform-privacy-statement p {
+    margin-top: 64px;
+    font-size: 0.8rem;
+    border-top: 1px solid #ddd;
+    padding-top: 16px;
+    color: #aaa;
+}
+.page-node-done .webform-privacy-statement a {
+    color: #888;
+}
+
+
 // MEDIA
 @media (max-width: 600px) {
     .node-type-doe-mee {

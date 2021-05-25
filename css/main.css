@@ -477,6 +477,11 @@ img {
 :focus {
   outline: 2px solid #0276BA; }
 
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 1000;
+  src: local(""), url("../fonts/inter/Inter-VariableFont_slnt,wght.ttf") format("truetype-variations"), url("../fonts/inter/static/Inter-Regular.ttf") format("truetype"); }
 /* LAYOUT */
 /* FLEX */
 .flex {
@@ -1547,20 +1552,6 @@ blockquote:after {
   font-weight: normal;
   text-shadow: 2px 2px 14px #000; }
 
-.page-node-done .webform-confirmation h2 {
-  font-size: 1rem;
-  margin-top: 32px; }
-
-.page-node-done .webform-privacy-statement p {
-  margin-top: 64px;
-  font-size: 0.8rem;
-  border-top: 1px solid #ddd;
-  padding-top: 16px;
-  color: #aaa; }
-
-.page-node-done .webform-privacy-statement a {
-  color: #888; }
-
 .logged-in .webformslider, .logged-in .leftside, .logged-in .rightside {
   top: 21px; }
 
@@ -1731,7 +1722,22 @@ blockquote:after {
   margin-bottom: 4px; }
 
 .rightside .field.body .field-item > p:first-child {
-  font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif; }
+  font-family: "Inter", sans-serif;
+  font-weight: 700; }
+
+.page-node-done .webform-confirmation h2 {
+  font-size: 1rem;
+  margin-top: 32px; }
+
+.page-node-done .webform-privacy-statement p {
+  margin-top: 64px;
+  font-size: 0.8rem;
+  border-top: 1px solid #ddd;
+  padding-top: 16px;
+  color: #aaa; }
+
+.page-node-done .webform-privacy-statement a {
+  color: #888; }
 
 @media (max-width: 600px) {
   .node-type-doe-mee .sidetitle {
@@ -2312,7 +2318,7 @@ footer .footer-menu a {
   fill-opacity: 0.2; }
 
 .leaflet-container {
-  font-family: "HelveticaNeueLT-Light", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: .8rem;
   line-height: 1.5; }
   .leaflet-container p {
@@ -2477,7 +2483,7 @@ ul.pager {
   background: #fff; }
 
 #personen-wrapper h3 {
-  font-family: "HelveticaNeueLT-Light", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+  font-family: "Inter", sans-serif;
   text-transform: none; }
 
 #personen-wrapper .persoon {
@@ -3342,7 +3348,7 @@ ul.secondary a.active {
 /* THEMES */
 /* THEME */
 body {
-  font-family: "HelveticaNeueLT-Light", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif; }
+  font-family: "Inter", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "HelveticaInseratLTPro", sans-serif;
@@ -3350,7 +3356,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase; }
 
 p {
-  font-family: "HelveticaNeueLT-Light", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif; }
+  font-family: "Inter", sans-serif; }
 
 /* UTILS */
 /* BOX-SHADOW */

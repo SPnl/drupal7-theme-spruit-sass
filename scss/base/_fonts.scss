@@ -1,0 +1,11 @@
+//FONTS
+
+// for info https://github.com/rsms/inter/
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 100 1000;
+	src: local(''),
+		url('../fonts/inter/Inter-VariableFont_slnt,wght.ttf') format('truetype-variations'), /* Variable */
+		url('../fonts/inter/static/Inter-Regular.ttf') format('truetype'), /* Safari, Android, iOS (fallback) */
+}
