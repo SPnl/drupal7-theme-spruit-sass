@@ -408,8 +408,9 @@ template {
 /* BASE STYLING */
 /* SET ROOT FONTSIZE FOR EACH MEDIA */
 html {
+  font-family: "Inter", sans-serif;
   font-size: 16px;
-  line-height: 1;
+  line-height: 1.625;
   width: 100%;
   height: 100%; }
 
@@ -422,7 +423,10 @@ html {
 /* FONTSIZE BASED ON ROOT */
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 1rem 0;
-  line-height: 1; }
+  line-height: 1;
+  font-family: "HelveticaInseratLTPro", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase; }
 
 h1 a:hover,
 h2 a:hover {
@@ -430,12 +434,9 @@ h2 a:hover {
   color: #000; }
 
 p {
-  margin: 0 0 1rem 0;
-  font-size: 1rem;
-  line-height: 1.5rem; }
+  margin: 0 0 1rem 0; }
   p strong {
-    font-weight: normal;
-    font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif; }
+    font-weight: 600; }
 
 ul {
   line-height: 1.5rem; }
@@ -2032,11 +2033,10 @@ input::placeholder, textarea::placeholder {
 
 .form-select {
   padding: 8px;
-  font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+  font-weight: 600;
   font-size: 1rem;
   background: #fafafa;
   border: 1px solid #ddd;
-  /*width: 100%;*/
   text-overflow: ellipsis; }
 
 .form-item label {
@@ -2058,7 +2058,7 @@ span.field-prefix {
   border: 1px solid #ddd;
   padding: .72rem .5rem .72rem .5rem;
   text-align: center;
-  font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif; }
+  font-weight: 600; }
 
 span.field-prefix + input {
   width: calc(100% - 2rem) !important; }
@@ -2079,7 +2079,7 @@ span.field-prefix + input {
   background: #fafafa;
   border: 1px solid #DDDDDD;
   color: #333333;
-  font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif; }
+  font-weight: 600; }
 
 .form-item .form-text.form-number {
   max-width: none;
@@ -2531,7 +2531,7 @@ ul.pager {
   float: left;
   text-align: center;
   padding: .72em;
-  font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif; }
+  font-weight: 600; }
 
 #search-block-form .form-submit {
   font-family: 'SPruit-icons';
@@ -3344,19 +3344,6 @@ ul.secondary a.active {
 .page-user .primary-content {
   max-width: 640px;
   margin: 0 auto; }
-
-/* THEMES */
-/* THEME */
-body {
-  font-family: "Inter", sans-serif; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "HelveticaInseratLTPro", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase; }
-
-p {
-  font-family: "Inter", sans-serif; }
 
 /* UTILS */
 /* BOX-SHADOW */

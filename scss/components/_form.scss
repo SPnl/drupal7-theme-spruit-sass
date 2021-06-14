@@ -31,11 +31,10 @@ input,textarea {
 }
 .form-select {
     padding: 8px;
-    font-family: $font-strong;
+    font-weight: 600;
     font-size: 1rem;
     background: #fafafa;
     border: 1px solid #ddd;
-    /*width: 100%;*/
     text-overflow: ellipsis;
 }
 
@@ -62,7 +61,7 @@ span.field-prefix {
     border: 1px solid #ddd;
     padding: .72rem .5rem .72rem .5rem;
     text-align: center;
-    font-family: $font-strong;
+    font-weight: 600;
 }
 span.field-prefix + input {
     width: calc(100% - 2rem)!important;
@@ -85,7 +84,7 @@ span.field-prefix + input {
     background: #fafafa;
     border: 1px solid $color4;
     color: $color3;
-    font-family: $font-strong;
+    font-weight: 600;
 }
 
 .form-item .form-text.form-number {
