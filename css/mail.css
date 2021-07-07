@@ -3,10 +3,12 @@ body {
   font-family: Sans-serif;
   color: #444444;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 #message-wrapper {
-  background: #fafafa; }
+  background: #fafafa;
+}
 
 #message-content {
   border-top: 4px solid #ec1b27;
@@ -17,23 +19,27 @@ body {
   margin: 0;
   line-height: 1.4;
   background: #ffffff;
-  font-size: 16px; }
+  font-size: 16px;
+}
 
 #message-footer {
   padding: 24px;
   margin: 0;
   color: #aaaaaa;
-  text-align: center; }
+  text-align: center;
+}
 
 #message-footer a,
 #message-footer a:link,
 #message-footer a:visited {
-  color: #888888; }
+  color: #888888;
+}
 
 #message-content h1 {
   font-size: 24px;
   color: #ec1b27;
-  margin-top: 0; }
+  margin-top: 0;
+}
 
 #message-content a.action {
   background: #ec1b27;
@@ -42,6 +48,6 @@ body {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
-  margin: 0 auto; }
-
+  margin: 0 auto;
+}
 /*# sourceMappingURL=mail.css.map */

@@ -1,7 +1,10 @@
-/* DOE MEE NODE STYLE */
-.node-type-doe-mee .action-links,
-.node-type-doe-mee #site-footer {
-    display: none; //quickfix
+// DOE MEE NODE STYLE
+.node-type-doe-mee {
+    .action-links,
+    #site-footer,
+    .ajax-progress-throbber {
+    display: none;
+    }
 }
 // experiment
 .node-type-doe-mee .btn {

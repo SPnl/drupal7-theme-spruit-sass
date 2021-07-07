@@ -3,81 +3,103 @@
  * Make sure to put url/page where it was applied
  */
 .padding-0 {
-  padding: 0 !important; }
+  padding: 0 !important;
+}
 
 #rood-banner {
-  background-image: url("/files/rood_1920.jpg"); }
+  background-image: url("/files/rood_1920.jpg");
+}
 
 @media screen and (min-width: 768px) {
   #rood-banner {
     background-image: url("/files/rood_1920.jpg");
     min-height: 860px;
-    height: calc(100vh - 122px); } }
+    height: calc(100vh - 122px);
+  }
+}
+
 .red-text {
-  color: red; }
+  color: red;
+}
 
 div.webform-hidden {
-  display: none; }
+  display: none;
+}
 
 .empty-header #site-header,
 .page-doemee #site-header {
   background: transparent;
   position: absolute;
-  border: none; }
+  border: none;
+}
 
 .empty-header,
 .page-doemee {
-  border-top: 4px solid #ec1b23; }
+  border-top: 4px solid #ec1b23;
+}
 
 #doemee-rodebalk .meer-weten {
   display: block;
   padding: .72em 0;
   font-family: "HelveticaNeueLTStd-BdCn", sans-serif;
-  font-weight: normal; }
+  font-weight: normal;
+}
 
 .whatsapp-link {
-  color: #fff; }
+  color: #fff;
+}
 
 #doemee-rodebalk .meer-weten.mobile .text,
 #doemee-rodebalk .meer-weten.immobile {
-  display: none; }
+  display: none;
+}
 
 .whatsapp-link img {
   display: inline-block;
   margin: 0 8px;
   vertical-align: -5px;
   height: 24px;
-  display: inline-block; }
+  display: inline-block;
+}
 
 @media screen and (min-width: 768px) {
   #doemee-rodebalk .meer-weten.mobile {
-    display: none; }
-
+    display: none;
+  }
   #doemee-rodebalk .meer-weten.immobile {
-    display: block; }
-
+    display: block;
+  }
   #lilian-2017-banner {
     background-image: url("/files/lilian_1920.jpg");
     background-position: 50% 0;
     min-height: 680px;
-    height: 86vh; } }
+    height: 86vh;
+  }
+}
+
 .page-energierekening .webform-component--stijging-energierekening input {
-  max-width: 120px; }
+  max-width: 120px;
+}
 
 .page-donatie .primary-content .content-header .title,
 .page-node-1684 .primary-content .content-header .title {
-  max-width: 720px; }
+  max-width: 720px;
+}
 
 @media screen and (max-width: 600px) {
   .page-donatie .primary-content,
   .page-node-1684 .primary-content {
-    padding-top: 3rem; } }
+    padding-top: 3rem;
+  }
+}
+
 #sp-mollie-form {
   max-width: 720px;
   padding: 0 1rem;
-  margin: 0 auto 3rem auto; }
+  margin: 0 auto 3rem auto;
+}
 
 .primary-content {
-  min-height: calc(100vh - 167px); }
-
+  min-height: calc(100vh - 167px);
+}
 /*# sourceMappingURL=shame.css.map */
