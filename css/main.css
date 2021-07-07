@@ -2112,13 +2112,12 @@ span.field-prefix + input {
   content: 'v';
   color: #fff;
   background: #fff;
-  padding: 6px;
+  padding: 0 0.3rem;
   margin-right: 8px;
   border: 2px solid #333;
   font-size: 1rem;
   display: table-cell;
-  float: left;
-  margin-top: -8px; }
+  float: left; }
 
 .form-type-radio input:checked + label:before,
 .form-type-checkbox input:checked + label:before {

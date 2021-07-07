@@ -120,13 +120,13 @@ span.field-prefix + input {
     content: 'v';
     color: #fff;
     background: #fff;
-    padding: 6px;
+    padding: 0 0.3rem;
     margin-right: 8px;
     border: 2px solid #333;
     font-size: 1rem;
     display: table-cell; // to prevent label text wrapping underneath
     float: left; // to prevent label text wrapping underneath
-    margin-top: -8px; // to prevent label text wrapping underneath
+    //margin-top: -8px; // to prevent label text wrapping underneath
 }
 .form-type-radio input:checked + label:before,
 .form-type-checkbox input:checked + label:before {
