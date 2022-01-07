@@ -89,7 +89,7 @@
                       <tr><!-- Disclaimer -->
                         <td align="center" class="content" valign="middle">
                           <p align="center" style="color:#a6a6a6; font-size:12px; font-family:Helvetica,Arial,sans-serif; margin-bottom:15px; padding:12px; line-height:13px;">
-                            Je ontvangt deze mail omdat je een formulier op <?php print $domain; ?> hebt ingevuld. Is dat niet het geval,
+                            Je ontvangt deze mail omdat je een formulier op <?php print $base_url; ?> hebt ingevuld. Is dat niet het geval,
                                stuur dan een e-mail naar <a href="mailto:webmaster@sp.nl">webmaster@sp.nl</a>.
                           </p>
                         </td>
