@@ -30,10 +30,17 @@ function spruit_sass_preprocess_page(&$variables) {
   if (isset($variables['node']->type)) {
     $variables['theme_hook_suggestions'][]='page__'.$variables['node']->type;
   }
-    
+
   $variables['logo_url'] = 'https://www.sp.nl/?landing=0';
   if (user_is_logged_in()) {
     $variables['logo_url'] =  url('<front>');
   }
 
+}
+
+function spruit_sass_html_head_alter(&$head_elements) {
+  // Remove Drupal generator meta tag.
+  if (isset($head_elements['system_meta_generator'])) {
+    unset($head_elements['system_meta_generator']);
+  }
 }

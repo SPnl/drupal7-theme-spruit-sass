@@ -7,12 +7,20 @@
 <!doctype html>
 <html class="no-js" lang="nl-NL">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php print $head; ?>
     <title><?php print $head_title; ?></title>
     <?php print $styles; ?>
     <?php print $scripts; ?>
-  <?php if(isset($_COOKIE['sp_tc']) && $_COOKIE['sp_tc'] == 2) :?>
+
+  <?php
+  /**
+   * Only load tracking html elements, such as facebook 'pixel', when user consent is given.
+   * When caching is enabled for the site, use the cookie_aware_page_cache module to cache variants
+   * Depending on the value of the sp_tc (tracking consent) cookie
+   */
+  if(isset($_COOKIE['sp_tc']) && $_COOKIE['sp_tc'] == 2) :?>
+  <!-- Only load tracking when consent is given -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -27,7 +35,7 @@
   </script>
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=454884558037853&ev=PageView&noscript=1" /></noscript>
   <!-- End Facebook Pixel Code -->
-  <?php endif; ?>
+  <?php endif; /* End tracking consent */ ?>
 
   </head>
   <body class="<?php print $classes; ?>" <?php print $attributes;?>>
