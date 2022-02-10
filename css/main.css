@@ -453,8 +453,6 @@ template {
 }
 
 /* VARIABLES */
-/* BASE STYLING */
-/* SET ROOT FONTSIZE FOR EACH MEDIA */
 html {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -463,20 +461,12 @@ html {
   height: 100%;
 }
 
-@media screen and (min-width: 1980px) {
-  html {
-    font-size: 20px;
-  }
-}
-
-@media screen and (min-width: 2560px) {
-  html {
-    font-size: 24px;
-  }
-}
-
-/* FONTSIZE BASED ON ROOT */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0 0 1rem 0;
   line-height: 1;
   font-family: "HelveticaInseratLTPro", sans-serif;
@@ -547,7 +537,7 @@ img {
 }
 
 :focus {
-  outline: 2px solid #0276BA;
+  outline: 2px solid #0276ba;
 }
 
 @font-face {
@@ -2483,19 +2473,23 @@ fieldset {
   margin: 2rem 0;
 }
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
   color: #ccc;
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
   color: #ccc;
 }
 
-input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
   color: #ccc;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: #ccc;
 }
 
@@ -2521,17 +2515,10 @@ input::placeholder, textarea::placeholder {
 
 .form-item label {
   display: inline-block;
-  margin-bottom: 8px;
   margin-top: 2px;
   font-weight: normal;
   font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
-  letter-spacing: .3px;
-}
-
-@media screen and (min-width: 768px) {
-  .form-item label {
-    font-size: 1.125rem;
-  }
+  letter-spacing: 0.3px;
 }
 
 span.field-prefix {
@@ -2540,7 +2527,7 @@ span.field-prefix {
   height: 2.6rem;
   background: #ddd;
   border: 1px solid #ddd;
-  padding: .72rem .5rem .72rem .5rem;
+  padding: 0.72rem 0.5rem 0.72rem 0.5rem;
   text-align: center;
   font-weight: 600;
 }
@@ -2563,7 +2550,7 @@ span.field-prefix + input {
 .form-item .form-textarea {
   max-width: 100%;
   width: 100%;
-  padding: .72rem;
+  padding: 0.72rem;
   background: #fafafa;
   border: 1px solid #DDDDDD;
   color: #333333;
@@ -2578,7 +2565,7 @@ span.field-prefix + input {
 .form-checkboxes .form-item,
 .form-radios .form-item {
   display: table;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .form-type-radio input[type="radio"] + label,
@@ -2596,14 +2583,14 @@ span.field-prefix + input {
 
 .form-type-radio input:focus + label:before,
 .form-type-checkbox input:focus + label:before {
-  outline: 2px solid #0276BA;
+  outline: 2px solid #0276ba;
 }
 
 .form-type-radio input[type="radio"] + label:before,
 .form-type-checkbox input[type="checkbox"] + label:before {
   display: inline-block;
-  font-family: 'SPruit-icons';
-  content: 'v';
+  font-family: "SPruit-icons";
+  content: "v";
   color: #fff;
   background: #fff;
   padding: 0 0.3rem;
@@ -2616,7 +2603,7 @@ span.field-prefix + input {
 
 .form-type-radio input:checked + label:before,
 .form-type-checkbox input:checked + label:before {
-  content: 'v';
+  content: "v";
   color: #EC1B23 !important;
   background: #fff;
 }
@@ -2645,7 +2632,7 @@ span.field-prefix + input {
 }
 
 input[type="file"] {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 input.form-submit,
@@ -2683,7 +2670,7 @@ input.button-primary:hover {
   margin-bottom: 8px;
   color: #666;
   font-weight: bold;
-  font-size: .8em;
+  font-size: 0.8em;
   font-family: sans-serif;
 }
 

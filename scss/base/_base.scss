@@ -1,85 +1,77 @@
-/* BASE STYLING */
+// BASE
 
-
-/* SET ROOT FONTSIZE FOR EACH MEDIA */
 html {
-    font-family: $font-body;
-    font-size: 16px; //set as root size
-    line-height: 1.625; //26px
-    width: 100%; // set ICB
-    height: 100%;
-}
-@media screen and (min-width: 1980px){
-    html {
-        font-size: 20px;
-    }
-}
-@media screen and (min-width: 2560px){
-    html {
-        font-size: 24px;
-    }
+  font-family: $font-body;
+  font-size: 16px; //set as root size
+  line-height: 1.625; //26px
+  width: 100%; // set ICB
+  height: 100%;
 }
 
-/* FONTSIZE BASED ON ROOT */
-h1,h2,h3,h4,h5,h6 {
-    margin: 0 0 1rem 0;
-    line-height: 1;
-    font-family: $font-primary;
-    font-weight: 400;
-    text-transform: uppercase;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 1rem 0;
+  line-height: 1;
+  font-family: $font-primary;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 h1 a:hover,
 h2 a:hover {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 p {
-    margin: 0 0 1rem 0;
-    strong {
-      font-weight: 600;
-    }
+  margin: 0 0 1rem 0;
+  strong {
+    font-weight: 600;
+  }
 }
 ul {
-   line-height: 1.5rem;  
+  line-height: 1.5rem;
 }
-@media screen and (min-width: 768px){
-    p {
-        font-size: 1.125rem; // 18px
-        line-height: 1.62rem; // 26px 
-    }
-    ul {
-        line-height: 1.62rem;
-    }
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1.125rem; // 18px
+    line-height: 1.62rem; // 26px
+  }
+  ul {
+    line-height: 1.62rem;
+  }
 }
 h1 {
-    font-size: 2rem; //36px
+  font-size: 2rem; //36px
 }
 h2 {
-    font-size: 1.5rem; //27px
-    margin-top: 8px;
-}   
+  font-size: 1.5rem; //27px
+  margin-top: 8px;
+}
 h3 {
-    font-size: 1.17rem; //21px
-    margin-top: 14px;
-}   
+  font-size: 1.17rem; //21px
+  margin-top: 14px;
+}
 h4 {
-    font-size: 1rem; //18px
-    margin-top: 16px;
-}   
+  font-size: 1rem; //18px
+  margin-top: 16px;
+}
 h5 {
-    font-size: 0.83rem; //15px
-    margin-top: 19px;
-}   
+  font-size: 0.83rem; //15px
+  margin-top: 19px;
+}
 h6 {
-    font-size: 0.67rem; //12px
-    margin-top: 22px;
-} 
+  font-size: 0.67rem; //12px
+  margin-top: 22px;
+}
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 :focus {
-    outline: 2px solid #0276BA;
+  outline: 2px solid #0276ba;
 }
