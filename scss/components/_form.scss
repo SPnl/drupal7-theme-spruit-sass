@@ -112,7 +112,7 @@ span.field-prefix + input {
 .form-type-checkbox input[type="checkbox"] + label:before {
   display: inline-block;
   font-family: "SPruit-icons";
-  content: "v";
+  content: " ";
   color: #fff;
   background: #fff;
   padding: 0 0.3rem;
@@ -123,13 +123,14 @@ span.field-prefix + input {
   float: left; // to prevent label text wrapping underneath
   //margin-top: -8px; // to prevent label text wrapping underneath
   cursor: pointer;
+  min-width: 40px;
+  min-height: 40px;
+  text-align: center;
 }
 .form-type-radio input:checked + label:before,
 .form-type-checkbox input:checked + label:before {
   content: "v";
   color: $color1 !important; //important prevents hover state
-  background: #fff;
-  //border-color: $color1;
 }
 .form-type-radio input:checked + label,
 .form-type-checkbox input:checked + label {
