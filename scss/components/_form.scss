@@ -122,6 +122,7 @@ span.field-prefix + input {
   display: table-cell; // to prevent label text wrapping underneath
   float: left; // to prevent label text wrapping underneath
   //margin-top: -8px; // to prevent label text wrapping underneath
+  cursor: pointer;
 }
 .form-type-radio input:checked + label:before,
 .form-type-checkbox input:checked + label:before {
@@ -134,10 +135,13 @@ span.field-prefix + input {
 .form-type-checkbox input:checked + label {
   color: $color1;
 }
-.no-touch .form-type-radio:hover input + label:before,
-.no-touch .form-type-checkbox:hover input + label:before {
-  color: #aaa;
-}
+
+// FIXME: breaks with Samsung browsers
+// .no-touch .form-type-radio:hover input + label:before,
+// .no-touch .form-type-checkbox:hover input + label:before {
+//   color: #aaa;
+// }
+
 // RADIOS AND CHECKBOXES - VOTING STYLE
 // add a .voting class as wrapper
 .voting .form-type-radio input[type="radio"] + label:before,
