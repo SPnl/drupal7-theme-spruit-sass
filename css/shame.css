@@ -17,7 +17,6 @@
     height: calc(100vh - 122px);
   }
 }
-
 .red-text {
   color: red;
 }
@@ -40,7 +39,7 @@ div.webform-hidden {
 
 #doemee-rodebalk .meer-weten {
   display: block;
-  padding: .72em 0;
+  padding: 0.72em 0;
   font-family: "HelveticaNeueLTStd-BdCn", sans-serif;
   font-weight: normal;
 }
@@ -76,7 +75,6 @@ div.webform-hidden {
     height: 86vh;
   }
 }
-
 .page-energierekening .webform-component--stijging-energierekening input {
   max-width: 120px;
 }
@@ -88,11 +86,10 @@ div.webform-hidden {
 
 @media screen and (max-width: 600px) {
   .page-donatie .primary-content,
-  .page-node-1684 .primary-content {
+.page-node-1684 .primary-content {
     padding-top: 3rem;
   }
 }
-
 #sp-mollie-form {
   max-width: 720px;
   padding: 0 1rem;
@@ -101,5 +98,4 @@ div.webform-hidden {
 
 .primary-content {
   min-height: calc(100vh - 167px);
-}
-/*# sourceMappingURL=shame.css.map */
+}/*# sourceMappingURL=shame.css.map */
